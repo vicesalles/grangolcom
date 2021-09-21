@@ -1,64 +1,35 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-
+import {FaHeart} from '@react-icons/all-files/fa/FaHeart'
+import {FaTwitter} from '@react-icons/all-files/fa/FaTwitter'
+import {FaInstagram} from '@react-icons/all-files/fa/FaInstagram'
+import {IoMdFootball} from '@react-icons/all-files/io/IoMdFootball';
+import {SiTiktok} from '@react-icons/all-files/si/SiTiktok';
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Gran Gol</title>
+        <link rel="icon" href="/futbol.ico?v=2" />
+        <meta property="og:title" content="Gran Gol"/>
+        <meta property="og:description" content="Gran Gol futbol, futebol, calcio, football, fut, fussball, voetball, كرة القدم."/>
+        <meta property="og:image" content="https://grangol.com/grangol.jpg"/>
+        <meta property="og:url" content="https://grangol.com"></meta>
+
+        <meta name="twitter:title" content="Gran Gol"/>
+        <meta name="twitter:description" content="Gran Gol futbol, futebol, calcio, football, fut, fussball, voetball, كرة القدم."/>
+        <meta name="twitter:image" content="https://grangol.com/grangol.jpg"/>
+        <meta name="twitter:card" content="summary_large_image"></meta>
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+          <h1><FaHeart fontSize={100} color={"red"}/> <IoMdFootball fontSize={100}/></h1>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+      <a href="https://twitter.com/grangol11" target="_blank" style={{marginRight:15}}><FaTwitter fontSize={25} color={"white"}/></a>
+      <a href="https://www.instagram.com/grangol11/" target="_blank" style={{marginRight:15}}><FaInstagram fontSize={25} color={"white"}/></a>
+      <a href="https://www.tiktok.com/@grangol11" target="_blank" style={{marginRight:15}}><SiTiktok fontSize={25} color={"white"}/></a>
       </footer>
     </div>
   )
