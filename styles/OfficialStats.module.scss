@@ -1,0 +1,65 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    top:0px;
+    left: 0px;
+  }
+.main {
+    top:0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+.StatsMainHeader{
+    padding-left: 2em;
+    width: 100%;
+}
+
+.statsTable{
+    background-color: green;
+    padding: 2em;
+    border: 2px solid white;
+    margin: 2em;       
+    display: flex;
+    flex-direction: column;
+   
+  
+}
+
+.headerRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5em;
+    font-weight: bold;
+    color: white;
+    div{
+        width: 33%;
+        text-align: center;
+    }
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    text-align: center;
+    border: 2px solid white;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    div{
+        display: flex;
+        width: 33%;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+}
+

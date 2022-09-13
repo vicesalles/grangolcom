@@ -1,10 +1,10 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import {FaHeart} from '@react-icons/all-files/fa/FaHeart'
-import {FaTwitter} from '@react-icons/all-files/fa/FaTwitter'
-import {FaInstagram} from '@react-icons/all-files/fa/FaInstagram'
 import {IoMdFootball} from '@react-icons/all-files/io/IoMdFootball';
-import {SiTiktok} from '@react-icons/all-files/si/SiTiktok';
+
+import Footer from '../components/Footer'
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -24,13 +24,12 @@ export default function Home() {
 
       <main className={styles.main}>
           <h1><FaHeart fontSize={100} color={"red"}/> <IoMdFootball fontSize={100}/></h1>
+          
       </main>
-
-      <footer className={styles.footer}>
-      <a href="https://twitter.com/grangol11" target="_blank" style={{marginRight:15}}><FaTwitter fontSize={25} color={"white"}/></a>
-      <a href="https://www.instagram.com/grangol11/" target="_blank" style={{marginRight:15}}><FaInstagram fontSize={25} color={"white"}/></a>
-      <a href="https://www.tiktok.com/@grangol11" target="_blank" style={{marginRight:15}}><SiTiktok fontSize={25} color={"white"}/></a>
-      </footer>
+      <div className={styles.textMenu}><Link href="/en/books">football books</Link> | <Link href="/en/european-football-official-stats">football stats</Link></div>
+      <Footer/>
     </div>
   )
 }
+
+

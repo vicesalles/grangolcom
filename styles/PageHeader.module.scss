@@ -1,0 +1,27 @@
+.PageHeader{
+    width: 100%;
+    h1{
+        padding-left: 1em;
+    }
+    .TitleLine{
+        display: flex;
+        flex-direction: row;
+        justify-content: initial;
+        align-items: initial;
+    }
+    .pilota{
+        margin-right: 0.5em;   
+        margin-bottom: 0px;
+        align-items: baseline;
+        align-content: flex-end;
+        :hover{
+            cursor: pointer;
+        }     
+    }
+
+    p{
+        margin-top: 0px;
+        padding-left: 2em;
+    }
+}
+
