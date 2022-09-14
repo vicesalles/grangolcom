@@ -8,7 +8,7 @@ export default(req, res) => {
             url: "https://amzn.to/3B9DQ67",
             title: "Football Hackers: The Science and Art of a Data Revolution",
             author: "Christoph Biermann",
-            description: "Football hackers is a great introductory book to the role that data plays in the nowadays football. In this book, the german journalist, Christoph Bierman introduces key concepts such as 'Expected Goals' or 'Packing', among others, and narrates his encounters with some of the most prominent trailblazers in the introduction of the data-driven approach for the elite football. This book is a first step towards understanding our beloved game in the current times.",
+            description: "Football hackers is a great introductory book to the role that data plays in the nowadays football. In this book, the german journalist, Christoph Bierman introduces key concepts such as 'Expected Goals' or 'Packing', among others, and narrates his encounters with some of the most prominent trailblazers in the matter: The introduction of the data-driven approach to the elite football. This book is a first step towards understanding our beloved game in the current times.",
             cover: "https://images-na.ssl-images-amazon.com/images/I/41uA7e3BXnL._SX323_BO1,204,203," +
                     "200_.jpg"
         },{

@@ -17,10 +17,65 @@
     flex-direction: column;
   }
 .StatsMainHeader{
-    padding-left: 2em;
+    padding-left: em;
     width: 100%;
 }
 
+.textMenu{
+    height: 20%;
+    padding: 0.1em 0em 0.5em 0em;
+    a:hover{
+        color:grey;
+      }
+  }
+
+ @media (max-width:768px) {
+    
+.statsTable{
+    background-color: green;
+    padding: 0.5em;
+    border: 2px solid white;
+    margin: 0.5em;       
+    display: flex;
+    flex-direction: column;   
+  
+}
+
+.headerRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5em;
+    font-weight: bold;
+    color: white;
+    div{
+        width: 33%;
+        text-align: center;
+    }
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    text-align: center;
+    border: 2px solid white;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    div{
+        display: flex;
+        width: 33%;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+}
+ } 
+
+ @media (min-width:768px){
+
+    
 .statsTable{
     background-color: green;
     padding: 2em;
@@ -62,4 +117,9 @@
         color: white;
     }
 }
+
+ }
+
+
+
 

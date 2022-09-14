@@ -1,6 +1,7 @@
 import Head from 'next/head'
+import Link from 'next/link';
 import useSWR from 'swr'
-import styles from '../../styles/Books.module.css'
+import styles from '../../styles/Books.module.scss'
 import Footer from '../../components/Footer';
 import Book from '../../components/Book';
 import PageHeader from '../../components/PageHeader';
@@ -44,6 +45,7 @@ export default function Books() {
         />
         {data.map((bookData) => <Book data={bookData}/>)}
       </main>
+      <div className={styles.textMenu}><Link href="/">home</Link> | <Link href="/en/european-football-official-stats">football stats</Link></div>
       <Footer/>
     </div>
   )

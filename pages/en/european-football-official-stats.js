@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../../styles/OfficialStats.module.scss'
 import Footer from '../../components/Footer';
 import VisitButton from '../../components/VisitButton'
@@ -42,6 +43,8 @@ export default function EuropeanFootballOfficialStats() {
         </div>
         
       </main>
+      <div className={styles.textMenu}><Link href="/">home</Link> | <Link href="/en/books">football books</Link></div>
+      
       <Footer/>
     </div>
   )

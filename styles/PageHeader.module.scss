@@ -1,3 +1,4 @@
+@media(min-width:768px){
 .PageHeader{
     width: 100%;
     h1{
@@ -24,4 +25,34 @@
         padding-left: 2em;
     }
 }
+}
+@media(max-width:768px){
+.PageHeader{
+    width: 100%;
+    padding: 0em 0.5em 0em 0.5em;
+    h1{
+        padding-left: 0.5em;
+    }
+    .TitleLine{
+        display: flex;
+        flex-direction: row;
+        justify-content: initial;
+        align-items: initial;
+    }
+    .pilota{
+        margin-right: 0.5em;   
+        margin-bottom: 0px;
+        align-items: baseline;
+        align-content: flex-end;
+        :hover{
+            cursor: pointer;
+        }     
+    }
 
+    p{
+        margin-top: 0px;
+        padding-left: 1em;
+        padding-right: 0.5em;
+    }
+}
+}

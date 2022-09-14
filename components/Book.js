@@ -1,4 +1,4 @@
-import styles from '../styles/Books.module.css'
+import styles from '../styles/Books.module.scss'
 export default function Book({data}){
     
     return(<div id={data.slug} key={data.slug} className={styles.Book}>
