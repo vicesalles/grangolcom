@@ -5,11 +5,11 @@ import Footer from '../../components/Footer';
 import VisitButton from '../../components/VisitButton'
 import StarsDisplayer from '../../components/StarsDisplayer';
 import PageHeader from '../../components/PageHeader';
-import { PageViews } from '@piwikpro/react-piwik-pro';
+
 
 export default function EuropeanFootballOfficialStats() {
  
-  PageViews.trackPageView('Stats');
+
 
   return (
     <div className={styles.container}>
