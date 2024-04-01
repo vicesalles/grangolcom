@@ -1,5 +1,5 @@
 import styles from '../styles/Home.module.css'
-import {FaTwitter} from '@react-icons/all-files/fa/FaTwitter'
+import { FaXTwitter } from "react-icons/fa6";
 import {FaInstagram} from '@react-icons/all-files/fa/FaInstagram'
 import {SiTiktok} from '@react-icons/all-files/si/SiTiktok';
 
@@ -11,7 +11,7 @@ export default function Footer() {
                 target="_blank"
                 style={{
                 marginRight: 15
-            }}><FaTwitter fontSize={25} color={"white"}/></a>            
+            }}><FaXTwitter fontSize={25} color={"white"}/></a>            
            
         </footer>
     )
