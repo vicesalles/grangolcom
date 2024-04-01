@@ -3,9 +3,12 @@ import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import {FaHeart} from '@react-icons/all-files/fa/FaHeart'
 import {IoMdFootball} from '@react-icons/all-files/io/IoMdFootball';
+import { PageViews } from '@piwikpro/react-piwik-pro';
+
 
 import Footer from '../components/Footer'
 export default function Home() {
+  PageViews.trackPageView('Home');
   return (
     <div className={styles.container}>
       <Head>

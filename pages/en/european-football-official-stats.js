@@ -5,9 +5,12 @@ import Footer from '../../components/Footer';
 import VisitButton from '../../components/VisitButton'
 import StarsDisplayer from '../../components/StarsDisplayer';
 import PageHeader from '../../components/PageHeader';
+import { PageViews } from '@piwikpro/react-piwik-pro';
 
 export default function EuropeanFootballOfficialStats() {
  
+  PageViews.trackPageView('Stats');
+
   return (
     <div className={styles.container}>
       <Head>
@@ -33,11 +36,11 @@ export default function EuropeanFootballOfficialStats() {
           <div className={styles.statsTable}>
             <div className={styles.headerRow}><div>Competition</div><div>Data Provider</div><div>Data Value</div><div>Link</div></div>
             <div>
-            <div className={styles.row}><div>Champions League</div><div>UEFA</div><div><StarsDisplayer id={"champions"} number={2}/></div><div><VisitButton url="https://www.uefa.com/uefachampionsleague/statistics/"/></div></div>
+            <div className={styles.row}><div>Champions League</div><div>UEFA</div><div><StarsDisplayer id={"champions"} number={3}/></div><div><VisitButton url="https://www.uefa.com/uefachampionsleague/statistics/"/></div></div>
             <div className={styles.row}><div>Premier League</div><div>ORACLE</div><div><StarsDisplayer number={3} id={"premier"}/></div><div><VisitButton url="https://www.premierleague.com/stats"/></div></div>
-            <div className={styles.row}><div>La Liga</div><div>Microsoft</div><div><StarsDisplayer id={"laLiga"} number={3}/></div><div><VisitButton url="https://www.laliga.com/en-US/stats"/></div></div>
+            <div className={styles.row}><div>La Liga</div><div>Microsoft</div><div><StarsDisplayer id={"laLiga"} number={1}/></div><div><VisitButton url="https://www.laliga.com/en-ES/leaderboard"/></div></div>
             <div className={styles.row}><div>Bundesliga</div><div>AWS</div><div><StarsDisplayer id={"bundesliga"} number={4}/></div><div><VisitButton url="https://www.bundesliga.com/en/bundesliga/stats/overview"/></div></div>
-            <div className={styles.row}><div>Serie A</div><div>-</div><div><StarsDisplayer id={"serieA"} number={1}/></div><div><VisitButton url="https://www.legaseriea.it/en/serie-a/teams-statistics"/></div></div>
+            <div className={styles.row}><div>Serie A</div><div>-</div><div><StarsDisplayer id={"serieA"} number={3}/></div><div><VisitButton url="https://www.legaseriea.it/en/serie-a/teams-statistics"/></div></div>
             </div>
           </div>
         </div>

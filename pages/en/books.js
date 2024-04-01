@@ -5,6 +5,7 @@ import styles from '../../styles/Books.module.scss'
 import Footer from '../../components/Footer';
 import Book from '../../components/Book';
 import PageHeader from '../../components/PageHeader';
+import { PageViews } from '@piwikpro/react-piwik-pro';
 
 const hackers = {
   slug: "hackers",
@@ -17,6 +18,8 @@ const hackers = {
 }
 const fetcher = (url) => fetch(url).then((res) => res.json())
 export default function Books() {
+
+  PageViews.trackPageView('Books');
 
   const {data, error} = useSWR('/api/books', fetcher)
 
