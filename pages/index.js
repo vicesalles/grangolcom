@@ -28,7 +28,7 @@ export default function Home() {
           <h1><FaHeart fontSize={100} color={"red"}/> <IoMdFootball fontSize={100}/></h1>
           
       </main>
-      <div className={styles.textMenu}><Link href="/en/books">football books</Link> | <Link href="/en/european-football-official-stats">football stats</Link></div>
+      <div className={styles.textMenu}><Link href="./books">football books</Link> | <Link href="./european-football-official-stats">football stats</Link></div>
       <Footer/>
     </div>
   )

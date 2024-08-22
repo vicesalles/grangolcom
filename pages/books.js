@@ -1,17 +1,17 @@
 import Head from 'next/head'
 import Link from 'next/link';
 import useSWR from 'swr'
-import styles from '../../styles/Books.module.scss'
-import Footer from '../../components/Footer';
-import Book from '../../components/Book';
-import PageHeader from '../../components/PageHeader';
+import styles from '../styles/Books.module.scss'
+import Footer from '../components/Footer';
+import Book from '../components/Book';
+import PageHeader from '../components/PageHeader';
 
 
 const hackers = {
   slug: "hackers",
   url: "https://amzn.to/3B9DQ67",
   title: "Gran Llibre",
-  author: "Vice SAllés",
+  author: "Vice Sallés",
   description: "molt bo.",
   cover: "https://images-na.ssl-images-amazon.com/images/I/41uA7e3BXnL._SX323_BO1,204,203," +
       "200_.jpg"
