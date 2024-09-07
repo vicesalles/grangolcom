@@ -25,6 +25,13 @@ export default(req, res) => {
             author: "Pep Lijnders",
             description: "A privileged view from the very inside of the Liverpool's season 2020/2021. That season Liverpool make it to the Champions League final and got the Premier League second position. The Klopp's assistant coach Pep Lijnders takes you to a season lenght journey.",
             cover: "https://m.media-amazon.com/images/I/81a0nEWAfoL._SY466_.jpg"
+        },{
+            slug:"mixer",
+            url: "https://amzn.to/3ZdEyNe",
+            title:"The Mixer",
+            author: "Michael Cox",
+            description: "An insightful exploration of the evolution of tactical approaches in the Premier League, tracing its transformation from the early days of direct, route-one football to the modern era of sophisticated strategies such as false nines, and examining how key managers, players, and innovations have shaped the league's tactical landscape over the years.",
+            cover: "https://m.media-amazon.com/images/I/71RSsi6V3fL._SY466_.jpg"
         }])
 }
 

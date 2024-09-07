@@ -5,6 +5,9 @@ import styles from '../styles/Books.module.scss'
 import Footer from '../components/Footer';
 import Book from '../components/Book';
 import PageHeader from '../components/PageHeader';
+import TopNavbar from '../components/TopNavbar';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'react-i18next';
 
 
 const hackers = {
@@ -18,7 +21,7 @@ const hackers = {
 }
 const fetcher = (url) => fetch(url).then((res) => res.json())
 export default function Books() {
-
+  const { t, ready } = useTranslation('common');
  
   const {data, error} = useSWR('/api/books', fetcher)
 
@@ -42,14 +45,26 @@ export default function Books() {
       </Head>
 
       <main className={styles.main}>
-        <PageHeader title="Best Books about modern Football"
+        <TopNavbar/>
+        <PageHeader title={t('topFootballBooks')}
           description="Everything is going digital. Football is no excepcion. Those books are a great aproach to the new way football is understood. The digital transformation of football."
         />
         {data.map((bookData) => <Book data={bookData}/>)}
       </main>
-      <div className={styles.textMenu}><Link href="/">home</Link> | <Link href="/stats">football stats</Link> | <Link href="/games">football games</Link></div>
+      
+      <div className={styles.textMenu}>
+        <Link href="/">{t('home')}</Link> | <Link href="/stats">{t('footballStats')}</Link> | <Link href="/games">{t('footballGames')}</Link>
+      </div>
       <Footer/>
     </div>
   )
 
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  };
 }

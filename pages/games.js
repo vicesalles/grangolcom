@@ -2,15 +2,20 @@ import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/OfficialStats.module.scss'
 import Footer from '../components/Footer';
-import VisitButton from '../components/VisitButton'
-import StarsDisplayer from '../components/StarsDisplayer';
 import PageHeader from '../components/PageHeader';
+import TopNavbar from '../components/TopNavbar';
+import {IoMdFootball} from '@react-icons/all-files/io/IoMdFootball';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'react-i18next';
 
 
 export default function Games() {
-  const { t } = useTranslation('common');
+  const { t, ready } = useTranslation('common');
+
+  // Wait until translations are ready
+  if (!ready) {
+    return <div><IoMdFootball fontSize={12}/></div>;
+  }
 
 
   return (
@@ -28,8 +33,9 @@ export default function Games() {
         <meta name="twitter:image" content="https://grangol.com/grangol.jpg"/>
         <meta name="twitter:card" content="summary_large_image"></meta>
       </Head>
-
+      
       <main className={styles.main}>
+      <TopNavbar/>
         <PageHeader 
         title={t('footballGames')}
         description={t('playingToPlayFootball')}/>

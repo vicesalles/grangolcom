@@ -3,5 +3,10 @@
     "footballBooks": "Libros de fútbol",
     "footballStats": "Estadísticas de fútbol",
     "footballGames": "Juegos de fútbol",
-    "playingToPlayFootball":"Jugando a jugar a fútbol"
+    "playingToPlayFootball":"Jugando a jugar a fútbol",
+    "competition":"Competición",
+    "dataProvider":"Proveedor de datos",
+    "dataValue":"Valor de los datos",
+    "topEuroStats":"Datos oficiales de las principales competiciones europeas de fútbol",
+    "topFootballBooks":"Los mejores libros de fútbol"
   }

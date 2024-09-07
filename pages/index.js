@@ -9,7 +9,12 @@ import { useTranslation } from 'react-i18next';
 import Footer from '../components/Footer'
 import TopNavbar from '../components/TopNavbar';
 export default function Home() {
-  const { t } = useTranslation('common');
+  const { t, ready } = useTranslation('common');
+
+  // Wait until translations are ready
+  if (!ready) {
+    return <div><IoMdFootball fontSize={12}/></div>;
+  }
   return (
     <div className={styles.container}>
       <Head>

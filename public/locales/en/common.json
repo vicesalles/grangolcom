@@ -3,5 +3,10 @@
     "footballBooks": "Football books",
     "footballStats": "Football stats",
     "footballGames": "Football games",
-    "playingToPlayFootball":"Playing to play football"
+    "playingToPlayFootball":"Playing to play football",
+    "competition":"Competition",
+    "dataProvider":"Data provider",
+    "dataValue":"Data Value",
+    "topEuroStats":"Top European Football official stats",
+    "topFootballBooks":"Best Books about modern Football"
   }
