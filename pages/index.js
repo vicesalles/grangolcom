@@ -5,6 +5,7 @@ import {FaHeart} from '@react-icons/all-files/fa/FaHeart'
 import {IoMdFootball} from '@react-icons/all-files/io/IoMdFootball';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'react-i18next';
+import { GoogleTagManager } from '@next/third-parties/google';
 
 import Footer from '../components/Footer'
 import TopNavbar from '../components/TopNavbar';
@@ -30,6 +31,7 @@ export default function Home() {
         <meta name="twitter:image" content="https://grangol.com/grangol.jpg"/>
         <meta name="twitter:card" content="summary_large_image"></meta>
       </Head>
+      <GoogleTagManager gtmId="G-WSSRG343P3" />
       <TopNavbar/>
       <main className={styles.main}>
           <h1><FaHeart fontSize={100} color={"red"}/> <IoMdFootball fontSize={100}/></h1>
