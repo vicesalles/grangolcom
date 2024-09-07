@@ -5,10 +5,12 @@ import Footer from '../components/Footer';
 import VisitButton from '../components/VisitButton'
 import StarsDisplayer from '../components/StarsDisplayer';
 import PageHeader from '../components/PageHeader';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'react-i18next';
 
 
-export default function EuropeanFootballOfficialStats() {
- 
+export default function Games() {
+  const { t } = useTranslation('common');
 
 
   return (
@@ -29,18 +31,26 @@ export default function EuropeanFootballOfficialStats() {
 
       <main className={styles.main}>
         <PageHeader 
-        title="Football Games"
-        description="Games about football"/>
+        title={t('footballGames')}
+        description={t('playingToPlayFootball')}/>
     
         <div>
           
         </div>
         
       </main>
-      <div className={styles.textMenu}><Link href="/">home</Link> | <Link href="/en/books">football books</Link></div>
+      <div className={styles.textMenu}><Link href="/">{t('home')}</Link> | <Link href="/stats">{t('footballStats')}</Link> | <Link href="/books">{t('footballBooks')}</Link></div>
       
       <Footer/>
     </div>
   )
 
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  };
 }

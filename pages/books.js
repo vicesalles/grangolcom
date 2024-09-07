@@ -47,7 +47,7 @@ export default function Books() {
         />
         {data.map((bookData) => <Book data={bookData}/>)}
       </main>
-      <div className={styles.textMenu}><Link href="/">home</Link> | <Link href="/en/european-football-official-stats">football stats</Link></div>
+      <div className={styles.textMenu}><Link href="/">home</Link> | <Link href="/stats">football stats</Link> | <Link href="/games">football games</Link></div>
       <Footer/>
     </div>
   )

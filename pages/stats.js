@@ -46,7 +46,7 @@ export default function EuropeanFootballOfficialStats() {
         </div>
         
       </main>
-      <div className={styles.textMenu}><Link href="/">home</Link> | <Link href="/en/books">football books</Link></div>
+      <div className={styles.textMenu}><Link href="/">home</Link> | <Link href="/books">football books</Link> | <Link href="games">football games</Link></div>
       
       <Footer/>
     </div>

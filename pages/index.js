@@ -3,11 +3,13 @@ import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import {FaHeart} from '@react-icons/all-files/fa/FaHeart'
 import {IoMdFootball} from '@react-icons/all-files/io/IoMdFootball';
-
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'react-i18next';
 
 import Footer from '../components/Footer'
+import TopNavbar from '../components/TopNavbar';
 export default function Home() {
-  
+  const { t } = useTranslation('common');
   return (
     <div className={styles.container}>
       <Head>
@@ -23,15 +25,23 @@ export default function Home() {
         <meta name="twitter:image" content="https://grangol.com/grangol.jpg"/>
         <meta name="twitter:card" content="summary_large_image"></meta>
       </Head>
-
+      <TopNavbar/>
       <main className={styles.main}>
           <h1><FaHeart fontSize={100} color={"red"}/> <IoMdFootball fontSize={100}/></h1>
           
       </main>
-      <div className={styles.textMenu}><Link href="./books">football books</Link> | <Link href="./european-football-official-stats">football stats</Link> | <Link href="./football-games">football games</Link></div>
+      <div className={styles.textMenu}><Link href="./books">{t('footballBooks')}</Link> | <Link href="./stats">{t('footballStats')}</Link> | <Link href="./games">{t('footballGames')}</Link></div>
       <Footer/>
     </div>
   )
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  };
 }
 
 
