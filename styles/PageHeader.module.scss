@@ -1,8 +1,14 @@
+@font-face {
+    font-family: 'Anton';
+    src: url(../public/fonts/Anton-Regular.ttf ) format('truetype');
+}
+
 @media(min-width:768px){
 .PageHeader{
     width: 100%;
     h1{
         padding-left: 1em;
+        font-family: 'Anton',sans-serif;
     }
     .TitleLine{
         display: flex;
