@@ -9,7 +9,7 @@ export default function PageHeader(props) {
             <div className={styles.TitleLine}><h1><span className={styles.pilota}><Link href="/">
             <IoMdFootball fontSize={30}/>
             </Link></span>{title}</h1></div>
-            <p>{description}</p>
+            <h2>{description}</h2>
         </div>
     )
 }
