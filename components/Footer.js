@@ -13,7 +13,7 @@ export default function Footer() {
                 marginRight: 15
             }}><FaXTwitter fontSize={25} color={"white"}/></a> 
 
-            <a className={styles.newsletter} href='https://grangol11.ck.page/92294e878f' target='_blank'>Newsletter</a>        
+            <a className={styles.newsletter} href='https://grangol.ck.page/df8ef243e9' target='_blank'>Newsletter</a>        
            
         </footer>
     )
