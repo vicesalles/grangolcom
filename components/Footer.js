@@ -1,19 +1,26 @@
 import styles from '../styles/Home.module.css'
 import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebook } from 'react-icons/fa6';
 import {FaInstagram} from '@react-icons/all-files/fa/FaInstagram'
 import {SiTiktok} from '@react-icons/all-files/si/SiTiktok';
 
 export default function Footer() {
     return (
         <footer className={styles.footer}>
+            <a className={styles.newsletter} href='https://grangol.ck.page/df8ef243e9' target='_blank'>| Newsletter |</a> 
             <a
                 href="https://twitter.com/grangol11"
                 target="_blank"
                 style={{
                 marginRight: 15
-            }}><FaXTwitter fontSize={25} color={"white"}/></a> 
+            }}><FaXTwitter fontSize={25} color={"white"}/></a>                   
 
-            <a className={styles.newsletter} href='https://grangol.ck.page/df8ef243e9' target='_blank'>Newsletter</a>        
+            <a
+                href="https://www.facebook.com/GranGol11"
+                target="_blank"
+                style={{
+                marginRight: 15
+            }}><FaFacebook fontSize={25} color={"white"}/></a>  
            
         </footer>
     )
@@ -33,5 +40,7 @@ marginRight: 15
                 style={{
                 marginRight: 15
             }}><FaInstagram fontSize={25} color={"white"}/></a>
+
+            https://www.facebook.com/GranGol11
 
 */
