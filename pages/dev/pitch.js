@@ -50,8 +50,8 @@ export default function Games() {
                         El camp de futbol és un espai rectangular on es juga el partit, però la seva mida pot variar una mica, tot i que sempre dins d’uns límits. Aquí tens les mides bàsiques:
                     </p>
                     <ul>
-                        <li>Longitud (de la línia de banda):** Pot tenir entre 90 i 120 metres.</li>
-                        <li>Amplada (de la línia de fons):** Pot variar entre 45 i 90 metres.</li>
+                        <li>Longitud (de la línia de banda): Pot tenir entre 90 i 120 metres.</li>
+                        <li>Amplada (de la línia de fons): Pot variar entre 45 i 90 metres.</li>
                     </ul>
                     <p>
                         Tanmateix, per als partits oficials, com els que veus a la tele quan juga el Barça o el Madrid, les mides són més específiques:
@@ -70,7 +70,7 @@ export default function Games() {
 
                     <h3>Les categories d’estadis de la UEFA</h3>
                     <p>
-                        La UEFA (Unió de Federacions Europees de Futbol) és l'organització que regula el futbol a Europa. Per assegurar-se que els estadis on es juguen els partits importants estiguin en bones condicions, ha creat un sistema de classificació. Els estadis es divideixen en diferents **categories**, i aquestes determinen la qualitat de les instal·lacions.
+                        La UEFA (Unió de Federacions Europees de Futbol) és l'organització que regula el futbol a Europa. Per assegurar-se que els estadis on es juguen els partits importants estiguin en bones condicions, ha creat un sistema de classificació. Els estadis es divideixen en diferents categories, i aquestes determinen la qualitat de les instal·lacions.
                     </p><p>
                         Les categories van de la <b>1 a la 5</b>, sent la categoria 5 la més alta. Un estadi de categoria 5 pot acollir grans competicions com la final de la Champions League o la final de l’Eurocopa.
                     </p>
@@ -79,7 +79,6 @@ export default function Games() {
                         Els estadis de categoria 5 han de complir unes normes molt estrictes. Aquests són alguns dels requisits principals:
                     </p>
                     <ol>
-
                         <li><b>Capacitat:</b> L’estadi ha de tenir almenys 60.000 seients per als espectadors.</li>
                         <li><b>Il·luminació:</b> La il·luminació ha de ser molt bona, amb almenys 1.400 lux, perquè els partits es puguin veure clarament tant al camp com a la televisió.</li>
                         <li><b>Cabines de premsa i televisió:</b> Han de tenir prou espai perquè els periodistes puguin treballar còmodament, i les càmeres de televisió han de poder captar bé el joc des de diferents angles.</li>
@@ -89,7 +88,6 @@ export default function Games() {
                             <li><b>Longitud:</b> Entre 105 metres.</li>
                             <li><b>Amplada:</b> 68 metres.</li>
                         </ul></li>
-
                     </ol>
 
 
@@ -98,7 +96,7 @@ export default function Games() {
                     </p>
                     <h3>Conclusió</h3>
                     <p>
-                        Ara ja coneixes les dimensions d’un camp de futbol i com es classifiquen els estadis segons la UEFA. Així que, la propera vegada que vegis un partit a la televisió o vagis a un estadi, podràs entendre millor tot el que envolta un partit de futbol, des de les mides del camp fins a les categories dels estadis on es juguen els partits més importants del món.
+                        Pel disseny dels nostres jocs agafarem com a referència les mides del terreny de joc dels estadis de categoria 5 de la UEFA.
                     </p>   
 
                 <Image
