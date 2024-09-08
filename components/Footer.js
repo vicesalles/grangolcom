@@ -11,7 +11,9 @@ export default function Footer() {
                 target="_blank"
                 style={{
                 marginRight: 15
-            }}><FaXTwitter fontSize={25} color={"white"}/></a>            
+            }}><FaXTwitter fontSize={25} color={"white"}/></a> 
+
+            <a className={styles.newsletter} href='https://grangol11.ck.page/92294e878f' target='_blank'>Newsletter</a>        
            
         </footer>
     )

@@ -131,3 +131,8 @@
     flex-direction: column;
   }
 }
+
+.newsletter{
+  color: white;
+  font-weight: bold;
+}
