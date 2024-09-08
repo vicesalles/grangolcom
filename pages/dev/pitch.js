@@ -96,7 +96,7 @@ export default function Games() {
                     </p>
                     <h3>Conclusió</h3>
                     <p>
-                        Pel disseny dels nostres jocs agafarem com a referència les mides del terreny de joc dels estadis de categoria 5 de la UEFA.
+                        Pel disseny dels nostres jocs agafarem com a referència les mides del terreny de joc dels estadis de categoria 5 de la UEFA. A més a més de les seves dimensions, el camp es pot descriure de d'altres maneres. Per exemple, en zones de joc: Atac, defensa i mig del camp. El pròxim article serà sobre aquesta qüestió.
                     </p>   
 
                 <Image
