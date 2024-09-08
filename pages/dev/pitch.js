@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import styles from '../../styles/OfficialStats.module.scss'
+import styles from '../../styles/Articles.module.scss'
 import Footer from '../../components/Footer';
 import PageHeader from '../../components/PageHeader';
 import TopNavbar from '../../components/TopNavbar';
@@ -20,7 +20,7 @@ export default function Games() {
 
 
     return (
-        <div className={styles.container}>
+        <div>
             <Head>
                 <title>Gran Gol: Les mides del camp de futbol</title>
                 <link rel="icon" href="/futbol.ico?v=2" />
@@ -41,7 +41,7 @@ export default function Games() {
                     title="El terreny de joc"
                     description="Les dimensions d’un camp de futbol i les categories d’estadis de la UEFA" />
 
-                <div>
+                <div className={styles.container}>
                     <p>
                         El futbol és un dels esports més populars del món, i a part de tenir un munt de regles emocionants, també és important conèixer el lloc on es juga: el camp de futbol. Aquest lloc no és igual a tot arreu, però la majoria segueixen unes normes establertes. T’has preguntat mai quines són les dimensions d’un camp de futbol o quins tipus d’estadis hi ha segons la UEFA? Aquí t'ho explico d'una manera fàcil de comprendre!
                     </p>
@@ -80,14 +80,14 @@ export default function Games() {
                     </p>
                     <ol>
 
-                        <li>z<b>Capacitat:</b> L’estadi ha de tenir almenys 60.000 seients per als espectadors.</li>
-                        <li>z<b>Il·luminació:</b> La il·luminació ha de ser molt bona, amb almenys 1.400 lux, perquè els partits es puguin veure clarament tant al camp com a la televisió.</li>
-                        <li>z<b>Cabines de premsa i televisió:</b> Han de tenir prou espai perquè els periodistes puguin treballar còmodament, i les càmeres de televisió han de poder captar bé el joc des de diferents angles.</li>
-                        <li>z<b>Vestidors:</b> Els jugadors han de tenir vestidors espaiosos i còmodes, amb totes les instal·lacions necessàries.</li>
-                        <li>z<b>Mides del camp:</b> El camp en estadis de categoria 5 ha de tenir unes dimensions més específiques:</li>
+                        <li><b>Capacitat:</b> L’estadi ha de tenir almenys 60.000 seients per als espectadors.</li>
+                        <li><b>Il·luminació:</b> La il·luminació ha de ser molt bona, amb almenys 1.400 lux, perquè els partits es puguin veure clarament tant al camp com a la televisió.</li>
+                        <li><b>Cabines de premsa i televisió:</b> Han de tenir prou espai perquè els periodistes puguin treballar còmodament, i les càmeres de televisió han de poder captar bé el joc des de diferents angles.</li>
+                        <li><b>Vestidors:</b> Els jugadors han de tenir vestidors espaiosos i còmodes, amb totes les instal·lacions necessàries.</li>
+                        <li><b>Mides del camp:</b> El camp en estadis de categoria 5 ha de tenir unes dimensions més específiques:</li>
                         <li><ul>
-                            <li>z<b>Longitud:</b> Entre 105 metres.</li>
-                            <li>z<b>Amplada:</b> 68 metres.</li>
+                            <li><b>Longitud:</b> Entre 105 metres.</li>
+                            <li><b>Amplada:</b> 68 metres.</li>
                         </ul></li>
 
                     </ol>
@@ -99,7 +99,7 @@ export default function Games() {
                     <h3>Conclusió</h3>
                     <p>
                         Ara ja coneixes les dimensions d’un camp de futbol i com es classifiquen els estadis segons la UEFA. Així que, la propera vegada que vegis un partit a la televisió o vagis a un estadi, podràs entendre millor tot el que envolta un partit de futbol, des de les mides del camp fins a les categories dels estadis on es juguen els partits més importants del món.
-                    </p>   </div>
+                    </p>   
 
                 <Image
                     src="/img/articles/campFutbol.png"
@@ -107,10 +107,11 @@ export default function Games() {
                     height={803}
                     alt="Esquema de les dimensions d'un camp de futbol"
                 />
+                </div>
 
             </main>
-            <div className={styles.textMenu}><Link href="/">{t('home')}</Link> | <Link href="/stats">{t('footballStats')}</Link> | <Link href="/books">{t('footballBooks')}</Link></div>
 
+            <div className={styles.textMenu}><Link href="/">{t('home')}</Link> | <Link href="/stats">{t('footballStats')}</Link> | <Link href="/books">{t('footballBooks')}</Link></div>
             <Footer />
         </div>
     )
