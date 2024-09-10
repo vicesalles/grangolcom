@@ -7,8 +7,6 @@ import { useTranslation } from 'react-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useEffect, useState } from 'react';
 
-
-import CookieConsentBanner from '../components/CookieConsentBanner';
 import Footer from '../components/Footer';
 import TopNavbar from '../components/TopNavbar';
 
@@ -41,7 +39,7 @@ export default function Subscription() {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <TopNavbar />
-      <CookieConsentBanner />
+      
       <main className={styles.main}>
         <h1>{t('subThanks')}</h1>
         <h1><FaHeart fontSize={100} color={'red'} /> <IoMdFootball fontSize={100} /></h1>
