@@ -13,7 +13,6 @@ import { useEffect, useState } from 'react';
 
 export default function Games() {
   const { t, ready } = useTranslation(['common', 'games']);
-
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {

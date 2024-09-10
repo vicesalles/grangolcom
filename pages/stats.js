@@ -9,10 +9,22 @@ import { IoMdFootball } from '@react-icons/all-files/io/IoMdFootball';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'react-i18next';
 import TopNavbar from '../components/TopNavbar';
+import { useEffect, useState } from 'react';
 
 
 export default function EuropeanFootballOfficialStats() {
-  const { t, ready } = useTranslation('common');
+  const { t, ready } = useTranslation(['common', 'games']);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    // This ensures that the component is mounted in the browser
+    setIsMounted(true);
+  }, []);
+
+  // Wait until translations are ready
+  if (!ready || !isMounted) {
+    return <div><IoMdFootball fontSize={12} /></div>;
+  }
 
   return (
     <div className={styles.container}>
@@ -28,7 +40,7 @@ export default function EuropeanFootballOfficialStats() {
         <meta name="twitter:image" content="https://grangol.com/grangol.jpg"/>
         <meta name="twitter:card" content="summary_large_image"></meta>
       </Head>
-                 
+
       <main className={styles.main}>
         <TopNavbar />
         {!ready ? (
@@ -39,7 +51,7 @@ export default function EuropeanFootballOfficialStats() {
           <>
             <PageHeader
               title={t('topEuroStats')}
-              description="The main european football competitions collect and publish data about the football games. Here is a list of links about official football data."
+              description={t('topEuroStatsH2')}
             />
             <div className={styles.statsTable}>
               <div className={styles.headerRow}>
@@ -56,6 +68,12 @@ export default function EuropeanFootballOfficialStats() {
                 <div className={styles.row}><div>Serie A</div><div>-</div><div><StarsDisplayer id={"serieA"} number={3}/></div><div><VisitButton url="https://www.legaseriea.it/it/serie-a/statistiche"/></div></div>
               </div>
             </div>
+            <div>
+          <div className={styles.article}>
+            <p>{t('stats:p1')}</p>
+            <p>{t('stats:p2')}</p>            
+          </div>
+        </div>
           </>
         )}
       </main>
@@ -72,7 +90,7 @@ export default function EuropeanFootballOfficialStats() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common'])),
+      ...(await serverSideTranslations(locale, ['common', 'stats'])),
     },
   };
 }
