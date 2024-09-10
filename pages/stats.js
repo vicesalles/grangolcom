@@ -9,7 +9,7 @@ import { IoMdFootball } from '@react-icons/all-files/io/IoMdFootball';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'react-i18next';
 import TopNavbar from '../components/TopNavbar';
-import { GoogleTagManager } from '@next/third-parties/google';
+
 
 export default function EuropeanFootballOfficialStats() {
   const { t, ready } = useTranslation('common');
@@ -28,7 +28,7 @@ export default function EuropeanFootballOfficialStats() {
         <meta name="twitter:image" content="https://grangol.com/grangol.jpg"/>
         <meta name="twitter:card" content="summary_large_image"></meta>
       </Head>
-      <GoogleTagManager gtmId="G-WSSRG343P3" />      
+                 
       <main className={styles.main}>
         <TopNavbar />
         {!ready ? (

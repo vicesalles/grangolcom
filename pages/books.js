@@ -8,8 +8,6 @@ import PageHeader from '../components/PageHeader';
 import TopNavbar from '../components/TopNavbar';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'react-i18next';
-import { GoogleTagManager } from '@next/third-parties/google';
-
 
 const hackers = {
   slug: "hackers",
@@ -44,7 +42,7 @@ export default function Books() {
         <meta name="twitter:image" content="https://grangol.com/grangol.jpg"/>
         <meta name="twitter:card" content="summary_large_image"></meta>
       </Head>
-      <GoogleTagManager gtmId="G-WSSRG343P3" />
+      
       <main className={styles.main}>
         <TopNavbar/>
         <PageHeader title={t('topFootballBooks')}

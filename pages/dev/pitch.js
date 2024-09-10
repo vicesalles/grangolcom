@@ -7,7 +7,6 @@ import TopNavbar from '../../components/TopNavbar';
 import { IoMdFootball } from '@react-icons/all-files/io/IoMdFootball';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'react-i18next';
-import { GoogleTagManager } from '@next/third-parties/google';
 import Image from 'next/image';
 
 export default function Games() {
@@ -34,7 +33,7 @@ export default function Games() {
                 <meta name="twitter:image" content="https://grangol.com/grangol.jpg" />
                 <meta name="twitter:card" content="summary_large_image"></meta>
             </Head>
-            <GoogleTagManager gtmId="G-WSSRG343P3" />
+            
             <main className={styles.main}>
                 <TopNavbar />
                 <PageHeader

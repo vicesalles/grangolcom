@@ -5,7 +5,7 @@ import { FaHeart } from '@react-icons/all-files/fa/FaHeart';
 import { IoMdFootball } from '@react-icons/all-files/io/IoMdFootball';
 import { useTranslation } from 'react-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-
+import { useEffect, useState } from 'react';
 
 import CookieConsentBanner from '../components/CookieConsentBanner';
 import Footer from '../components/Footer';
@@ -14,8 +14,15 @@ import TopNavbar from '../components/TopNavbar';
 export default function Home() {
   const { t, ready } = useTranslation('common');
 
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    // This ensures that the component is mounted in the browser
+    setIsMounted(true);
+  }, []);
+
   // Wait until translations are ready
-  if (!ready) {
+  if (!ready || !isMounted) {
     return <div><IoMdFootball fontSize={12} /></div>;
   }
 
@@ -33,8 +40,7 @@ export default function Home() {
         <meta name="twitter:image" content="https://grangol.com/grangol.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <TopNavbar />
-      <CookieConsentBanner />
+      <TopNavbar />      
       <main className={styles.main}>
         <h1><FaHeart fontSize={100} color={'red'} /> <IoMdFootball fontSize={100} /></h1>
       </main>
