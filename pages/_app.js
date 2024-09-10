@@ -10,8 +10,25 @@ import { checkConsent, loadGTM } from '../utils/consent'; // Import helper funct
 function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
-    if (checkConsent()) {
-      loadGTM(); // Load GTM if consent is already given
+    const consentGiven = checkConsent(); // Your existing consent logic
+    if (consentGiven) {
+      // Load Google Analytics
+      const script = document.createElement('script');
+      script.src = `https://www.googletagmanager.com/gtag/js?id=G-WSSRG343P3`;
+      script.async = true;
+      document.head.appendChild(script);
+
+      // Initialize gtag after script is loaded
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){window.dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-WSSRG343P3');
+
+      // Notify Google Analytics about consent
+      gtag('consent', 'update', {
+        'ad_storage': 'denied',       // 'denied' if consent is not given
+        'analytics_storage': 'granted' // 'denied' if consent is not given
+      });
     }
   }, []);
   

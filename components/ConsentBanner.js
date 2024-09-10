@@ -11,8 +11,27 @@ function ConsentBanner() {
 
   const handleConsent = () => {
     setConsent(true);
-    setConsentGiven(true);
+  
+    // Load GTM
     loadGTM();
+  
+    // Load Google Analytics script
+    const script = document.createElement('script');
+    script.src = `https://www.googletagmanager.com/gtag/js?id=G-WSSRG343P3`;
+    script.async = true;
+    document.head.appendChild(script);
+  
+    // Initialize gtag
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { window.dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-WSSRG343P3');
+  
+    // Notify Google Analytics of consent
+    gtag('consent', 'update', {
+      'ad_storage': 'denied',
+      'analytics_storage': 'granted'
+    });
   };
 
   const denyCookies = () => {
