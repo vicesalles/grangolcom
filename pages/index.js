@@ -42,6 +42,7 @@ export default function Home() {
       <TopNavbar />      
       <main className={styles.main}>
         <h1><FaHeart fontSize={100} color={'red'} /> <IoMdFootball fontSize={100} /></h1>
+        <a className={styles.newsletter} href='https://grangol.ck.page/df8ef243e9' target='_blank'> {t('newsLetterCTA')} </a> 
       </main>
       <div className={styles.textMenu}>
         <Link href="./books">{t('footballBooks')}</Link> | <Link href="./stats">{t('footballStats')}</Link> | <Link href="./games">{t('footballGames')}</Link>
