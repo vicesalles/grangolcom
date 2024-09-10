@@ -45,7 +45,7 @@ export default function Home() {
         <a className={styles.newsletter} href='https://grangol.ck.page/df8ef243e9' target='_blank'> {t('newsLetterCTA')} </a> 
       </main>
       <div className={styles.textMenu}>
-        <Link href="./books">{t('footballBooks')}</Link> | <Link href="./stats">{t('footballStats')}</Link> | <Link href="./games">{t('footballGames')}</Link>
+      <Link href="./ggx">GGx</Link> | <Link href="./books">{t('footballBooks')}</Link> | <Link href="./stats">{t('footballStats')}</Link> | <Link href="./games">{t('footballGames')}</Link>
       </div>
       <Footer />
     </div>

@@ -1,0 +1,21 @@
+{
+    "ggxTitol": "GGX",
+    "ggxSubTitol": "Gran Gol Chapas",
+    "ggxpeuFotoPorteria": "El segundo modelo de portería es más resistente a la dureza del juego.",
+    "ggxFotoXapesVelles": "Se puede jugar con chapas y botones.",
+    "ggxFotoArea": "La longitud de la última valla lateral marca el área de penalti. Se chuta desde el centro.",
+    "ggxIntro": "GGX es una revisión del antiguo juego de las chapas. Las chapas fueron uno de los primeros simuladores de fútbol de la historia. Hoy, mientras desarrollamos el juego Gran Gol, recuperamos este fantástico juego que ha dado tantas buenas horas de diversión. Todo lo que se muestra aquí se puede hacer con chapas de bebidas y botones.",
+    "ggxNormesTitol": "Normas del GGX:", 
+    "ggxNormes": "Estas son las normas del GGX. En esta lista de 10 puntos está todo lo que necesitas saber para jugar un partido.",
+    "ggxNormes1": "El juego se juega por turnos rápidos.",
+    "ggxNormes2": "El jugador con la posesión tira primero, seguido por el jugador sin posesión.",
+    "ggxNormes3": "La posesión se pierde cuando la pelota toca a un jugador del equipo contrario.",
+    "ggxNormes4": "La posesión se pierde si la chapa-pelota se gira. Si en un tiro la chapa se gira al revés, el jugador que ha chutado pierde la posesión. Todos los jugadores pueden recolocarse con las manos, y el partido continúa con la posesión para el otro equipo.",
+    "ggxNormes5": "El jugador sin posesión no puede chutar contra la pelota. Si lo hace, es falta. Tocar la pelota sin tener la posesión se considera una falta.",
+    "ggxNormes6": "Si el jugador con posesión hace un tiro y no toca la pelota, el jugador defensor puede chutar contra la pelota y recuperar la posesión.",
+    "ggxNormes7": "Tocar a un jugador contrario es falta. Si, debido al choque, el jugador contrario se gira al revés, quien ha cometido la falta recibe una tarjeta amarilla. Con dos tarjetas amarillas, un jugador elegido del equipo que ha cometido la falta es retirado del campo. (¡Recuerda llevar el control de las tarjetas!)",
+    "ggxNormes8": "Si la falta ocurre dentro del área (la zona está marcada por la última valla lateral), es penalti. El penalti se chuta desde el extremo más alejado de la valla que delimita el área.",
+    "ggxNormes9": "No hay fuera de juego. Chutar la pelota fuera del campo conlleva una tarjeta roja y la expulsión de un jugador del equipo que ha tirado fuera. (Los rebotes con el portero no cuentan.)",
+    "ggxNormes10": "Después de cada falta o gol, ambos jugadores pueden recolocar libremente su equipo con las manos antes de reanudar el juego."
+}
+

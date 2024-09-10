@@ -1,0 +1,24 @@
+{
+    "ggxTitol":"GGX",
+    "ggxSubTitol":"Gran Gol Xapes",
+    "ggxpeuFotoPorteria":"El segon model de porteria és més resistent a la duresa del joc.",
+    "ggxFotoXapesVelles":"Es pot jugar amb xapes i botons",
+    "ggxFotoArea":"La llargada de l'última tanca lateral marca l'àrea de penal. Es xuta des del centre.",
+    "ggxIntro":"GGX és una revisió de l'antic joc de les xapes. Les xapes van ser un dels primers simuladors de futbol de la història. Avui, mentre desenvolupem el joc Gran Gol, recuperem aquest fantàstic joc que tantes bones estones ha brindat a la gent. Tot el que es mostra aquí, es pot fer amb xapes de begudes i botons.",
+    "ggxNormesTitol":"Normes del GGX:", 
+    "ggxNormes":"Aquestes són les normes del GGX. En aquesta llista de 10 punts hi ha tot el que cal saber per jugar un partit.",
+    "ggxNormes1": "El joc es juga per torns ràpids.",
+    "ggxNormes2": "El jugador amb la possessió tira primer, seguit del jugador sense possessió.",
+    "ggxNormes3": "La possessió es perd quan la pilota toca un jugador de l'equip contrari.",
+    "ggxNormes4": "La possessió es perd si la pastilla-pilota es gira. Si en un xut la pastilla es gira cap per avall, el jugador que ha xutat perd la possessió. Tots els jugadors es poden recol·locar amb les mans, i el partit continua amb possessió per a l'altre equip.",
+    "ggxNormes5": "El jugador sense possessió no pot xutar contra la pilota. Si ho fa, és falta. Tocar la pilota sense tenir la possessió és considerat una falta.",
+    "ggxNormes6": "Si el jugador amb possessió fa una tirada i no toca la pilota, el jugador defensor pot xutar contra la pilota i recuperar la possessió.",
+    "ggxNormes7": "Tocar un jugador contrari és falta. Si, a causa del xoc, el jugador contrari es gira cap per avall, qui ha comès la falta rep una targeta groga. Amb dues targetes grogues, un jugador escollit de l’equip que ha comès la falta és retirat del camp. (Penseu a portar el compte de les targetes!)",
+    "ggxNormes8": "Si la falta es produeix dins l'àrea (la zona la marca l'última tanca lateral) és penal. El penal es xuta des de l'extrem més llunyà de la tanca que delimita l'àrea.",
+    "ggxNormes9": "No hi ha fores. Xutar la pilota fora del camp comporta una targeta vermella i l’expulsió d’un jugador de l’equip que ha tirat fora la pilota. (Els rebots amb el porter no compten.)",
+    "ggxNormes10": "Després de cada falta o gol, tots dos jugadors poden resituar lliurement el seu equip amb les mans abans de reprendre el joc."
+}
+
+
+
+

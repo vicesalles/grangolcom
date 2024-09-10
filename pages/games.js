@@ -54,6 +54,9 @@ export default function Games() {
             <p>{t('games:jocsTaula')}</p>
             <p>{t('games:xapes')}</p>
             <p>{t('games:tancament')}</p>
+
+            <h4> <Link href="/ggx">{t('games:playGGx')}</Link></h4>
+                        
           </div>
           <div className={styles.containerImatge}>
           <Image
@@ -67,7 +70,7 @@ export default function Games() {
         </div>
         
       </main>
-      <div className={styles.textMenu}><Link href="/">{t('home')}</Link> | <Link href="/stats">{t('footballStats')}</Link> | <Link href="/books">{t('footballBooks')}</Link></div>
+      <div className={styles.textMenu}><Link href="/">{t('home')}</Link> | <Link href="/ggx">GGx</Link> | <Link href="/stats">{t('footballStats')}</Link> | <Link href="/books">{t('footballBooks')}</Link></div>
       
       <Footer/>
     </div>
