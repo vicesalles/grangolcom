@@ -7,7 +7,7 @@ import {SiTiktok} from '@react-icons/all-files/si/SiTiktok';
 export default function Footer() {
     return (
         <footer className={styles.footer}>
-            <a className={styles.newsletter} href='https://grangol.ck.page/df8ef243e9' target='_blank'>| Newsletter |</a> 
+            <a className={styles.newsletter} href='https://grangol.ck.page/df8ef243e9' target='_blank'> Newsletter </a> 
             <a
                 href="https://twitter.com/grangol11"
                 target="_blank"
