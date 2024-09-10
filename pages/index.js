@@ -7,7 +7,6 @@ import { useTranslation } from 'react-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useEffect, useState } from 'react';
 
-import CookieConsentBanner from '../components/CookieConsentBanner';
 import Footer from '../components/Footer';
 import TopNavbar from '../components/TopNavbar';
 
