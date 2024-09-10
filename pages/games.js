@@ -10,6 +10,7 @@ import {IoMdFootball} from '@react-icons/all-files/io/IoMdFootball';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 export default function Games() {
   const { t, ready } = useTranslation(['common', 'games']);
@@ -47,12 +48,21 @@ export default function Games() {
         title={t('footballGames')}
         description={t('playingToPlayFootball')}/>
     
-        <div>
-          <div className={styles.article}>
+        <div>          
+          <div className={styles.article}>          
             <p>{t('games:intro')}</p>
             <p>{t('games:jocsTaula')}</p>
             <p>{t('games:xapes')}</p>
             <p>{t('games:tancament')}</p>
+          </div>
+          <div className={styles.containerImatge}>
+          <Image
+                    src="/img/articles/ProvesPilotaFitxa.jpg"
+                    width={1200}
+                    height={402}
+                    alt="La fitxa pilota és un element clau en els nostres jocs"
+                />
+                <p className={styles.peuFoto}>La FitxaPilota és un element bàsic del joc.</p>
           </div>
         </div>
         

@@ -30,4 +30,17 @@
     margin-top: 2em;
     width: 80%;
     margin: auto;
+    font-size: 14pt;
+}
+
+.containerImatge{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.peuFoto{
+  font-size: 10pt;
+  font-family: 'Courier New', Courier, monospace;
 }

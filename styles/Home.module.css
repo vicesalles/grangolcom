@@ -137,4 +137,14 @@
 .newsletter{
   color: white;
   font-weight: bold;
+  background-color: black;
+  padding: .5em 1em .5em 1em;
+}
+
+.newsletter:hover{
+  color: black;
+  font-weight: bold;
+  background-color: yellow;
+  padding: .5em 1em .5em 1em;
+  box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
 }
