@@ -16,5 +16,9 @@
     "ggxNormes7": "Touching an opposing player is a foul. If, due to the collision, the opposing player flips over, the one who committed the foul receives a yellow card. With two yellow cards, a selected player from the offending team is removed from the field. (Make sure to keep track of the cards!)",
     "ggxNormes8": "If the foul occurs inside the area (the zone is marked by the last side fence), it's a penalty. The penalty is taken from the farthest end of the fence that marks the area.",
     "ggxNormes9": "There are no offsides. Shooting the ball out of bounds results in a red card and the removal of a player from the team that kicked it out. (Rebounds off the goalkeeper do not count.)",
-    "ggxNormes10": "After every foul or goal, both players can freely reposition their team with their hands before resuming the game."
+    "ggxNormes10": "After every foul or goal, both players can freely reposition their team with their hands before resuming the game.",
+    "ggxNormesPartit": "Matches can be played in two ways: with goals or with time.",
+    "ggxNormesPartitGols": "With goals: A number of goals is decided, and the first team to reach it wins.",
+    "ggxNormesPartitTemps": "With time: Two halves of 6 minutes each are played. You’ll need a stopwatch to keep track of time."
+
 }

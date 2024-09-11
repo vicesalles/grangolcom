@@ -16,7 +16,13 @@
     "ggxNormes7": "Tocar un jugador contrari és falta. Si, a causa del xoc, el jugador contrari es gira cap per avall, qui ha comès la falta rep una targeta groga. Amb dues targetes grogues, un jugador escollit de l’equip que ha comès la falta és retirat del camp. (Penseu a portar el compte de les targetes!)",
     "ggxNormes8": "Si la falta es produeix dins l'àrea (la zona la marca l'última tanca lateral) és penal. El penal es xuta des de l'extrem més llunyà de la tanca que delimita l'àrea.",
     "ggxNormes9": "No hi ha fores. Xutar la pilota fora del camp comporta una targeta vermella i l’expulsió d’un jugador de l’equip que ha tirat fora la pilota. (Els rebots amb el porter no compten.)",
-    "ggxNormes10": "Després de cada falta o gol, tots dos jugadors poden resituar lliurement el seu equip amb les mans abans de reprendre el joc."
+    "ggxNormes10": "Després de cada falta o gol, tots dos jugadors poden resituar lliurement el seu equip amb les mans abans de reprendre el joc.",
+    "ggxNormesPartit":"Es poden jugar partits de dues maneres: amb gols o amb temps.",
+    "ggxNormesPartitGols":"Amb gols: Es decideix un nombre de gols, i el primer equip que hi arribi guanya.",
+    "ggxNormesPartitTemps":"Amb temps: Es juguen dues parts de 6 minuts cadascuna. Necessitaràs un cronòmetre per controlar el temps."
+
+
+
 }
 
 

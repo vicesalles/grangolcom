@@ -70,6 +70,11 @@ export default function GGX() {
                 <p className={styles.peuFoto}>{t('ggx:ggxpeuFotoPorteria')}</p>
           </div>
           <h3>{t('ggx:ggxNormesTitol')}</h3>
+          <p>{t('ggx:ggxNormesPartit')}</p>
+          <p><ul>
+            <li>{t('ggx:ggxNormesPartitGols')}</li>
+            <li>{t('ggx:ggxNormesPartitTemps')}</li>
+            </ul></p>
             <p>{t('ggx:ggxNormes')}:</p>
             <p><ol>
                 <li>{t('ggx:ggxNormes1')}</li>

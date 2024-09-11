@@ -16,6 +16,10 @@
     "ggxNormes7": "Tocar a un jugador contrario es falta. Si, debido al choque, el jugador contrario se gira al revés, quien ha cometido la falta recibe una tarjeta amarilla. Con dos tarjetas amarillas, un jugador elegido del equipo que ha cometido la falta es retirado del campo. (¡Recuerda llevar el control de las tarjetas!)",
     "ggxNormes8": "Si la falta ocurre dentro del área (la zona está marcada por la última valla lateral), es penalti. El penalti se chuta desde el extremo más alejado de la valla que delimita el área.",
     "ggxNormes9": "No hay fuera de juego. Chutar la pelota fuera del campo conlleva una tarjeta roja y la expulsión de un jugador del equipo que ha tirado fuera. (Los rebotes con el portero no cuentan.)",
-    "ggxNormes10": "Después de cada falta o gol, ambos jugadores pueden recolocar libremente su equipo con las manos antes de reanudar el juego."
+    "ggxNormes10": "Después de cada falta o gol, ambos jugadores pueden recolocar libremente su equipo con las manos antes de reanudar el juego.",
+    "ggxNormesPartit": "Se pueden jugar partidos de dos maneras: con goles o con tiempo.",
+    "ggxNormesPartitGols": "Con goles: Se decide un número de goles, y el primer equipo que llegue a esa cantidad gana.",
+    "ggxNormesPartitTemps": "Con tiempo: Se juegan dos tiempos de 6 minutos cada uno. Necesitarás un cronómetro para controlar el tiempo."
+
 }
 
