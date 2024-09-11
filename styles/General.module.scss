@@ -45,3 +45,22 @@
   font-size: 10pt;
   font-family: 'Courier New', Courier, monospace;
 }
+
+.botoCTA{
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  padding: .5em 1em .5em 1em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.botoCTA:hover{
+  color: black;
+  font-weight: bold;
+  background-color: yellow;
+  padding: .5em 1em .5em 1em;
+  box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+  margin-top: 1em;
+  margin-bottom: 2em;
+}

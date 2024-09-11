@@ -88,6 +88,9 @@ export default function GGX() {
                 <li>{t('ggx:ggxNormes9')}</li>
                 <li>{t('ggx:ggxNormes10')}</li>
                 </ol></p>
+                <div className={styles.containerImatge}>
+              <a className={styles.botoCTA} href='https://grangol.ck.page/08b0016369' target='_blank'>Descarrega't les normes en paper</a>
+                </div>
             
           </div>
           <div className={styles.containerImatge}>
