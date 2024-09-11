@@ -10,7 +10,7 @@
     "ggxNormes1": "El joc es juga per torns ràpids.",
     "ggxNormes2": "El jugador amb la possessió tira primer, seguit del jugador sense possessió.",
     "ggxNormes3": "La possessió es perd quan la pilota toca un jugador de l'equip contrari.",
-    "ggxNormes4": "La possessió es perd si la pastilla-pilota es gira. Si en un xut la pastilla es gira cap per avall, el jugador que ha xutat perd la possessió. Tots els jugadors es poden recol·locar amb les mans, i el partit continua amb possessió per a l'altre equip.",
+    "ggxNormes4": "La possessió es perd si la pastilla-pilota es gira. Si en un xut la pastilla es gira cap per avall, el jugador que ha xutat perd la possessió. El defensor pot tirar a tocar la pilota.",
     "ggxNormes5": "El jugador sense possessió no pot xutar contra la pilota. Si ho fa, és falta. Tocar la pilota sense tenir la possessió és considerat una falta.",
     "ggxNormes6": "Si el jugador amb possessió fa una tirada i no toca la pilota, el jugador defensor pot xutar contra la pilota i recuperar la possessió.",
     "ggxNormes7": "Tocar un jugador contrari és falta. Si, a causa del xoc, el jugador contrari es gira cap per avall, qui ha comès la falta rep una targeta groga. Amb dues targetes grogues, un jugador escollit de l’equip que ha comès la falta és retirat del camp. (Penseu a portar el compte de les targetes!)",

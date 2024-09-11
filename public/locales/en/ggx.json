@@ -10,7 +10,7 @@
     "ggxNormes1": "The game is played in quick turns.",
     "ggxNormes2": "The player with possession shoots first, followed by the player without possession.",
     "ggxNormes3": "Possession is lost when the ball touches a player from the opposing team.",
-    "ggxNormes4": "Possession is lost if the cap-ball flips. If during a shot the cap flips over, the player who shot loses possession. All players can be repositioned by hand, and the game continues with possession for the other team.",
+    "ggxNormes4": "Possession is lost if the cap-ball flips. If during a shot the cap flips over, the player who shot loses possession. The defender can shoot to hit the ball.",
     "ggxNormes5": "The player without possession cannot shoot at the ball. If they do, it's a foul. Touching the ball without possession is considered a foul.",
     "ggxNormes6": "If the player with possession takes a shot and misses the ball, the defending player can shoot at the ball and regain possession.",
     "ggxNormes7": "Touching an opposing player is a foul. If, due to the collision, the opposing player flips over, the one who committed the foul receives a yellow card. With two yellow cards, a selected player from the offending team is removed from the field. (Make sure to keep track of the cards!)",
