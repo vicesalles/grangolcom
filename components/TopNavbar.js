@@ -11,7 +11,7 @@ export default function TopNavbar(props) {
 
   return (
     <nav className={styles.contenidorNav}>      
-      | <a className={styles.botoIdioma} onClick={() => changeLanguage('ca')}>CA</a> | <a className={styles.botoIdioma} onClick={() => changeLanguage('en')}>EN</a> | <a className={styles.botoIdioma} onClick={() => changeLanguage('es')}>ES</a> | 
+      | <a className={styles.botoIdioma} onClick={() => changeLanguage('es')}>ES</a> | <a className={styles.botoIdioma} onClick={() => changeLanguage('en')}>EN</a> | <a className={styles.botoIdioma} onClick={() => changeLanguage('ca')}>CA</a> | 
      </nav>
   );
 }
