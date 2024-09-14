@@ -50,6 +50,8 @@ export default function GGX() {
     
         <div>          
           <div className={styles.article}>    
+          <h3>{t('ggx:queEsGGx')}</h3>
+          <p>{t('ggx:ggxIntro')}</p>
           <div className={styles.containerImatge}>
           <Image
                     src="/img/articles/xapesVelles.jpg"
@@ -59,8 +61,17 @@ export default function GGX() {
                 />
                 <p className={styles.peuFoto}>{t('ggx:ggxFotoXapesVelles')}</p>
           </div> 
-            <p>{t('ggx:ggxIntro')}</p>
+            <p>{t('ggx:ggxDisseny')}</p>
             <div className={styles.containerImatge}>
+          <Image
+                    src="/img/articles/TestResistencia.jpg"
+                    width={1200}
+                    height={661}
+                    alt="{t('ggx:ggxpeuFotoResistencia')}"
+                />
+                <p className={styles.peuFoto}>{t('ggx:ggxpeuFotoResistencia')}</p>
+          </div>
+          <div className={styles.containerImatge}>
           <Image
                     src="/img/articles/porteriaZero.jpg"
                     width={1200}
@@ -99,18 +110,18 @@ export default function GGX() {
                     src="/img/articles/areaJoc.jpg"
                     width={1200}
                     height={612}
-                    alt="{t('ggx:ggxFotoArea')}"
+                    alt="{t('ggx:ggxFotoAreaPenal')}"
                 />
-                <p className={styles.peuFoto}>{t('ggx:ggxFotoArea')}</p>
+                <p className={styles.peuFoto}>{t('ggx:ggxFotoAreaPenal')}</p>
           </div>
           <div className={styles.containerImatge}>
           <Image
                     src="/img/articles/areaGol.jpg"
                     width={1200}
-                    height={612}
-                    alt="{t('ggx:ggxFotoArea')}"
+                    height={798}
+                    alt="{t('ggx:ggxFotoAreaGol')}"
                 />
-                <p className={styles.peuFoto}>{t('ggx:ggxFotoArea')}</p>
+                <p className={styles.peuFoto}>{t('ggx:ggxFotoAreaGol')}</p>
           </div>
         </div>
         
