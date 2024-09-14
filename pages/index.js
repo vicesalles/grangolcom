@@ -37,6 +37,7 @@ export default function Home() {
         <meta name="twitter:description" content="Gran Gol futbol, futebol, calcio, football, fut, fussball, voetball, كرة القدم." />
         <meta name="twitter:image" content="https://grangol.com/grangol.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="robots" content="index, follow"/>
       </Head>
       <TopNavbar />      
       <main className={styles.main}>
