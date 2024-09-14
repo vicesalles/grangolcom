@@ -87,6 +87,7 @@ export default function GGX() {
                 <li>{t('ggx:ggxNormes8')}</li>
                 <li>{t('ggx:ggxNormes9')}</li>
                 <li>{t('ggx:ggxNormes10')}</li>
+                <li>{t('ggx:ggxNormes11')}</li>
                 </ol></p>
                 <div className={styles.containerImatge}>
               <a className={styles.botoCTA} href='https://grangol.ck.page/08b0016369' target='_blank'>Descarrega't les normes en paper</a>
@@ -96,6 +97,15 @@ export default function GGX() {
           <div className={styles.containerImatge}>
           <Image
                     src="/img/articles/areaJoc.jpg"
+                    width={1200}
+                    height={612}
+                    alt="{t('ggx:ggxFotoArea')}"
+                />
+                <p className={styles.peuFoto}>{t('ggx:ggxFotoArea')}</p>
+          </div>
+          <div className={styles.containerImatge}>
+          <Image
+                    src="/img/articles/areaGol.jpg"
                     width={1200}
                     height={612}
                     alt="{t('ggx:ggxFotoArea')}"
