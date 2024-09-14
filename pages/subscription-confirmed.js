@@ -37,6 +37,7 @@ export default function Subscription() {
         <meta name="twitter:description" content="Gran Gol futbol, futebol, calcio, football, fut, fussball, voetball, كرة القدم." />
         <meta name="twitter:image" content="https://grangol.com/grangol.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="robots" content="noindex, nofollow"/>
       </Head>
       <TopNavbar />
       
@@ -45,7 +46,7 @@ export default function Subscription() {
         <h1><FaHeart fontSize={100} color={'red'} /> <IoMdFootball fontSize={100} /></h1>
       </main>
       <div className={styles.textMenu}>
-        <Link href="./books">{t('footballBooks')}</Link> | <Link href="./stats">{t('footballStats')}</Link> | <Link href="./games">{t('footballGames')}</Link>
+      <Link href="./ggx">GGx</Link> | <Link href="./books">{t('footballBooks')}</Link> | <Link href="./stats">{t('footballStats')}</Link> | <Link href="./games">{t('footballGames')}</Link>
       </div>
       <Footer />
     </div>

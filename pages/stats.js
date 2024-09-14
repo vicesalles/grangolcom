@@ -39,6 +39,7 @@ export default function EuropeanFootballOfficialStats() {
         <meta name="twitter:description" content="Gran Gol: European Big Leagues Stats."/>
         <meta name="twitter:image" content="https://grangol.com/grangol.jpg"/>
         <meta name="twitter:card" content="summary_large_image"></meta>
+        <meta name="robots" content="index, follow"/>
       </Head>
 
       <main className={styles.main}>
@@ -79,7 +80,7 @@ export default function EuropeanFootballOfficialStats() {
       </main>
 
       <div className={styles.textMenu}>
-        <Link href="/">{t('home')}</Link> | <Link href="/books">{t('footballBooks')}</Link> | <Link href="/games">{t('footballGames')}</Link>
+        <Link href="/">{t('home')}</Link> | <Link href="./ggx">GGx</Link> | <Link href="/books">{t('footballBooks')}</Link> | <Link href="/games">{t('footballGames')}</Link>
       </div>
 
       <Footer />

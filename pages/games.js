@@ -41,6 +41,7 @@ export default function Games() {
         <meta name="twitter:description" content={t('footballGames')}/>
         <meta name="twitter:image" content="https://grangol.com/grangol.jpg"/>
         <meta name="twitter:card" content="summary_large_image"></meta>
+        <meta name="robots" content="index, follow"/>
       </Head>      
       <main className={styles.main}>
       <TopNavbar/>
