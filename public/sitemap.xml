@@ -1,25 +1,63 @@
-   <!-- public/sitemap.xml -->
-   <xml version="1.0" encoding="UTF-8">
-    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-        <url>
-            <loc>https://www.grangol.com/</loc>
-            <lastmod>2024-09-24</lastmod>
-          </url>
-        <url>
-        <loc>https://www.grangol.com/ggx</loc>
-        <lastmod>2024-09-24</lastmod>
-      </url>
-      <url>
-        <loc>https://www.grangol.com/books</loc>
-        <lastmod>2024-09-24</lastmod>
-      </url>
-      <url>
-        <loc>https://www.grangol.com/games</loc>
-        <lastmod>2024-09-24</lastmod>
-      </url>
-      <url>
-        <loc>https://www.grangol.com/stats</loc>
-        <lastmod>2024-09-24</lastmod>
-      </url>
-    </urlset>
-    </xml>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://grangol.com</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="https://grangol.com/en"/>
+    <xhtml:link
+               rel="alternate"
+               hreflang="es"
+               href="https://grangol.com/es"/>
+    
+  </url>
+  <url>
+    <loc>https://grangol.com/ggx</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="es"
+               href="https://grangol.com/es/ggx"/>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="https://grangol.com/en/ggx"/>
+  </url>
+  <url>
+    <loc>https://www.grangol.com/books</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="https://www.grangol.com/en/books"/>
+    <xhtml:link
+               rel="alternate"
+               hreflang="es"
+               href="https://www.grangol.com/es/books"/>
+    
+  </url>
+  <url>
+    <loc>https://www.grangol.com/stats</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="https://www.grangol.com/en/stats"/>
+    <xhtml:link
+               rel="alternate"
+               hreflang="es"
+               href="https://www.grangol.com/es/stats"/>
+    
+  </url>
+  <url>
+    <loc>https://www.grangol.com/games</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="https://www.grangol.com/en/games"/>
+    <xhtml:link
+               rel="alternate"
+               hreflang="es"
+               href="https://www.grangol.com/es/games"/>
+    
+  </url>
+</urlset>
