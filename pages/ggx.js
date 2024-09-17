@@ -26,22 +26,52 @@ export default function GGX() {
     return <div><IoMdFootball fontSize={12} /></div>;
   }
 
+  const jsonLdData = {
+    "@context": "https://schema.org",
+    "@type": "Game",
+    "name": "GGx",
+    "description": "GGx és un joc de futbol inspirat en el Subbuteo i les xapes.",
+    "image": "https://grangol.com/grangol.jpg",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Gran Gol"
+    },
+    "genre": "Joc de futbol",
+    "url": "https://grangol.com"
+  };
 
   return (
     <div className={styles.container}>
       <Head>
         <title>Gran Gol: {t('ggx:ggxTitol')}</title>
+        <meta name="description" content={t('ggxDescripcio')} />  
+
         <link rel="icon" href="/futbol.ico?v=2"/>
-        <meta property="og:title" content="Gran Gol"/>
-        <meta property="og:description" content={t('footballGames')}/>
-        <meta property="og:image" content="https://grangol.com/grangol.jpg"/>
+        <meta property="og:title" content={t('ggx:ggxTitol')}/>
+        <meta property="og:description" content={t('ggxDescripcio')}/>
+        <meta property="og:image" content="https://grangol.com/GGxFons.jpg"/>
         <meta property="og:url" content="https://grangol.com"></meta>
 
-        <meta name="twitter:title" content="Gran Gol"/>
-        <meta name="twitter:description" content={t('ggx:ggxTitol')}/>
-        <meta name="twitter:image" content="https://grangol.com/grangol.jpg"/>
+        <meta name="twitter:title" content={t('ggx:ggxTitol')}/>
+        <meta name="twitter:description" content={t('ggxDescripcio')}/>
+        <meta name="twitter:image" content="https://grangol.com/GGxFons.jpg"/>
         <meta name="twitter:card" content="summary_large_image"></meta>
         <meta name="robots" content="index, follow"/>
+
+        <Head>     
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="canonical" href="https://grangol.com/ggx" />
+      <link rel="sitemap" type="application/xml" title="Sitemap" href="https://grangol.com/sitemap.xml" />
+
+      {/* Incrustar JSON-LD */}
+      <script 
+          type="application/ld+json" 
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }} 
+        />
+
+      
+      </Head>
       </Head>      
       <main className={styles.main}>
       <TopNavbar/>
@@ -61,6 +91,15 @@ export default function GGX() {
                     alt="{t('ggx:ggxFotoXapesVelles')}"
                 />
                 <p className={styles.peuFoto}>{t('ggx:ggxFotoXapesVelles')}</p>
+          </div> 
+          <div className={styles.containerImatge}>
+          <Image
+                    src="/img/articles/GGxFons.jpg"
+                    width={1200}
+                    height={900}
+                    alt="{t('ggx:ggxDescripcio')}"
+                />
+                <p className={styles.peuFoto}>{t('ggx:ggxDescripcio')}</p>
           </div> 
             <p>{t('ggx:ggxDisseny')}</p>
             <div className={styles.containerImatge}>
