@@ -3,102 +3,89 @@ import TeamHeader from '../../components/TeamHeader';
 import Footer from '../../components/Footer';
 import styles from '../../styles/Home.module.css';
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { IoMdFootball } from '@react-icons/all-files/io/IoMdFootball';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
+import { getTeamBySlugAndLocale, getAllTeamsByLocale } from '../../lib/teams'; // Adjust path as needed
 
-export default function TeamPage({ data, locale }) {
+export default function TeamPage({ team, locale }) {
   const router = useRouter();
   const { t, ready } = useTranslation(['common']);
-  const [isMounted, setIsMounted] = useState(false);
 
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  if (!ready || !isMounted) {
-    return <div><IoMdFootball fontSize={12} /></div>;
-  }
-
+  // Handle fallback state
   if (router.isFallback) {
     return <div>Loading...</div>;
   }
 
+  // Handle loading state for translations
+  if (!ready) {
+    return <div><IoMdFootball fontSize={50} /></div>; // Display the football icon while translations are loading
+  }
+
   return (
     <>
-    <div>
-      {/* Use the TeamHeader component */}
-      <TeamHeader 
-        name={data.name} 
-        mainColor={data.mainColor} 
-        secondColor={data.secondColor} 
-      />
-
       <div>
-      <p>{data.description}</p>
-        <p>Main Color: {data.mainColor}</p>
-        <p>Second Color: {data.secondColor}</p>
-        <p>Main Player: {data.mainPlayer}</p>
+        {/* Use the TeamHeader component */}
+        <TeamHeader 
+          name={team.name} 
+          mainColor={team.mainColor} 
+          secondColor={team.secondColor} 
+        />
+
+        <div>
+          <p>{team.description}</p>
+          <p>Main Color: {team.mainColor}</p>
+          <p>Second Color: {team.secondColor}</p>
+          <p>Main Player: {team.mainPlayer}</p>
+        </div>
       </div>
-    </div>
-    <div className={styles.textMenu}>
-      <Link href="/ggx">GGx</Link> | <Link href="/teams">{t('equips')}</Link>
+
+      {/* Link to other pages */}
+      <div className={styles.textMenu}>
+        <Link href="/ggx">GGx</Link> | <Link href="/teams">{t('equips')}</Link>
       </div>
-    <Footer/>
+
+      <Footer />
     </>
   );
 }
 
-// Fetch data for the page
-export async function getStaticProps({ params, locale }) {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/teams/${params.slug}?locale=${locale}`);
-  const data = await res.json();
+// Step 1: Generate paths for each team and each locale
+export async function getStaticPaths() {
+  const locales = ['ca', 'en', 'es']; // Define your locales
+  let paths = [];
 
-  if (!data.message) {
-    return { notFound: true };
+  // Loop over each locale and generate paths for teams
+  locales.forEach(locale => {
+    const teams = getAllTeamsByLocale(locale);
+    const localePaths = teams.map(team => ({
+      params: { slug: team.slug }, // Slug for dynamic routing
+      locale, // Locale for localization
+    }));
+    paths = [...paths, ...localePaths];
+  });
+
+  return {
+    paths, // Return all generated paths
+    fallback: 'blocking', // Block until the page is fully generated
+  };
+}
+
+// Step 2: Fetch team data based on slug and locale
+export async function getStaticProps({ params, locale }) {
+  const team = getTeamBySlugAndLocale(params.slug, locale);
+
+  if (!team) {
+    return {
+      notFound: true, // Return a 404 if the team is not found
+    };
   }
 
   return {
     props: {
-      data: data.message,  // Pass the team data to the page
-      locale,              // Pass the current locale
-      ...(await serverSideTranslations(locale, ['common'])),
+      team, // Pass the fetched team data to the page
+      ...(await serverSideTranslations(locale, ['common'])), // Fetch translations
     },
-    revalidate: 10,  // Revalidate the page every 10 seconds
+    revalidate: 10, // ISR: Revalidate every 10 seconds
   };
 }
-
-export async function getStaticPaths() {
-  try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/teams`);
-    const teams = await res.json();
-
-    // Log the response to debug the structure
-    console.log("Teams API response:", teams);
-
-    // Validate that the response is an array of team objects
-    if (!Array.isArray(teams)) {
-      throw new Error("Expected an array of teams but got something else");
-    }
-
-    const locales = ['ca', 'en', 'es'];
-
-    // Generate paths for each locale and slug
-    const paths = teams.map(team => 
-      locales.map(locale => ({
-        params: { slug: team.slug },  // Use the slug field to generate paths
-        locale,  // Include the locale in the paths
-      }))
-    ).flat();  // Flatten the array of arrays
-
-    return {
-      paths,
-      fallback: 'blocking',
-    };
-  } catch (error) {
-    console.error("Error generating static paths:", error);
-    throw error;
-  }
-}
-
