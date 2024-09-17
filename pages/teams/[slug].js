@@ -1,5 +1,5 @@
-// /pages/teams/[slug].js
 import { useRouter } from 'next/router';
+import TeamHeader from '../../components/TeamHeader';
 
 export default function TeamPage({ data, locale }) {
   const router = useRouter();
@@ -10,15 +10,24 @@ export default function TeamPage({ data, locale }) {
 
   return (
     <div>
-      <h1>{data.name} ({locale.toUpperCase()})</h1>
-      <p>Main Color: {data.mainColor}</p>
-      <p>Second Color: {data.secondColor}</p>
-      <p>Main Player: {data.mainPlayer}</p>
+      {/* Use the TeamHeader component */}
+      <TeamHeader 
+        name={data.name} 
+        mainColor={data.mainColor} 
+        secondColor={data.secondColor} 
+      />
+
+      <div>
+      <p>{data.description}</p>
+        <p>Main Color: {data.mainColor}</p>
+        <p>Second Color: {data.secondColor}</p>
+        <p>Main Player: {data.mainPlayer}</p>
+      </div>
     </div>
   );
 }
 
-// Fetch team data from the API route during build or request
+// Fetch data for the page
 export async function getStaticProps({ params, locale }) {
   const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/teams/${params.slug}?locale=${locale}`);
   const data = await res.json();
@@ -35,7 +44,6 @@ export async function getStaticProps({ params, locale }) {
     revalidate: 10,  // Revalidate the page every 10 seconds
   };
 }
-
 
 // Generate paths for all slugs and locales
 export async function getStaticPaths() {
