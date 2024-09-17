@@ -69,21 +69,36 @@ export async function getStaticProps({ params, locale }) {
   };
 }
 
-// Generate paths for all slugs and locales
 export async function getStaticPaths() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/teams`);
-  const slugs = await res.json();
+  try {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/teams`);
+    const teams = await res.json();
 
-  const locales = ['ca', 'en', 'es'];
-  const paths = slugs.flatMap((slugObj) =>
-    locales.map((locale) => ({
-      params: { slug: slugObj.slug },
-      locale,
-    }))
-  );
+    // Log the response to debug the structure
+    console.log("Teams API response:", teams);
 
-  return {
-    paths,
-    fallback: 'blocking',
-  };
+    // Validate that the response is an array of team objects
+    if (!Array.isArray(teams)) {
+      throw new Error("Expected an array of teams but got something else");
+    }
+
+    const locales = ['ca', 'en', 'es'];
+
+    // Generate paths for each locale and slug
+    const paths = teams.map(team => 
+      locales.map(locale => ({
+        params: { slug: team.slug },  // Use the slug field to generate paths
+        locale,  // Include the locale in the paths
+      }))
+    ).flat();  // Flatten the array of arrays
+
+    return {
+      paths,
+      fallback: 'blocking',
+    };
+  } catch (error) {
+    console.error("Error generating static paths:", error);
+    throw error;
+  }
 }
+
