@@ -1,14 +1,32 @@
 import { useRouter } from 'next/router';
 import TeamHeader from '../../components/TeamHeader';
+import Footer from '../../components/Footer';
+import styles from '../../styles/Home.module.css';
+import Link from 'next/link';
+import { useState, useEffect } from 'react';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { IoMdFootball } from '@react-icons/all-files/io/IoMdFootball';
+import { useTranslation } from 'next-i18next';
 
 export default function TeamPage({ data, locale }) {
   const router = useRouter();
+  const { t, ready } = useTranslation(['common']);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!ready || !isMounted) {
+    return <div><IoMdFootball fontSize={12} /></div>;
+  }
 
   if (router.isFallback) {
     return <div>Loading...</div>;
   }
 
   return (
+    <>
     <div>
       {/* Use the TeamHeader component */}
       <TeamHeader 
@@ -24,6 +42,11 @@ export default function TeamPage({ data, locale }) {
         <p>Main Player: {data.mainPlayer}</p>
       </div>
     </div>
+    <div className={styles.textMenu}>
+      <Link href="/ggx">GGx</Link> | <Link href="/teams">{t('equips')}</Link>
+      </div>
+    <Footer/>
+    </>
   );
 }
 
@@ -40,6 +63,7 @@ export async function getStaticProps({ params, locale }) {
     props: {
       data: data.message,  // Pass the team data to the page
       locale,              // Pass the current locale
+      ...(await serverSideTranslations(locale, ['common'])),
     },
     revalidate: 10,  // Revalidate the page every 10 seconds
   };
