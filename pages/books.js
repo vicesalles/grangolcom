@@ -34,12 +34,12 @@ export default function Books() {
         <link rel="icon" href="/futbol.ico?v=2"/>
         <meta property="og:title" content="Gran Gol"/>
         <meta property="og:description" content={t('topFootballBooks')} />
-        <meta property="og:image" content="https://grangol.com/grangol.jpg"/>
-        <meta property="og:url" content="https://grangol.com"></meta>
+        <meta property="og:image" content="https://www.grangol.com/grangol.jpg"/>
+        <meta property="og:url" content="https://www.grangol.com"></meta>
 
         <meta name="twitter:title" content="Gran Gol"/>
         <meta name="twitter:description" content={t('topFootballBooks')}/>
-        <meta name="twitter:image" content="https://grangol.com/grangol.jpg"/>
+        <meta name="twitter:image" content="https://www.grangol.com/grangol.jpg"/>
         <meta name="twitter:card" content="summary_large_image"></meta>
       </Head>
       

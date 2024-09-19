@@ -61,8 +61,8 @@ export default function GGX() {
         <Head>     
 
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="canonical" href="https://grangol.com/ggx" />
-      <link rel="sitemap" type="application/xml" title="Sitemap" href="https://grangol.com/sitemap.xml" />
+      <link rel="canonical" href="https://www.grangol.com/ggx" />
+      <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.grangol.com/sitemap.xml" />
 
       {/* Incrustar JSON-LD */}
       <script 

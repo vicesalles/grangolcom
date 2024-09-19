@@ -2,62 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://grangol.com</loc>
+    <loc>https://www.grangol.com</loc>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="https://grangol.com/en"/>
+               href="https://www.grangol.com/en"/>
     <xhtml:link
                rel="alternate"
                hreflang="es"
-               href="https://grangol.com/es"/>
+               href="https://www.grangol.com/es"/>
     
   </url>
   <url>
-    <loc>https://grangol.com/ggx</loc>
+    <loc>https://www.grangol.com/ggx</loc>
     <xhtml:link
                rel="alternate"
                hreflang="es"
-               href="https://grangol.com/es/ggx"/>
+               href="https://www.grangol.com/es/ggx"/>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="https://grangol.com/en/ggx"/>
+               href="https://www.grangol.com/en/ggx"/>
   </url>
   <url>
     <loc>https://www.grangol.com/books</loc>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="https://grangol.com/en/books"/>
+               href="https://www.grangol.com/en/books"/>
     <xhtml:link
                rel="alternate"
                hreflang="es"
-               href="https://grangol.com/es/books"/>
+               href="https://www.grangol.com/es/books"/>
     
   </url>
   <url>
-    <loc>https://grangol.com/stats</loc>
+    <loc>https://www.grangol.com/stats</loc>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="https://grangol.com/en/stats"/>
+               href="https://www.grangol.com/en/stats"/>
     <xhtml:link
                rel="alternate"
                hreflang="es"
-               href="https://grangol.com/es/stats"/>
+               href="https://www.grangol.com/es/stats"/>
     
   </url>
   <url>
-    <loc>https://grangol.com/games</loc>
+    <loc>https://www.grangol.com/games</loc>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="https://grangol.com/en/games"/>
+               href="https://www.grangol.com/en/games"/>
     <xhtml:link
                rel="alternate"
                hreflang="es"
-               href="https://grangol.com/es/games"/>
+               href="https://www.grangol.com/es/games"/>
     
   </url>
 </urlset>
