@@ -29,35 +29,35 @@
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="https://www.grangol.com/en/books"/>
+               href="https://grangol.com/en/books"/>
     <xhtml:link
                rel="alternate"
                hreflang="es"
-               href="https://www.grangol.com/es/books"/>
+               href="https://grangol.com/es/books"/>
     
   </url>
   <url>
-    <loc>https://www.grangol.com/stats</loc>
+    <loc>https://grangol.com/stats</loc>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="https://www.grangol.com/en/stats"/>
+               href="https://grangol.com/en/stats"/>
     <xhtml:link
                rel="alternate"
                hreflang="es"
-               href="https://www.grangol.com/es/stats"/>
+               href="https://grangol.com/es/stats"/>
     
   </url>
   <url>
-    <loc>https://www.grangol.com/games</loc>
+    <loc>https://grangol.com/games</loc>
     <xhtml:link
                rel="alternate"
                hreflang="en"
-               href="https://www.grangol.com/en/games"/>
+               href="https://grangol.com/en/games"/>
     <xhtml:link
                rel="alternate"
                hreflang="es"
-               href="https://www.grangol.com/es/games"/>
+               href="https://grangol.com/es/games"/>
     
   </url>
 </urlset>
