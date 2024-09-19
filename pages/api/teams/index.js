@@ -2,7 +2,8 @@
 const teams = [
   { slug: "vapor", name: "CE El Vapor" },
   { slug: "olivera", name: "CF Olivera" },
-  { slug: "miners", name: "Atl.Miner" }
+  { slug: "miners", name: "Atl. Miner" },
+  { slug: "victoria", name: "FC Victòria" }
 ];
 
 export default function handler(req, res) {
