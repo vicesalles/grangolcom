@@ -56,7 +56,7 @@ export default function Games() {
             <p>{t('games:xapes')}</p>
             <p>{t('games:tancament')}</p>
 
-            <h4> <Link href="/ggx">{t('games:playGGx')}</Link></h4>
+            <h4 className={styles.newsletter}><Link href="/ggx">{t('games:playGGx')}</Link></h4>
                         
           </div>
           <div className={styles.containerImatge}>
