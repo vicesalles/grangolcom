@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /api/
 Allow: /
-Sitemap: https://grangol.com/sitemap.xml
+Sitemap: https://www.grangol.com/sitemap.xml

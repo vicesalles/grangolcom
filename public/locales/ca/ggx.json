@@ -1,36 +1,29 @@
 {
-    "ggxTitol":"GGx",
-    "ggxSubTitol":"Gran Gol Xapes",
-    "queEsGGx":"Què és GGx?",
-    "ggxDescripcio":"GGx és un joc de futbol inspirat en les xapes i el Subbuteo",
-    "ggxDisseny":"Inspirats en el Subbuteo i en les xapes, els dissenys i versions dels diversos components, s'han anat succeïnt, a còpia de jugar-hi, fins a arribar a l'estat actual.",
-    "ggxpeuFotoPorteria":"El segon model de porteria és més resistent a la duresa del joc.",
+    "ggxTitol": "GGx",
+    "ggxSubTitol": "Gran Gol Xapes",
+    "queEsGGx": "Què és GGx?",
+    "ggxDescripcio": "GGx és un joc de futbol inspirat en les xapes i el Subbuteo",
+    "ggxDisseny": "Inspirats en el Subbuteo i en les xapes, els dissenys i versions dels diversos components, s'han anat succeïnt, a còpia de jugar-hi, fins a arribar a l'estat actual.",
+    "ggxpeuFotoPorteria": "El segon model de porteria és més resistent a la duresa del joc.",
     "ggxpeuFotoResistencia": "El procés de disseny inclou tests de resistència.",
-    "ggxFotoXapesVelles":"S'hi pot jugar amb xapes i botons",
-    "ggxFotoAreaPenal":"La llargada de l'última tanca lateral marca l'àrea de penal. Es xuta des del centre.",
-    "ggxFotoAreaGol":"Només es pot fer gol des de les dues tanques més properes a la porteria. Ho anomenem àrea de gol.",
-    "ggxIntro":"GGx és una revisió de l'antic joc de les xapes. Les xapes van ser un dels primers simuladors de futbol de la història. Avui, mentre desenvolupem el joc Gran Gol, recuperem aquest fantàstic joc que tantes bones estones ha brindat a la gent. Tot el que es mostra aquí, es pot fer amb xapes de begudes i botons.",
-    "ggxNormesTitol":"Normes del GGx", 
-    "ggxNormes":"Aquestes són les normes del GGx. En aquesta llista de 11 punts hi ha tot el que cal saber per jugar un partit.",
-    "ggxNormes1": "El joc es juga per torns ràpids.",
-    "ggxNormes2": "El jugador amb la possessió tira primer, seguit del jugador sense possessió.",
-    "ggxNormes3": "La possessió es perd quan la pilota toca un jugador de l'equip contrari.",
-    "ggxNormes4": "La possessió es perd si la pastilla-pilota es gira. Si en un xut la pastilla es gira cap per avall, el jugador que ha xutat perd la possessió. El defensor pot tirar a tocar la pilota.",
+    "ggxFotoXapesVelles": "S'hi pot jugar amb xapes i botons",
+    "ggxFotoAreaPenal": "La llargada de l'última tanca lateral marca l'àrea de penal. Es xuta des del centre.",
+    "ggxFotoAreaGol": "Només es pot fer gol des de les dues tanques més properes a la porteria. Ho anomenem àrea de gol.",
+    "ggxIntro": "GGx és una revisió de l'antic joc de les xapes. Les xapes van ser un dels primers simuladors de futbol de la història. Avui, mentre desenvolupem el joc Gran Gol, recuperem aquest fantàstic joc que tantes bones estones ha brindat a la gent. Tot el que es mostra aquí, es pot fer amb xapes de begudes i botons.",
+    "ggxNormesTitol": "Normes del GGx",
+    "ggxNormes": "Aquestes són les normes del GGx. En aquesta llista de 11 punts hi ha tot el que cal saber per jugar un partit.",
+    "ggxNormes1": "Es xuta sense fer palanca amb el dit gros.",
+    "ggxNormes2": "El joc es juga per torns ràpids. El jugador amb la possessió tira primer, seguit del jugador sense possessió. Si el jugador amb possessió fa dues tirades seguides sense tocar la pilota, el jugador defensor pot xutar contra la pilota i recuperar la possessió.",
+    "ggxNormes3": "Si un jugador de l'equip que té la possessió està a menys d'un dit de la pilota, es pot recolocar agafant-lo.",
+    "ggxNormes4": "La possessió es perd quan la pilota toca un jugador de l'equip contrari. La possessió es perd si la pilota es gira. Si en un xut la pastilla es gira cap per avall, el jugador que ha xutat perd la possessió. El defensor col·loca el seu jugador més pròxim al costat de la pilota.",
     "ggxNormes5": "El jugador sense possessió no pot xutar contra la pilota. Si ho fa, és falta. Tocar la pilota sense tenir la possessió és considerat una falta.",
-    "ggxNormes6": "Si el jugador amb possessió fa una tirada i no toca la pilota, el jugador defensor pot xutar contra la pilota i recuperar la possessió.",
-    "ggxNormes7":"Només es pot fer gol des de l'àrea delimitada per les dues tanques més properes a la porteria. Anomenem aquesta zona, àrea de gol.",
-    "ggxNormes8": "Tocar un jugador contrari és falta. Si, a causa del xoc, el jugador contrari es gira cap per avall, qui ha comès la falta rep una targeta groga. Amb dues targetes grogues, un jugador escollit de l’equip que ha comès la falta és retirat del camp. (Penseu a portar el compte de les targetes!)",
+    "ggxNormes6": "Tocar un jugador contrari que té la pilota (hi està a tres dits o menys) és falta.",
+    "ggxNormes7": "Al tocar un jugador contrari, tingui o no la pilota, si el jugador contrari es gira cap per avall, qui ha comès la falta rep una targeta groga. Si per l'impacte, el jugador surt fora del camp, és targeta vermella. Amb dues targetes grogues, un jugador escollit de l’equip que ha comès la falta és retirat del camp. (Penseu a portar el compte de les targetes!)",
+    "ggxNormes8": "Només es pot fer gol des de l'àrea delimitada per les dues tanques més properes a la porteria. Anomenem aquesta zona, àrea de gol.",
     "ggxNormes9": "Si la falta es produeix dins l'àrea (la zona la marca l'última tanca lateral) és penal. El penal es xuta des de l'extrem més llunyà de la tanca que delimita l'àrea.",
     "ggxNormes10": "No hi ha fores. Xutar la pilota fora del camp comporta una targeta vermella i l’expulsió d’un jugador de l’equip que ha tirat fora la pilota. (Els rebots amb el porter no compten.)",
-    "ggxNormes11": "Després de cada falta o gol, tots dos jugadors poden resituar lliurement el seu equip amb les mans abans de reprendre el joc.",    
-    "ggxNormesPartit":"Es poden jugar partits de dues maneres: amb gols o amb temps.",
-    "ggxNormesPartitGols":"Amb gols: Es decideix un nombre de gols, i el primer equip que hi arribi guanya.",
-    "ggxNormesPartitTemps":"Amb temps: Es juguen dues parts de 6 minuts cadascuna. Necessitaràs un cronòmetre per controlar el temps."
-
-
-
+    "ggxNormes11": "Després de cada falta (tirar la pilota a fora és falta) o gol, tots dos jugadors poden resituar lliurement el seu equip amb les mans abans de reprendre el joc.",
+    "ggxNormesPartit": "Es poden jugar partits de dues maneres: amb gols o amb temps.",
+    "ggxNormesPartitGols": "Amb gols: Es decideix un nombre de gols, i el primer equip que hi arribi guanya.",
+    "ggxNormesPartitTemps": "Amb temps: Es juguen dues parts de 6 minuts cadascuna. Necessitaràs un cronòmetre per controlar el temps."
 }
-
-
-
-
