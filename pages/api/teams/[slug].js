@@ -5,13 +5,17 @@ const teams = {
     { slug: "olivera", name: "CF Olivera", mainColor: "green", secondColor: "white", description: "English description", mainPlayer: "Aina (6)" },
     { slug: "miners", name: "Club Atlètic Miner", mainColor: "yellow", secondColor: "black", description: "English description", mainPlayer: "Otger (10)" },
     { slug: "victoria", name: "FC Victòria", mainColor: "black", secondColor: "white", description: "English description", mainPlayer: "Martí (3)"},
-    { slug: "pescador", name: "CF Pescador", mainColor: "blue", secondColor: "white", description: "English description", mainPlayer: "Marina (1)"}
+    { slug: "nautic", name: "Club Nàutic", mainColor: "blue", secondColor: "white", description: "English description", mainPlayer: "Ot (8)"},
+    { slug: "dos_fars", name: "Dos Fars Club Esportiu", mainColor: "blue", secondColor: "yellow", description: "English description", mainPlayer: "Narcís (2)"},
+    { slug: "pescador", name: "CF Pescador", mainColor: "white", secondColor: "blue", description: "English description", mainPlayer: "Marina (1)"}
   ],
   ca: [
-    { slug: "vapor", name: "CE El Vapor", mainColor: "black", secondColor: "white", description: "Descripció en Català", mainPlayer: "Fàtima (8)" },
+    { slug: "vapor", name: "CE El Vapor", mainColor: "black", secondColor: "white", description: "Descripció en Català", mainPlayer: "Fàtima (8)", players: [{player_name:"",preferredPosition:"",tshirtNumber:"",plays:[{playPosition:"",playValue:""},{playPosition:"",playValue:""},{playPosition:"",playValue:""}]}] },
     { slug: "olivera", name: "CF Olivera", mainColor: "green", secondColor: "white", description: "Descripció en Català", mainPlayer: "Aina (6)" },
     { slug: "miners", name: "Club Atlètic Miner", mainColor: "yellow", secondColor: "black", description: "English description", mainPlayer: "Otger (10)"},
     { slug: "victoria", name: "FC Victòria", mainColor: "black", secondColor: "white", description: "English description", mainPlayer: "Martí (3)"},
+    { slug: "nautic", name: "Club Nàutic", mainColor: "blue", secondColor: "white", description: "English description", mainPlayer: "Ot (8)"},
+    { slug: "dos_fars", name: "Dos Fars Club Esportiu", mainColor: "blue", secondColor: "yellow", description: "English description", mainPlayer: "Narcís (2)"},
     { slug: "pescador", name: "CF Pescador", mainColor: "blue", secondColor: "white", description: "English description", mainPlayer: "Marina (1)"}
   ],
   es: [
@@ -19,6 +23,8 @@ const teams = {
     { slug: "olivera", name: "CF Olivera", mainColor: "green", secondColor: "white", description: "Descripción en Español", mainPlayer: "Aina (6)" },
     { slug: "miners", name: "Club Atlètic Miner", mainColor: "yellow", secondColor: "black", description: "English description", mainPlayer: "Otger (10)"},
     { slug: "victoria", name: "FC Victòria", mainColor: "black", secondColor: "white", description: "English description", mainPlayer: "Martí (3)"},
+    { slug: "nautic", name: "Club Nàutic", mainColor: "blue", secondColor: "white", description: "English description", mainPlayer: "Ot (8)"},
+    { slug: "dos_fars", name: "Dos Fars Club Esportiu", mainColor: "blue", secondColor: "yellow", description: "English description", mainPlayer: "Narcís (2)"},
     { slug: "pescador", name: "CF Pescador", mainColor: "blue", secondColor: "white", description: "English description", mainPlayer: "Marina (1)"}
   ]
 };
