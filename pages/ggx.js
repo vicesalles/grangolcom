@@ -16,16 +16,6 @@ export default function GGX() {
   const { t, ready } = useTranslation(['common', 'ggx']);
   const [isMounted, setIsMounted] = useState(false);
 
-  useEffect(() => {
-    // This ensures that the component is mounted in the browser
-    setIsMounted(true);
-  }, []);
-
-  // Wait until translations are ready
-  if (!ready || !isMounted) {
-    return <div><IoMdFootball fontSize={12} /></div>;
-  }
-
   const jsonLdData = {
     "@context": "https://schema.org",
     "@type": "Game",
@@ -39,6 +29,45 @@ export default function GGX() {
     "genre": "Joc de futbol",
     "url": "https://grangol.com"
   };
+
+  useEffect(() => {
+    // This ensures that the component is mounted in the browser
+    setIsMounted(true);
+  }, []);
+
+  // Wait until translations are ready
+  if (!ready || !isMounted) {
+    return <div>
+      <Head>
+        <title>Gran Gol: GGx</title>
+        <meta name="description" content="GGx ❤️⚽" />  
+
+        <link rel="icon" href="/futbol.ico?v=2"/>
+        <meta property="og:title" content="Gran Gol GGx"/>
+        <meta property="og:description" content="❤️⚽"/>
+        <meta property="og:image" content="https://grangol.com/GGxFons.jpg"/>
+        <meta property="og:url" content="https://grangol.com/ggx"></meta>
+
+        <meta name="twitter:title" content="Gran Gol GGx"/>
+        <meta name="twitter:description" content="❤️⚽"/>
+        <meta name="twitter:image" content="https://grangol.com/GGxFons.jpg"/>
+        <meta name="twitter:card" content="summary_large_image"></meta>
+        <meta name="robots" content="index, follow"/>    
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="canonical" href="https://www.grangol.com/ggx" />
+      <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.grangol.com/sitemap.xml" />
+
+      {/* Incrustar JSON-LD */}
+      <script 
+          type="application/ld+json" 
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }} 
+        />
+
+      
+      </Head>
+      <IoMdFootball fontSize={12} /></div>;
+  }
+ 
 
   return (
     <div className={styles.container}>
