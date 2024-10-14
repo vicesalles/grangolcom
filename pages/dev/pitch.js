@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import styles from '../../styles/Articles.module.scss'
+import styles from '../../styles/General.module.scss'
 import Footer from '../../components/Footer';
 import PageHeader from '../../components/PageHeader';
 import TopNavbar from '../../components/TopNavbar';
@@ -40,7 +40,7 @@ export default function Games() {
                     title="El terreny de joc"
                     description="Les dimensions d’un camp de futbol i les categories d’estadis de la UEFA" />
 
-                <div className={styles.container}>
+                <div className={styles.article}>
                     <p>
                         El futbol és un dels esports més populars del món, i a part de tenir un munt de regles emocionants, també és important conèixer el lloc on es juga: el camp de futbol. Aquest lloc no és igual a tot arreu, però la majoria segueixen unes normes establertes. T’has preguntat mai quines són les dimensions d’un camp de futbol o quins tipus d’estadis hi ha segons la UEFA? Aquí t'ho explico d'una manera fàcil de comprendre!
                     </p>
@@ -108,7 +108,10 @@ export default function Games() {
 
             </main>
 
-            <div className={styles.textMenu}><Link href="/">{t('home')}</Link> | <Link href="/stats">{t('footballStats')}</Link> | <Link href="/books">{t('footballBooks')}</Link></div>
+            
+            <div className={styles.textMenu}>
+            <div className={styles.textMenu}><Link href="/">{t('home')}</Link> |  <Link href="./ggx">GGx</Link> | <Link href="/stats">{t('footballStats')}</Link></div>
+            </div>
             <Footer />
         </div>
     )
