@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react';
 import Footer from '../components/Footer';
 import TopNavbar from '../components/TopNavbar';
 
-export default function Home() {
+export default function Custom404() {
   const { t, ready } = useTranslation('common');
   const [isMounted, setIsMounted] = useState(false);
 
