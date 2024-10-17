@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Anton';
+  src: url(../public/fonts/Anton-Regular.ttf ) format('truetype');
+}
+
 .container {
   min-height: 100vh;
   display: flex;
@@ -147,4 +152,18 @@
   background-color: yellow;
   padding: .5em 1em .5em 1em;
   box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+}
+
+.titolPrincipal {
+  -webkit-text-stroke: 2px black;
+  font-family: 'Anton';
+  font-size: 4em;
+  max-width: 900px;
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.subtitolPrincipal{
+  margin-top: 0px;
 }

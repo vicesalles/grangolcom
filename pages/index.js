@@ -101,7 +101,9 @@ export default function Home() {
       </Head>
       <TopNavbar />      
       <main className={styles.main}>
-        <h1><FaHeart fontSize={100} color={'red'} /> <IoMdFootball fontSize={100} /></h1>
+        <h1 className={styles.titolPrincipal}>{t('mainTitle')}</h1>
+        <h2  className={styles.subtitolPrincipal}>{t('mainSubtitle')}</h2>
+        <h3><FaHeart fontSize={100} color={'red'} /> <IoMdFootball fontSize={100} /></h3>
         <a className={styles.newsletter} href={t('shareNewsletter')} target='_blank'> {t('newsLetterCTA')} </a> 
       </main>
       <div className={styles.textMenu}>
