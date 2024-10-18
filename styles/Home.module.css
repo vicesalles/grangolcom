@@ -162,8 +162,11 @@
   color: white;
   margin-top: 0px;
   margin-bottom: 0px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .subtitolPrincipal{
   margin-top: 0px;
+  font-size: 1.5em;
 }
