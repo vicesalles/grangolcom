@@ -1,10 +1,12 @@
 {
     "home":"Home",
     "mainTitle":"Gran Gol is a football game",
-    "mainSubtitle":"under development",
+    "mainSubtitle":"in development",
     "footballBooks": "Football books",
     "footballStats": "Football stats",
     "footballGames": "Football games",
+    "granGolTeams": "Gran Gol Story",
+    "ggxTeams":"GGX 3D printable Teams",
     "playingToPlayFootball":"Playing to play football",
     "competition":"Competition",
     "dataProvider":"Data provider",
@@ -14,6 +16,8 @@
     "topFootballBooks":"Best Books about modern Football",
     "subThanks":"Thanks for subscribing!",
     "newsLetterCTA":"I want the latest updates!",
-    "shareNewsletter":"https://grangol.ck.page/ae33031f33",
-    "equips":"Teams"
+    "newsLetterMaker":"Join our newsletter",
+    "shareNewsletter":"https://grangol.kit.com/ae33031f33",
+    "equips":"Teams",
+    "makerWelcome":"Welcome MakerWorld user!"
   }

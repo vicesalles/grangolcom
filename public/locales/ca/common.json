@@ -5,6 +5,8 @@
     "footballBooks": "Llibres de futbol",
     "footballStats": "Estadístiques de futbol",
     "footballGames": "Jocs de futbol",
+    "granGolTeams": "Història Gran Gol",
+    "ggxTeams":"Equips GGX 3D",
     "playingToPlayFootball":"Jugant a jugar a futbol",
     "competition":"Competició",
     "dataProvider":"Proveïdor de les dades",
@@ -14,7 +16,9 @@
     "topFootballBooks":"Els millors llibres de futbol",
     "subThanks":"Gràcies per subscriure't!",
     "newsLetterCTA":"Clica per rebre totes les novetats",
-    "shareNewsletter":"https://grangol.ck.page/df8ef243e9",
-    "equips":"Equips"
+    "shareNewsletter":"https://grangol.kit.com/df8ef243e9",
+    "newsLetterMaker":"Subscriu-te al newsletter",
+    "equips":"Equips",
+    "makerWelcome":"Benvingut usuari de MakerWorld!"
   }
   

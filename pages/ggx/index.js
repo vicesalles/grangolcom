@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import styles from '../styles/General.module.scss'
+import styles from '../../styles/General.module.scss'
 
-import Footer from '../components/Footer';
-import PageHeader from '../components/PageHeader';
-import TopNavbar from '../components/TopNavbar';
+import Footer from '../../components/Footer';
+import PageHeader from '../../components/PageHeader';
+import TopNavbar from '../../components/TopNavbar';
 
 import {IoMdFootball} from '@react-icons/all-files/io/IoMdFootball';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
