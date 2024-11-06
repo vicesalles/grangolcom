@@ -102,6 +102,7 @@ export default function Custom404() {
       <TopNavbar />      
       <main className={styles.main}>
         <h1>404</h1>
+        <img src='/img/404.gif'/>
         <p>ERROR!</p>
       </main>
       <div className={styles.textMenu}>
