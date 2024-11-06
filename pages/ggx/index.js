@@ -139,7 +139,8 @@ export default function GGX() {
                     alt="{t('ggx:ggxpeuFotoResistencia')}"
                 />
                 <p className={styles.peuFoto}>{t('ggx:ggxpeuFotoResistencia')}</p>
-          </div>
+          </div> 
+          
           <div className={styles.containerImatge}>
           <Image
                     src="/img/articles/porteriaZero.jpg"
@@ -149,6 +150,18 @@ export default function GGX() {
                 />
                 <p className={styles.peuFoto}>{t('ggx:ggxpeuFotoPorteria')}</p>
           </div>
+
+          <div className={styles.containerImatge}>
+          <Image
+                    src="https://gafrmmszazh98sh9.public.blob.vercel-storage.com/OTesting-EWdEr6SngPJdEy4oGmzPTfMGgcr0Cq.jpg"
+                    width={1200}
+                    height={904}
+                    alt="{t('ggx:ggxpeuFotoPorteria')}"
+                />
+                <p className={styles.peuFoto}>{t('ggx:ggxQcExperts')}</p>
+          </div>
+
+
           <h3>{t('ggx:ggxNormesTitol')}</h3>
           <p>{t('ggx:ggxNormesPartit')}</p>
           <p><ul>
