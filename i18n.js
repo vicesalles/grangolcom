@@ -21,7 +21,7 @@ import stats_es from './public/locales/es/stats.json';
 
 // Initialize i18n with multiple namespaces
 i18n.use(initReactI18next).init({
-  fallbackLng: 'ca', // Default fallback language
+  fallbackLng: 'en', // Default fallback language
   lng: 'ca',         // Starting language
   ns: ['common', 'games', 'ggx', 'stats'], // Declare namespaces
   defaultNS: 'common',  // Default namespace is common
