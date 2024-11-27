@@ -110,8 +110,7 @@ export default function GGXTeams() {
                
         <div className={styles.article}>    
           <h3>UNDER CONSTRUCTION</h3>
-          <p>{t('ggx:ggxTeamsDisclaimer')}</p>
-          <p>UNDER CONSTRUCTION</p>
+          <p>{t('ggx:ggxTeamsDisclaimer')}</p>         
         </div>
         
       </main>
