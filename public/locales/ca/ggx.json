@@ -32,5 +32,8 @@
     "ggxNormesPartitGols": "Amb gols: Es decideix un nombre de gols, i el primer equip que hi arribi guanya.",
     "ggxNormesPartitTemps": "Amb temps: Es juguen dues parts de 6 minuts cadascuna. Necessitaràs un cronòmetre per controlar el temps.",
     "ggxNormesPaperText":"Descarrega't les normes en PDF",
-    "ggxNormesPaperURL":"https://grangol.ck.page/08b0016369"
+    "ggxNormesPaperURL":"https://grangol.ck.page/08b0016369",
+    "ggxTeamsTitle":"GGx Equips imprimibles",
+    "ggxTeamsDescription":"Aquí trobaràs tots els equips disponibles per imprimir.",
+    "ggxTeamsDisclaimer":"Els equips imprimibles s'inspiren en clubs reals però en cap cas són o pretenen ser productes oficials o llicenciats per aquests clubs."
 }

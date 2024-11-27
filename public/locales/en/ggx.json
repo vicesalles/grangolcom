@@ -32,5 +32,8 @@
     "ggxNormesPartitGols": "With goals: A number of goals is decided, and the first team to reach that number wins.",
     "ggxNormesPartitTemps": "With time: Two halves of 6 minutes each are played. You will need a timer to keep track of the time.",
     "ggxNormesPaperText":"Download the GGx Rules PDF",
-    "ggxNormesPaperURL":"https://grangol.ck.page/ae472c7c61"
+    "ggxNormesPaperURL":"https://grangol.ck.page/ae472c7c61",
+    "ggxTeamsTitle":"GGx Printable Teams",
+    "ggxTeamsDescription":"Here you'll find all the avaible teams for printing",
+    "ggxTeamsDisclaimer":"The printable teams are inspired by real clubs but are by no means official products or licensed by those clubs."
 }
