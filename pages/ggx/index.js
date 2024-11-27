@@ -181,9 +181,13 @@ export default function GGX() {
                 <li>{t('ggx:ggxNormes9')}</li>
                 <li>{t('ggx:ggxNormes10')}</li>
                 <li>{t('ggx:ggxNormes11')}</li>
+                <li>{t('ggx:ggxNormes12')}</li>
+                <li>{t('ggx:ggxNormes13')}</li>
+                <li>{t('ggx:ggxNormes14')}</li>
+                <li>{t('ggx:ggxNormes15')}</li>
                 </ol></p>
                 <div className={styles.containerImatge}>
-              <a className={styles.botoCTA} href='https://grangol.ck.page/08b0016369' target='_blank'>Descarrega't les normes en paper</a>
+              <a className={styles.botoCTA} href={t('ggx:ggxNormesPaperURL')} target='_blank'>{t('ggx:ggxNormesPaperText')}</a>
                 </div>
             
           </div>
