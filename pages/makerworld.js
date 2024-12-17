@@ -107,7 +107,7 @@ export default function MakerWorldLanding() {
         <a className={styles.newsletter} href={t('shareNewsletter')} target='_blank'> {t('newsLetterMaker')} </a> 
       </main>
       <div className={styles.textMenu}>
-      <Link href="./ggx/rules">{t('ggx:ggxNormesTitol')}</Link> | <Link href="./ggx/teams">{t('ggxTeams')}</Link> | <Link href="./teams">{t('granGolTeams')}</Link> | <Link href="./ggx/support">{t('ggx:ggxSupportGGX')}</Link>
+      <Link href="./ggx/">{t('ggx:queEsGGx')}</Link> | <Link href="./ggx/rules">{t('ggx:ggxNormesTitol')}</Link> | <Link href="./ggx/teams">{t('ggxTeams')}</Link> | <Link href="./teams">{t('granGolTeams')}</Link> | <Link href="./ggx/support">{t('ggx:ggxSupportGGX')}</Link>
       </div>
       <Footer />
     </div>
