@@ -71,7 +71,7 @@ export default function Custom404() {
 
   function GetGif(){
 
-    const gifs = ["1","2","3","4","5","6","404"]
+    const gifs = ["1","1","2","3","4","5","6","7","8","9","404"]
     return gifs[Math.floor((Math.random() * (gifs.length - 1 + 1)))]
     
   }
@@ -108,7 +108,7 @@ export default function Custom404() {
       </Head>
       <TopNavbar />      
       <main className={styles.main}>
-        <h1>404</h1>
+        <h1>404 - Page not found</h1>
         <img src={'/img/'+GetGif()+'.gif'}/>        
       </main>
       <div className={styles.textMenu}>
