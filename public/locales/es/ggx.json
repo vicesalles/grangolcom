@@ -12,7 +12,7 @@
     "ggxFotoAreaGol": "Sólo se puede marcar gol desde las dos vallas más cercanas a la portería. Lo llamamos área de gol.",
     "ggxIntro": "GGx es una revisión del antiguo juego de las chapas. Las chapas fueron uno de los primeros simuladores de fútbol de la historia. Hoy, mientras desarrollamos el juego Gran Gol, recuperamos este fantástico juego que tantas buenas horas ha brindado a la gente. Todo lo que se muestra aquí, se puede hacer con chapas de bebidas y botones.",
     "ggxNormesTitol": "Normas del GGx",
-    "ggxNormes": "Estas son las normas del GGx. En esta lista de 11 puntos hay todo lo que hay que saber para jugar un partido.",
+    "ggxNormesIntro": "Estas son las normas del GGx. En esta lista de 11 puntos hay todo lo que hay que saber para jugar un partido.",
     "ggxNormes1": "Se tira sin hacer palanca con el pulgar.",
     "ggxNormes2": "El juego se desarrolla en turnos rápidos. El jugador en posesión (atacante) tira primero, seguido por el jugador sin posesión (defensor). El jugador atacante puede contar en voz alta hasta cinco, y si el defensor no ha realizado su turno, el atacante puede saltárselo y lanzar de nuevo. El defensor puede decir “paso” en cualquier momento y no tirar.",
     "ggxNormes3": "Si el atacante realiza dos lanzamientos seguidos sin tocar la pelota, el defensor puede tirar contra la pelota y recuperar la posesión.",
@@ -35,5 +35,6 @@
     "ggxNormesPaperURL":"https://grangol.ck.page/32c6f981d3",
     "ggxTeamsTitle":"GGx Equipos imprimibles",
     "ggxTeamsDescription":"Aquí encontrarás todos los equipos disponibles para imprimir.",
-    "ggxTeamsDisclaimer":"Los equipos imprimibles se inspiran en clubes reales pero en ningún caso son o prentenden ser productos oficiales o licenciados por esos clubs."
+    "ggxTeamsDisclaimer":"Los equipos imprimibles se inspiran en clubes reales pero en ningún caso son o prentenden ser productos oficiales o licenciados por esos clubs.",
+    "ggxSupportGGX":"Apoya GGX"
 }

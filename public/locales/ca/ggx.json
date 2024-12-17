@@ -12,7 +12,7 @@
     "ggxFotoAreaGol": "Només es pot fer gol des de les dues tanques més properes a la porteria. Ho anomenem àrea de gol.",
     "ggxIntro": "GGx és una revisió de l'antic joc de les xapes. Les xapes van ser un dels primers simuladors de futbol de la història. Avui, mentre desenvolupem el joc Gran Gol, recuperem aquest fantàstic joc que tantes bones estones ha brindat a la gent. Tot el que es mostra aquí, es pot fer amb xapes de begudes i botons.",
     "ggxNormesTitol": "Normes del GGx",
-    "ggxNormes": "En aquesta llista hi ha tot el que cal saber per jugar un partit de GGx:",
+    "ggxNormesIntro": "En aquesta llista hi ha tot el que cal saber per jugar un partit de GGx:",
     "ggxNormes1": "Es xuta sense fer palanca amb el dit gros.",
     "ggxNormes2": "El joc es juga per torns ràpids. El jugador amb la possessió (atacant) tira primer, seguit del jugador sense possessió (defensor). El jugador atacant pot comptar, en veu alta, fins a cinc, i si el jugador defensor no ha fet la seva tirada, pot saltar-se el seu torn i tirar de nou. El jugador defensor pot dir “passo” sempre que vulgui i no tirar.",
     "ggxNormes3": "Si el jugador atacant fa dues tirades seguides sense tocar la pilota, el jugador defensor pot xutar contra la pilota i recuperar la possessió.",
@@ -35,5 +35,6 @@
     "ggxNormesPaperURL":"https://grangol.ck.page/08b0016369",
     "ggxTeamsTitle":"GGx Equips imprimibles",
     "ggxTeamsDescription":"Aquí trobaràs tots els equips disponibles per imprimir.",
-    "ggxTeamsDisclaimer":"Els equips imprimibles s'inspiren en clubs reals però en cap cas són o pretenen ser productes oficials o llicenciats per aquests clubs."
+    "ggxTeamsDisclaimer":"Els equips imprimibles s'inspiren en clubs reals però en cap cas són o pretenen ser productes oficials o llicenciats per aquests clubs.",
+    "ggxSupportGGX":"Dóna suport al GGX"
 }

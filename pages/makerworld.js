@@ -103,13 +103,11 @@ export default function MakerWorldLanding() {
       <main className={styles.main}>
       <h1 className={styles.titolPrincipal}>{t('makerWelcome')}</h1>
         <h3><FaHeart fontSize={100} color={'red'} /> <IoMdFootball fontSize={100} /></h3>        
-        <h2>Support the project with a Tip</h2>
-        <div><a className={styles.newsletter} href="https://grangol.kit.com/products/ggx" target='_blank'> € </a> <a className={styles.newsletter} href="https://grangol.kit.com/products/ggx-uk" target='_blank'> £ </a> <a className={styles.newsletter} href="https://grangol.kit.com/products/support-ggx" target='_blank'>  $ </a></div>
-        <h2>... or get updates by e-mail</h2>
+        <h2>Get updates by e-mail</h2>
         <a className={styles.newsletter} href={t('shareNewsletter')} target='_blank'> {t('newsLetterMaker')} </a> 
       </main>
       <div className={styles.textMenu}>
-      <Link href="./ggx">GGx Rules</Link> | <Link href="./ggx/teams">{t('ggxTeams')}</Link> | <Link href="./teams">{t('granGolTeams')}</Link>
+      <Link href="./ggx/rules">{t('ggx:ggxNormesTitol')}</Link> | <Link href="./ggx/teams">{t('ggxTeams')}</Link> | <Link href="./teams">{t('granGolTeams')}</Link> | <Link href="./ggx/support">{t('ggx:ggxSupportGGX')}</Link>
       </div>
       <Footer />
     </div>
@@ -119,7 +117,7 @@ export default function MakerWorldLanding() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common', 'cookies'])), // Load both common and cookies namespaces
+      ...(await serverSideTranslations(locale, ['common', 'ggx'])), // Load both common and cookies namespaces
     },
   };
 }
