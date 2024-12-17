@@ -105,12 +105,12 @@ export default function GGX() {
       <main className={styles.main}>
       <TopNavbar/>
         <PageHeader 
-        title={t('ggx:ggxTitol')}
+        title={t('ggx:ggxStadium')}
         description={t('ggx:ggxSubTitol')}/>
     
         <div>          
           <div className={styles.article}>    
-          <h3>{t('ggx:queEsGGx')}</h3>
+          <h3>{t('ggx:ggxStadium')}</h3>
           <p>{t('ggx:ggxIntro')}</p>
           <div className={styles.containerImatge}>
           <Image
@@ -120,25 +120,6 @@ export default function GGX() {
                     alt="{t('ggx:ggxFotoXapesVelles')}"
                 />
                 <p className={styles.peuFoto}>{t('ggx:ggxFotoXapesVelles')}</p>
-          </div> 
-          <div className={styles.containerImatge}>
-          <Image
-                    src="/img/articles/GGxFons.jpg"
-                    width={1200}
-                    height={900}
-                    alt="{t('ggx:ggxDescripcio')}"
-                />
-                <p className={styles.peuFoto}>{t('ggx:ggxDescripcio')}</p>
-          </div> 
-            <p>{t('ggx:ggxDisseny')}</p>
-            <div className={styles.containerImatge}>
-          <Image
-                    src="/img/articles/TestResistencia.jpg"
-                    width={1200}
-                    height={661}
-                    alt="{t('ggx:ggxpeuFotoResistencia')}"
-                />
-                <p className={styles.peuFoto}>{t('ggx:ggxpeuFotoResistencia')}</p>
           </div> 
           
           <div className={styles.containerImatge}>
@@ -150,27 +131,13 @@ export default function GGX() {
                 />
                 <p className={styles.peuFoto}>{t('ggx:ggxpeuFotoPorteria')}</p>
           </div>
-
-          <div className={styles.containerImatge}>
-          <Image
-                    src="https://gafrmmszazh98sh9.public.blob.vercel-storage.com/OTesting-EWdEr6SngPJdEy4oGmzPTfMGgcr0Cq.jpg"
-                    width={1200}
-                    height={904}
-                    alt="{t('ggx:ggxpeuFotoPorteria')}"
-                />
-                <p className={styles.peuFoto}>{t('ggx:ggxQcExperts')}</p>
-          </div>
-          
-          </div>
+      
+        </div>
         </div>
         
-        <div className={styles.botoneraDestacada}>
-          <Link className={styles.newsletter} href="./ggx/rules">{t('ggx:ggxNormesTitol')}</Link> <Link className={styles.newsletter} href="./ggx/stadium">{t('ggx:ggxStadium')}</Link> <Link className={styles.newsletter} href="./ggx/teams">{t('ggxTeams')}</Link> <Link className={styles.newsletter} href="./ggx/support">{t('ggx:ggxSupportGGX')}</Link>
-          </div>
-
       </main>
-      <div className={styles.textMenu}><Link href="/">{t('home')}</Link> | <Link href="./ggx/rules">{t('ggx:ggxNormesTitol')}</Link> | <Link href="./ggx/stadium">{t('ggx:ggxStadium')}</Link> | <Link href="./ggx/teams">{t('ggxTeams')}</Link> | <Link href="./ggx/support">{t('ggx:ggxSupportGGX')}</Link></div>
-       
+      <div className={styles.textMenu}><Link href="/">{t('home')}</Link> | <Link href="./">{t('ggx:queEsGGx')}</Link> | <Link href="./rules">{t('ggx:ggxNormesTitol')}</Link> |  <Link href="./teams">{t('ggxTeams')}</Link> | <Link href="./support">{t('ggx:ggxSupportGGX')}</Link></div>
+        
       <Footer/>
     </div>
   )
