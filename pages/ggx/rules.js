@@ -159,9 +159,12 @@ export default function GGX() {
                 <p className={styles.peuFoto}>{t('ggx:ggxFotoAreaGol')}</p>
           </div>
         </div>
-        
+        <div className={styles.botoneraDestacada}>
+          <Link className={styles.newsletter} href="/ggx/">{t('ggx:queEsGGx')}</Link> <Link className={styles.newsletter} href="/ggx/stadium">{t('ggx:ggxStadium')}</Link> <Link className={styles.newsletter} href="/ggx/teams">{t('ggxTeams')}</Link> <Link className={styles.newsletter} href="/ggx/support">{t('ggx:ggxSupportGGX')}</Link>
+          </div>
+
       </main>
-      <div className={styles.textMenu}><Link href="/">{t('home')}</Link> | <Link href="./ggx/">{t('ggx:queEsGGx')}</Link> | <Link href="./ggx/rules">{t('ggx:ggxNormesTitol')}</Link> |  <Link href="./ggx/stadium">{t('ggx:ggxStadium')}</Link> | <Link href="./ggx/teams">{t('ggxTeams')}</Link> | <Link href="./ggx/support">{t('ggx:ggxSupportGGX')}</Link></div>
+      <div className={styles.textMenu}><Link href="/">{t('home')}</Link> | <Link href="./">{t('ggx:queEsGGx')}</Link> | <Link href="./rules">{t('ggx:ggxNormesTitol')}</Link> |  <Link href="./stadium">{t('ggx:ggxStadium')}</Link> | <Link href="./teams">{t('ggxTeams')}</Link> | <Link href="./support">{t('ggx:ggxSupportGGX')}</Link></div>
       
       <Footer/>
     </div>

@@ -134,7 +134,10 @@ export default function GGX() {
       
         </div>
         </div>
-        
+        <div className={styles.botoneraDestacada}>
+        <Link className={styles.newsletter} href="/ggx/">{t('ggx:queEsGGx')}</Link><Link className={styles.newsletter} href="/ggx/rules">{t('ggx:ggxNormesTitol')}</Link> <Link className={styles.newsletter} href="/ggx/teams">{t('ggxTeams')}</Link> <Link className={styles.newsletter} href="/ggx/support">{t('ggx:ggxSupportGGX')}</Link>
+          </div>
+
       </main>
       <div className={styles.textMenu}><Link href="/">{t('home')}</Link> | <Link href="./">{t('ggx:queEsGGx')}</Link> | <Link href="./rules">{t('ggx:ggxNormesTitol')}</Link> |  <Link href="./teams">{t('ggxTeams')}</Link> | <Link href="./support">{t('ggx:ggxSupportGGX')}</Link></div>
         
