@@ -69,6 +69,13 @@ export default function Custom404() {
       <IoMdFootball fontSize={12} /></div>;
   }  
 
+  function GetGif(){
+
+    const gifs = ["1","2","3","4","5","6","404"]
+    return gifs[Math.floor((Math.random() * (gifs.length - 1 + 1)))]
+    
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -102,8 +109,7 @@ export default function Custom404() {
       <TopNavbar />      
       <main className={styles.main}>
         <h1>404</h1>
-        <img src='/img/404.gif'/>
-        <p>ERROR!</p>
+        <img src={'/img/'+GetGif()+'.gif'}/>        
       </main>
       <div className={styles.textMenu}>
       <Link href="./ggx">GGx</Link> | <Link href="./books">{t('footballBooks')}</Link> | <Link href="./stats">{t('footballStats')}</Link> | <Link href="./games">{t('footballGames')}</Link>
