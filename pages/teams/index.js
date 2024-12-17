@@ -22,7 +22,9 @@ export default function TeamsPage({ teams }) {
   return (
     <>
       <div>
-        <h1>{t('equips')}</h1>  {/* Translated title */}
+        <h1>{t('granGolTeams')}</h1>
+        <p>{t('textHistoriaGranGol')}</p>
+        <h2>{t('equips')}</h2>  {/* Translated title */}
         <ul>
           {teams.map((team) => (
             <li key={team.slug}>
