@@ -86,21 +86,18 @@ export default function GGX() {
         <meta name="twitter:image" content="https://grangol.com/GGxFons.jpg"/>
         <meta name="twitter:card" content="summary_large_image"></meta>
         <meta name="robots" content="index, follow"/>
-
-        <Head>     
-
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="canonical" href="https://www.grangol.com/ggx" />
-      <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.grangol.com/sitemap.xml" />
-
+   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="canonical" href="https://www.grangol.com/ggx" />
+        <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.grangol.com/sitemap.xml" />
+        
       {/* Incrustar JSON-LD */}
       <script 
           type="application/ld+json" 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }} 
         />
-
       
-      </Head>
+      
       </Head>      
       <main className={styles.main}>
       <TopNavbar/>
