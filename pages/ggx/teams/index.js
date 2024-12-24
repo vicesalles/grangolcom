@@ -114,11 +114,10 @@ export default function GGXTeams() {
         </div>
 
         <div className={styles.botoneraDestacada}>
-        <Link className={styles.newsletter} href="/ggx/">{t('ggx:queEsGGx')}</Link><Link className={styles.newsletter} href="/ggx/rules">{t('ggx:ggxNormesTitol')}</Link> <Link className={styles.newsletter} href="/ggx/stadium">{t('ggx:ggxStadium')}</Link> <Link className={styles.newsletter} href="/ggx/support">{t('ggx:ggxSupportGGX')}</Link>
+        <Link className={styles.newsletter} href="/">{t('home')}</Link><Link className={styles.newsletter} href="/ggx/">{t('ggx:queEsGGx')}</Link><Link className={styles.newsletter} href="/ggx/rules">{t('ggx:ggxNormesTitol')}</Link> <Link className={styles.newsletter} href="/ggx/stadium">{t('ggx:ggxStadium')}</Link> <Link className={styles.newsletter} href="/ggx/support">{t('ggx:ggxSupportGGX')}</Link>
           </div>
         
-      </main>
-      <div className={styles.textMenu}><Link href="/">{t('home')}</Link> | <Link href="/ggx">GGx</Link> </div>
+      </main>      
       
       <Footer/>
     </div>
