@@ -132,7 +132,7 @@ export default function GGX() {
                     src="https://gafrmmszazh98sh9.public.blob.vercel-storage.com/ProvesPilotaFitxa-htReZt7c4tsYJcobpNRo5EteENdv01.jpg"
                     width={1200}
                     height={402}
-                    alt="La fitxa pilota és un element clau en els nostres jocs"
+                    alt={t('ggx:ggxFitxaPilota')}
                 />
                 <p className={styles.peuFoto}>{t('ggx:ggxFitxaPilota')}</p>
           </div>  

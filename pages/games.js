@@ -61,12 +61,12 @@ export default function Games() {
           </div>
           <div className={styles.containerImatge}>
           <Image
-                    src="/img/articles/ProvesPilotaFitxa.jpg"
+                    src="https://gafrmmszazh98sh9.public.blob.vercel-storage.com/ProvesPilotaFitxa-htReZt7c4tsYJcobpNRo5EteENdv01.jpg"
                     width={1200}
                     height={402}
-                    alt="La fitxa pilota és un element clau en els nostres jocs"
+                    alt="{t('ggx:ggxFitxaPilota')}"
                 />
-                <p className={styles.peuFoto}>La FitxaPilota és un element bàsic del joc.</p>
+                <p className={styles.peuFoto}>{t('ggx:ggxFitxaPilota')}</p>
           </div>
         </div>
         
@@ -82,7 +82,7 @@ export default function Games() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common', 'games'])),
+      ...(await serverSideTranslations(locale, ['common', 'games','ggx'])),
     },
   };
 }
