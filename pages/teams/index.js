@@ -4,7 +4,9 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { IoMdFootball } from '@react-icons/all-files/io/IoMdFootball';
 import { useTranslation } from 'next-i18next';
 import Footer from '../../components/Footer';
-import styles from '../../styles/Home.module.css';
+import PageHeader from '../../components/PageHeader';
+import TopNavbar from '../../components/TopNavbar';
+import styles from '../../styles/General.module.scss'
 import { getAllTeamsByLocale } from '../../lib/teams'; // Import direct data access
 
 export default function TeamsPage({ teams }) {
@@ -16,15 +18,21 @@ export default function TeamsPage({ teams }) {
   }, []);
 
   if (!ready || !isMounted) {
-    return <div><IoMdFootball fontSize={50} /></div>;  // Loading state
+    return <div><IoMdFootball fontSize={50} /></div>; 
   }
 
   return (
-    <>
-      <div>
-        <h1>{t('granGolTeams')}</h1>
+    <div className={styles.container}>
+    <main className={styles.main}>
+      <TopNavbar/>
+        <PageHeader 
+        title={t('granGolTeams')}
+        description={t('historiaGranGolSubtitol')}/>
+      <div>          
+      <div className={styles.article}>       
+        <h2>{t('benvingutsLligaGranGol')}</h2>
         <p>{t('textHistoriaGranGol')}</p>
-        <h2>{t('equips')}</h2>  {/* Translated title */}
+        <h2>{t('equips')}</h2> 
         <ul>
           {teams.map((team) => (
             <li key={team.slug}>
@@ -35,12 +43,14 @@ export default function TeamsPage({ teams }) {
           ))}
         </ul>
       </div>
-      <div className={styles.textMenu}>
+      </div>
+      
+    </main>
+    <div className={styles.textMenu}>
         <Link href="/ggx">GGx</Link> | <Link href="/books">{t('footballBooks')}</Link> | <Link href="/stats">{t('footballStats')}</Link> | <Link href="/games">{t('footballGames')}</Link>
       </div>
       <Footer />
-    </>
-  );
+    </div>);
 }
 
 // Static generation for all locales
