@@ -125,8 +125,20 @@ export default function GGX() {
                     alt="{t('ggx:ggxDescripcio')}"
                 />
                 <p className={styles.peuFoto}>{t('ggx:ggxDescripcio')}</p>
-          </div> 
-            <p>{t('ggx:ggxDisseny')}</p>
+          </div>             
+
+            <div className={styles.containerImatge}>
+          <Image
+                    src="/img/articles/ProvesPilotaFitxa.jpg"
+                    width={1200}
+                    height={402}
+                    alt="La fitxa pilota és un element clau en els nostres jocs"
+                />
+                <p className={styles.peuFoto}>{t('ggx:ggxFitxaPilota')}</p>
+          </div>  
+
+          <p>{t('ggx:ggxDisseny')}</p>
+
             <div className={styles.containerImatge}>
           <Image
                     src="/img/articles/TestResistencia.jpg"
@@ -136,6 +148,8 @@ export default function GGX() {
                 />
                 <p className={styles.peuFoto}>{t('ggx:ggxpeuFotoResistencia')}</p>
           </div> 
+
+          
           
           <div className={styles.containerImatge}>
           <Image
