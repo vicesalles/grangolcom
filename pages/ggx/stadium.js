@@ -39,17 +39,17 @@ export default function GGX() {
   if (!ready || !isMounted) {
     return <div>
       <Head>
-        <title>Gran Gol: GGx</title>
-        <meta name="description" content="GGx ❤️⚽" />  
+        <title>Gran Gol: GGx Stadium</title>
+        <meta name="description" content="GGx Stadium tabletop football" />  
 
         <link rel="icon" href="/futbol.ico?v=2"/>
-        <meta property="og:title" content="Gran Gol GGx"/>
-        <meta property="og:description" content="❤️⚽"/>
+        <meta property="og:title" content="Gran Gol GGx Stadium"/>
+        <meta property="og:description" content="GGx Stadium tabletop football"/>
         <meta property="og:image" content="https://grangol.com/GGxFons.jpg"/>
         <meta property="og:url" content="https://grangol.com/ggx"></meta>
 
-        <meta name="twitter:title" content="Gran Gol GGx"/>
-        <meta name="twitter:description" content="❤️⚽"/>
+        <meta name="twitter:title" content="Gran Gol GGx Stadium"/>
+        <meta name="twitter:description" content="GGx Stadium tabletop football"/>
         <meta name="twitter:image" content="https://grangol.com/GGxFons.jpg"/>
         <meta name="twitter:card" content="summary_large_image"></meta>
         <meta name="robots" content="index, follow"/>    
@@ -72,23 +72,21 @@ export default function GGX() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Gran Gol: {t('ggx:ggxTitol')}</title>
-        <meta name="description" content={t('ggxDescripcio')} />  
+        <title>Gran Gol: {t('stadium:titolStadium')}</title>
+        <meta name="description" content={t('stadium:titolStadium')} />  
 
         <link rel="icon" href="/futbol.ico?v=2"/>
-        <meta property="og:title" content={t('ggx:ggxTitol')}/>
-        <meta property="og:description" content={t('ggxDescripcio')}/>
+        <meta property="og:title" content={t('stadium:titolStadium')}/>
+        <meta property="og:description" content={t('stadium:titolStadium')}/>
         <meta property="og:image" content="https://grangol.com/GGxFons.jpg"/>
         <meta property="og:url" content="https://grangol.com"></meta>
 
-        <meta name="twitter:title" content={t('ggx:ggxTitol')}/>
-        <meta name="twitter:description" content={t('ggxDescripcio')}/>
+        <meta name="twitter:title" content={t('stadium:titolStadium')}/>
+        <meta name="twitter:description" content={t('stadium:subtitolStadium')}/>
         <meta name="twitter:image" content="https://grangol.com/GGxFons.jpg"/>
-        <meta name="twitter:card" content="summary_large_image"></meta>
-        <meta name="robots" content="index, follow"/>
-
-        <Head>     
-
+        <meta name="twitter:card" content="summary_large_image"></meta>        
+        
+      <meta name="robots" content="index, follow"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="canonical" href="https://www.grangol.com/ggx" />
       <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.grangol.com/sitemap.xml" />
@@ -97,30 +95,19 @@ export default function GGX() {
       <script 
           type="application/ld+json" 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }} 
-        />
-
-      
-      </Head>
+        />      
       </Head>      
       <main className={styles.main}>
       <TopNavbar/>
         <PageHeader 
-        title={t('ggx:ggxStadium')}
-        description={t('ggx:ggxSubTitol')}/>
+        title={t('stadium:titolStadium')}
+        description={t('stadium:subtitolStadium')}/>
     
         <div>          
           <div className={styles.article}>    
-          <h3>{t('ggx:ggxStadium')}</h3>
-          <p>{t('ggx:ggxIntro')}</p>
-          <div className={styles.containerImatge}>
-          <Image
-                    src="/img/articles/xapesVelles.jpg"
-                    width={1200}
-                    height={400}
-                    alt="{t('ggx:ggxFotoXapesVelles')}"
-                />
-                <p className={styles.peuFoto}>{t('ggx:ggxFotoXapesVelles')}</p>
-          </div> 
+          <h3>{t('stadium:titolArticleStadium')}</h3>
+          <p>{t('stadium:introStadium')}</p>         
+                    
           
           <div className={styles.containerImatge}>
           <Image
@@ -131,16 +118,16 @@ export default function GGX() {
                 />
                 <p className={styles.peuFoto}>{t('ggx:ggxpeuFotoPorteria')}</p>
           </div>
+          <p>{t('stadium:partsStadium')}</p>
       
         </div>
         </div>
         <div className={styles.botoneraDestacada}>
         <Link className={styles.newsletter} href="/ggx/">{t('ggx:queEsGGx')}</Link><Link className={styles.newsletter} href="/ggx/rules">{t('ggx:ggxNormesTitol')}</Link> <Link className={styles.newsletter} href="/ggx/teams">{t('ggxTeams')}</Link> <Link className={styles.newsletter} href="/ggx/support">{t('ggx:ggxSupportGGX')}</Link>
-          </div>
+        </div>
 
       </main>
-      <div className={styles.textMenu}><Link href="/">{t('home')}</Link> | <Link href="./">{t('ggx:queEsGGx')}</Link> | <Link href="./rules">{t('ggx:ggxNormesTitol')}</Link> |  <Link href="./teams">{t('ggxTeams')}</Link> | <Link href="./support">{t('ggx:ggxSupportGGX')}</Link></div>
-        
+      
       <Footer/>
     </div>
   )
@@ -150,7 +137,7 @@ export default function GGX() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common', 'ggx'])),
+      ...(await serverSideTranslations(locale, ['common', 'ggx','stadium'])),
     },
   };
 }
