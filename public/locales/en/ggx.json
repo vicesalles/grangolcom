@@ -1,6 +1,6 @@
 {
     "ggxTitol": "GGx",
-    "ggxSubTitol": "Gran Gol Caps",
+    "ggxSubTitol": "Tabletop Football",
     "queEsGGx": "What is GGx?",
     "ggxDescripcio": "GGx is a football game inspired by bottle caps and Subbuteo",
     "ggxDisseny": "Inspired by Subbuteo and bottle caps, the designs and versions of the various components have succeeded one another, through play, until reaching the current state.",
@@ -12,6 +12,7 @@
     "ggxFotoAreaGol": "Goals can only be scored from the two fences closest to the goal. We call this the goal area.",
     "ggxIntro": "GGx is a revision of the old bottle cap game. Bottle caps were one of the first football simulators in history. Today, while we develop the game Gran Gol, we recover this fantastic game that has provided so many good times to people. Everything shown here can be done with drink caps and buttons.",
     "ggxNormesTitol": "Rules of GGx",
+    "ggxNormesSubTitol": "How to play GGx?",
     "ggxNormesIntro": "These are the rules of GGx. In this list of 11 points, there is everything you need to know to play a match.",
     "ggxNormes1": "Flick without leveraging your thumb.",
     "ggxNormes2": "The game is played in quick turns. The player in possession (attacker) flicks first, followed by the player without possession (defender). The attacking player may count out loud to five, and if the defender hasn't taken their turn, the attacker may skip their turn and flick again. The defender can say “pass” at any time and skip their turn.",

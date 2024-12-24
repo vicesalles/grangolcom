@@ -48,7 +48,7 @@ export default function GGX() {
         <meta property="og:image" content="https://grangol.com/GGxFons.jpg"/>
         <meta property="og:url" content="https://grangol.com/ggx"></meta>
 
-        <meta name="twitter:title" content="Gran Gol GGx"/>
+        <meta name="twitter:title" content="Gran Gol GGx Rules"/>
         <meta name="twitter:description" content="❤️⚽"/>
         <meta name="twitter:image" content="https://grangol.com/GGxFons.jpg"/>
         <meta name="twitter:card" content="summary_large_image"></meta>
@@ -73,16 +73,16 @@ export default function GGX() {
     <div className={styles.container}>
       <Head>
         <title>Gran Gol: {t('ggx:ggxNormesTitol')}</title>
-        <meta name="description" content={t('ggxDescripcio')} />  
+        <meta name="description" content={t('ggx:ggxNormesSubTitol')} />  
 
         <link rel="icon" href="/futbol.ico?v=2"/>
         <meta property="og:title" content={t('ggx:ggxNormesTitol')}/>
-        <meta property="og:description" content={t('ggxDescripcio')}/>
+        <meta property="og:description" content={t('ggx:ggxNormesSubTitol')}/>
         <meta property="og:image" content="https://grangol.com/GGxFons.jpg"/>
         <meta property="og:url" content="https://grangol.com"></meta>
 
         <meta name="twitter:title" content={t('ggx:ggxNormesTitol')}/>
-        <meta name="twitter:description" content={t('ggxDescripcio')}/>
+        <meta name="twitter:description" content={t('ggx:ggxNormesSubTitol')}/>
         <meta name="twitter:image" content="https://grangol.com/GGxFons.jpg"/>
         <meta name="twitter:card" content="summary_large_image"></meta>
         <meta name="robots" content="index, follow"/>
@@ -111,7 +111,7 @@ export default function GGX() {
         <div>          
           <div className={styles.article}>  
 
-          <h3>{t('ggx:ggxNormesTitol')}</h3>
+          <h3>{t('ggx:ggxNormesSubTitol')}</h3>
           <p>{t('ggx:ggxNormesPartit')}</p>
           <p><ul>
             <li>{t('ggx:ggxNormesPartitGols')}</li>

@@ -39,17 +39,17 @@ export default function GGX() {
   if (!ready || !isMounted) {
     return <div>
       <Head>
-        <title>Gran Gol: GGx</title>
-        <meta name="description" content="GGx ❤️⚽" />  
+        <title>Gran Gol: GGx Rules</title>
+        <meta name="description" content="How to play GGx? The Tabletop football game" />  
 
         <link rel="icon" href="/futbol.ico?v=2"/>
-        <meta property="og:title" content="Gran Gol GGx"/>
-        <meta property="og:description" content="❤️⚽"/>
+        <meta property="og:title" content="Gran Gol GGx Rules"/>
+        <meta property="og:description" content="How to play GGx? The Tabletop football game"/>
         <meta property="og:image" content="https://grangol.com/GGxFons.jpg"/>
         <meta property="og:url" content="https://grangol.com/ggx"></meta>
 
-        <meta name="twitter:title" content="Gran Gol GGx"/>
-        <meta name="twitter:description" content="❤️⚽"/>
+        <meta name="twitter:title" content="Gran Gol GGx Rules"/>
+        <meta name="twitter:description" content="How to play GGx? The Tabletop football game"/>
         <meta name="twitter:image" content="https://grangol.com/GGxFons.jpg"/>
         <meta name="twitter:card" content="summary_large_image"></meta>
         <meta name="robots" content="index, follow"/>    
@@ -62,7 +62,6 @@ export default function GGX() {
           type="application/ld+json" 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }} 
         />
-
       
       </Head>
       <IoMdFootball fontSize={12} /></div>;
@@ -77,18 +76,16 @@ export default function GGX() {
 
         <link rel="icon" href="/futbol.ico?v=2"/>
         <meta property="og:title" content={t('ggx:ggxTitol')}/>
-        <meta property="og:description" content={t('ggxDescripcio')}/>
+        <meta property="og:description" content={t('ggx:ggxDescripcio')}/>
         <meta property="og:image" content="https://grangol.com/GGxFons.jpg"/>
         <meta property="og:url" content="https://grangol.com"></meta>
 
         <meta name="twitter:title" content={t('ggx:ggxTitol')}/>
-        <meta name="twitter:description" content={t('ggxDescripcio')}/>
+        <meta name="twitter:description" content={t('ggx:ggxDescripcio')}/>
         <meta name="twitter:image" content="https://grangol.com/GGxFons.jpg"/>
         <meta name="twitter:card" content="summary_large_image"></meta>
         <meta name="robots" content="index, follow"/>
-
-        <Head>     
-
+  
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="canonical" href="https://www.grangol.com/ggx" />
       <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.grangol.com/sitemap.xml" />
@@ -97,11 +94,10 @@ export default function GGX() {
       <script 
           type="application/ld+json" 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }} 
-        />
+        />            
+      </Head>     
 
-      
-      </Head>
-      </Head>      
+
       <main className={styles.main}>
       <TopNavbar/>
         <PageHeader 
@@ -165,11 +161,10 @@ export default function GGX() {
         </div>
         
         <div className={styles.botoneraDestacada}>
-          <Link className={styles.newsletter} href="./ggx/rules">{t('ggx:ggxNormesTitol')}</Link> <Link className={styles.newsletter} href="./ggx/stadium">{t('ggx:ggxStadium')}</Link> <Link className={styles.newsletter} href="./ggx/teams">{t('ggxTeams')}</Link> <Link className={styles.newsletter} href="./ggx/support">{t('ggx:ggxSupportGGX')}</Link>
+        <Link className={styles.newsletter} href="/">{t('home')}</Link> <Link className={styles.newsletter} href="/ggx/rules">{t('ggx:ggxNormesTitol')}</Link> <Link className={styles.newsletter} href="/ggx/stadium">{t('ggx:ggxStadium')}</Link> <Link className={styles.newsletter} href="/ggx/teams">{t('ggxTeams')}</Link> <Link className={styles.newsletter} href="/ggx/support">{t('ggx:ggxSupportGGX')}</Link>
           </div>
 
-      </main>
-      <div className={styles.textMenu}><Link href="/">{t('home')}</Link> | <Link href="./ggx/rules">{t('ggx:ggxNormesTitol')}</Link> | <Link href="./ggx/stadium">{t('ggx:ggxStadium')}</Link> | <Link href="./ggx/teams">{t('ggxTeams')}</Link> | <Link href="./ggx/support">{t('ggx:ggxSupportGGX')}</Link></div>
+      </main>      
        
       <Footer/>
     </div>
