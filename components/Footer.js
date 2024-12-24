@@ -1,5 +1,5 @@
 import styles from '../styles/Home.module.css';
-import { FaXTwitter, FaFacebook } from "react-icons/fa6";
+import { FaXTwitter, FaFacebook, FaDiscord } from "react-icons/fa6";
 import { IoMdFootball } from 'react-icons/io'; // Ensure this is imported
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
@@ -40,6 +40,15 @@ export default function Footer() {
         style={{ marginRight: 15 }}
       >
         <FaFacebook fontSize={25} color={"white"} />
+      </a>
+
+      <a
+        href="https://discord.gg/UEYtYVGG"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ marginRight: 15 }}
+      >
+        <FaDiscord fontSize={25} color={"white"} />
       </a>
     </footer>
   );
