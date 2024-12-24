@@ -29,6 +29,7 @@
     "ggxNormes13":"Si la falta ocurre dentro del área de penalti (delimitada por la última barrera lateral), es penalti y tarjeta amarilla. El penalti se lanza desde el extremo más lejano de la barrera que delimita el área de penalti.",
     "ggxNormes14":"No hay fueras. Lanzar la pelota fuera del campo resulta en falta y tarjeta amarilla. Los rebotes contra el portero o los postes de la portería no cuentan.",
     "ggxNormes15":"Tras cada falta o gol, ambos jugadores pueden recolocar libremente su equipo con las manos antes de reanudar el juego. El atacante puede contar en voz alta hasta cinco antes de comenzar.",
+    "ggxNormes16":"La norma del fuera de juego se aplica normalmente.",
     "ggxNormesPartit": "Se pueden jugar partidos de dos maneras: con goles o con tiempo.",
     "ggxNormesPartitGols": "Con goles: Se decide un número de goles, y el primer equipo que los alcance gana.",
     "ggxNormesPartitTemps": "Con tiempo: Se juegan dos partes de 6 minutos cada una. Necesitarás un cronómetro para controlar el tiempo.",

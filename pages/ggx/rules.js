@@ -131,6 +131,7 @@ export default function GGX() {
                 <li>{t('ggx:ggxNormes13')}</li>
                 <li>{t('ggx:ggxNormes14')}</li>
                 <li>{t('ggx:ggxNormes15')}</li>
+                <li>{t('ggx:ggxNormes16')}</li>
                 </ol></p>
                 <div className={styles.containerImatge}>
               <a className={styles.botoCTA} href={t('ggx:ggxNormesPaperURL')} target='_blank'>{t('ggx:ggxNormesPaperText')}</a>
