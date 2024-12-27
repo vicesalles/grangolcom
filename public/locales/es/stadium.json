@@ -1,7 +1,16 @@
 {
     "titolStadium": "Estadio GGx",
-    "subtitolStadium": "Donde recreamos la magia del fútbol",
+    "subtitolStadium": "Cómo montar el Estadio GGx",
     "titolArticleStadium": "El terreno de juego",
-    "introStadium": "El estadio GGx es fácil y rápido de montar. Se puede montar sobre cualquier superficie mínimamente deslizante. Desde cualquier mesa suficientemente grande hasta el suelo. Si las fichas se deslizan, cualquier lugar es bueno para un partido. Fácil y rápido de desmontar, en un abrir y cerrar de ojos, el partido está en marcha, jugado y recogido antes de tener que poner la mesa o irse a dormir. El terreno de juego mide 90x120 cm, pero recogido, cabe en una pequeña caja. Las dimensiones del terreno de juego están a escala respecto a los estadios de Categoría 4 de la UEFA.",
-    "partsStadium": "El estadio GGx estándar está compuesto por 4 vallas de fondo, 10 laterales, 2 porterías, 4 conectores de portería, 12 fijadores y 4 fijadores de esquina. En general, son piezas muy resistentes. Los fijadores quizás sean los más propensos a romperse, por lo que siempre merece la pena tener algunos de repuesto. Entre las barras laterales, hay unas especiales: son las barras de accesorios que tienen dos pequeños puntos de anclaje donde montar un marcador u otros accesorios."
+    "peuFotoPorteriaV3": "Esta es la tercera versión de la portería. Ahora queda fijada con el resto del campo mucho mejor.",
+    "introStadium": "El estadio GGx es fácil y rápido de montar. Se puede montar sobre cualquier superficie mínimamente deslizante. Desde cualquier mesa suficientemente grande hasta el suelo. Si las fichas se deslizan, cualquier lugar es bueno para un partido. Fácil y rápido de desmontar, en un abrir y cerrar de ojos, el partido está en marcha, jugado y recogido antes de tener que poner la mesa o irse a dormir. El terreno de juego mide 71x109 cm, pero recogido, cabe en una pequeña caja. Las dimensiones del terreno de juego están a escala respecto a los estadios de Categoría 4 de la UEFA.",
+    "partsStadium": "El estadio GGx estándar está compuesto por 4 vallas de fondo, 10 laterales, 2 porterías, 4 conectores de portería, 12 fijadores y 4 fijadores de esquina. En general, son piezas muy resistentes. Los fijadores quizás sean los más propensos a romperse, por lo que siempre merece la pena tener algunos de repuesto. Entre las barras laterales, hay unas especiales: son las barras de accesorios que tienen dos pequeños puntos de anclaje donde montar un marcador u otros accesorios.",
+    "porteriesTitol": "Cómo montar las porterías",
+    "porteriesIntro": "Las porterías están compuestas por 5 piezas: los tres postes, 2 redes laterales, la red superior y la red trasera. También hay que tener en cuenta las vallas de anclaje.",
+    "porteries01": "Las porterías están compuestas por 5 piezas",
+    "porteries02": "La muesca de las fijaciones mira hacia fuera del campo.",
+    "porteries03": "Primero, encaja las redes laterales.",
+    "porteries04": "A continuación, la parte trasera de la portería.",
+    "porteries05": "Finalmente, la red superior.",
+    "porteries06": "¡La portería ya está lista para el partido!"
 }

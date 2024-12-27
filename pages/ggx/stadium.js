@@ -19,15 +19,15 @@ export default function GGX() {
   const jsonLdData = {
     "@context": "https://schema.org",
     "@type": "Game",
-    "name": "GGx",
-    "description": "GGx és un joc de futbol inspirat en el Subbuteo i les xapes.",
+    "name": "GGx Stadium Setup",
+    "description": "GGx Stadium: How to setup GGx the tabletop football game.",
     "image": "https://grangol.com/grangol.jpg",
     "publisher": {
       "@type": "Organization",
       "name": "Gran Gol"
     },
     "genre": "Joc de futbol",
-    "url": "https://grangol.com"
+    "url": "https://grangol.com/ggx/stadium"
   };
 
   useEffect(() => {
@@ -39,17 +39,17 @@ export default function GGX() {
   if (!ready || !isMounted) {
     return <div>
       <Head>
-        <title>Gran Gol: GGx Stadium</title>
-        <meta name="description" content="GGx Stadium tabletop football" />  
+        <title>Gran Gol: GGx Stadium Setup</title>
+        <meta name="description" content="GGx Stadium: How to setup GGx the tabletop football game." />  
 
         <link rel="icon" href="/futbol.ico?v=2"/>
         <meta property="og:title" content="Gran Gol GGx Stadium"/>
-        <meta property="og:description" content="GGx Stadium tabletop football"/>
+        <meta property="og:description" content="GGx Stadium: How to setup GGx the tabletop football game ❤️⚽."/>
         <meta property="og:image" content="https://grangol.com/GGxFons.jpg"/>
         <meta property="og:url" content="https://grangol.com/ggx"></meta>
 
         <meta name="twitter:title" content="Gran Gol GGx Stadium"/>
-        <meta name="twitter:description" content="GGx Stadium tabletop football"/>
+        <meta name="twitter:description" content="GGx Stadium: How to setup GGx the tabletop football game ❤️⚽."/>
         <meta name="twitter:image" content="https://grangol.com/GGxFons.jpg"/>
         <meta name="twitter:card" content="summary_large_image"></meta>
         <meta name="robots" content="index, follow"/>    
@@ -111,14 +111,72 @@ export default function GGX() {
           
           <div className={styles.containerImatge}>
           <Image
-                    src="/img/articles/porteriaZero.jpg"
+                    src="https://gafrmmszazh98sh9.public.blob.vercel-storage.com/porteriaV3-EliIXPnTqyaotmbtsYfx9Wklv9fePr.jpg"
                     width={1200}
                     height={400}
-                    alt="{t('ggx:ggxpeuFotoPorteria')}"
+                    alt="{t('stadium:peuFotoPorteriaV3')}"
                 />
-                <p className={styles.peuFoto}>{t('ggx:ggxpeuFotoPorteria')}</p>
+                <p className={styles.peuFoto}>{t('stadium:peuFotoPorteriaV3')}</p>
           </div>
           <p>{t('stadium:partsStadium')}</p>
+
+          <h3>{t('stadium:porteriesTitol')}</h3>
+          <p>{t('stadium:porteriesIntro')}</p>  
+          <div className={styles.containerImatge}>
+          <Image
+                    src="https://gafrmmszazh98sh9.public.blob.vercel-storage.com/Stadium/porteries01-w5RjO7eZkWqmmCFVN32dcwWrlzx0SY.jpg"
+                    width={1200}
+                    height={904}
+                    objectFit={'contain'}
+                    alt="{t('stadium:porteries01')}"
+                />
+                <p className={styles.peuFoto}>{t('stadium:porteries01')}</p>
+          </div>
+          <div className={styles.containerImatge}>
+          <Image
+                    src="https://gafrmmszazh98sh9.public.blob.vercel-storage.com/Stadium/porteries02-XMpzBrmTwVNLvibboVdjPhRoByjHq7.jpg"
+                    width={1200}
+                    height={904}
+                    alt="{t('stadium:porteries02')}"
+                />
+                <p className={styles.peuFoto}>{t('stadium:porteries02')}</p>
+          </div>
+          <div className={styles.containerImatge}>
+          <Image
+                    src="https://gafrmmszazh98sh9.public.blob.vercel-storage.com/Stadium/porteries03-j74ll7C5vYWcoDVR3Utov2uwgO84GJ.jpg"
+                    width={1200}
+                    height={904}
+                    alt="{t('stadium:porteries03')}"
+                />
+                <p className={styles.peuFoto}>{t('stadium:porteries03')}</p>
+          </div>
+          <div className={styles.containerImatge}>
+          <Image
+                    src="https://gafrmmszazh98sh9.public.blob.vercel-storage.com/Stadium/porteries04-Xvk3NDiESCMEAyvfANcZ5jzQ3Qyjze.jpg"
+                    width={1200}
+                    height={904}
+                    alt="{t('stadium:porteries04')}"
+                />
+                <p className={styles.peuFoto}>{t('stadium:porteries04')}</p>
+          </div>
+          <div className={styles.containerImatge}>
+          <Image
+                    src="https://gafrmmszazh98sh9.public.blob.vercel-storage.com/Stadium/porteries05-q2UKo28vGWJHHDkcTXv6BLRssSNM2B.jpg"
+                    width={1200}
+                    height={904}
+                    alt="{t('stadium:porteries05')}"
+                />
+                <p className={styles.peuFoto}>{t('stadium:porteries05')}</p>
+          </div>
+          <div className={styles.containerImatge}>
+          <Image
+                    src="https://gafrmmszazh98sh9.public.blob.vercel-storage.com/Stadium/porteries06-kNv1hKZMl0OAuj7W026WUKwB5VaIWN.jpg"
+                    width={1200}
+                    height={904}
+                    alt="{t('stadium:porteries06')}"
+                />
+                <p className={styles.peuFoto}>{t('stadium:porteries06')}</p>
+          </div>
       
         </div>
         </div>
