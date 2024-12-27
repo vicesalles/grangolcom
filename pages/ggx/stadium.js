@@ -175,7 +175,11 @@ export default function GGX() {
                     height={904}
                     alt="{t('stadium:porteries06')}"
                 />
-                <p className={styles.peuFoto}>{t('stadium:porteries06')}</p>
+          <p className={styles.peuFoto}>{t('stadium:porteries06')}</p>      
+          </div>
+          <div className={styles.containerImatge}>
+          <video width={1200} src='https://gafrmmszazh98sh9.public.blob.vercel-storage.com/Stadium/ggx_stadium_0-kOW2KEIqAm5SiEWMUi2wtfMjoEXfRl.mp4' autoPlay loop muted playsinline/>
+          <p className={styles.peuFoto}>{t('stadium:loopVideo')}</p>
           </div>
       
         </div>
