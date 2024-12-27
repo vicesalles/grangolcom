@@ -19,15 +19,15 @@ export default function GGX() {
   const jsonLdData = {
     "@context": "https://schema.org",
     "@type": "Game",
-    "name": "GGx",
-    "description": "GGx és un joc de futbol inspirat en el Subbuteo i les xapes.",
+    "name": "GGx Rules",
+    "description": "How to play GGx the tabletop football Game ❤️⚽.",
     "image": "https://grangol.com/grangol.jpg",
     "publisher": {
       "@type": "Organization",
       "name": "Gran Gol"
     },
     "genre": "Joc de futbol",
-    "url": "https://grangol.com"
+    "url": "https://grangol.com/ggx/rules"
   };
 
   useEffect(() => {
@@ -39,17 +39,17 @@ export default function GGX() {
   if (!ready || !isMounted) {
     return <div>
       <Head>
-        <title>Gran Gol: GGx</title>
-        <meta name="description" content="GGx ❤️⚽" />  
+        <title>Gran Gol: GGx Rules</title>
+        <meta name="description" content="How to play GGx the tabletop football Game" />  
 
         <link rel="icon" href="/futbol.ico?v=2"/>
-        <meta property="og:title" content="Gran Gol GGx"/>
-        <meta property="og:description" content="❤️⚽"/>
+        <meta property="og:title" content="Gran Gol: GGx Rules"/>
+        <meta property="og:description" content="How to play GGx the tabletop football Game ❤️⚽"/>
         <meta property="og:image" content="https://grangol.com/GGxFons.jpg"/>
         <meta property="og:url" content="https://grangol.com/ggx"></meta>
 
         <meta name="twitter:title" content="Gran Gol GGx Rules"/>
-        <meta name="twitter:description" content="❤️⚽"/>
+        <meta name="twitter:description" content="How to play GGx the tabletop football Game ❤️⚽"/>
         <meta name="twitter:image" content="https://grangol.com/GGxFons.jpg"/>
         <meta name="twitter:card" content="summary_large_image"></meta>
         <meta name="robots" content="index, follow"/>    
