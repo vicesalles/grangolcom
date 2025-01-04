@@ -67,7 +67,7 @@ export async function getStaticPaths() {
 
   return {
     paths, // Return all generated paths
-    fallback: 'false', // Block until the page is fully generated
+    fallback: false, // Block until the page is fully generated
   };
 }
 
