@@ -62,7 +62,6 @@ export async function getStaticProps({ locale }) {
     props: {
       teams,  // List of teams for the current locale
       ...(await serverSideTranslations(locale, ['common'])),  // Localization data
-    },
-    revalidate: 10,  // Revalidate the page every 10 seconds
+    }   
   };
 }
