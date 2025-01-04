@@ -85,7 +85,6 @@ export async function getStaticProps({ params, locale }) {
     props: {
       team, // Pass the fetched team data to the page
       ...(await serverSideTranslations(locale, ['common'])), // Fetch translations
-    },
-    revalidate: 10, // ISR: Revalidate every 10 seconds
+    }
   };
 }
