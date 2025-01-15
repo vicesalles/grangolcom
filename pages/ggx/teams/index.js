@@ -111,6 +111,27 @@ export default function GGXTeams() {
         <div className={styles.article}>    
           <h3>UNDER CONSTRUCTION</h3>
           <p>{t('ggx:ggxTeamsDisclaimer')}</p>         
+          <div>
+            <h4>CLUBS</h4>
+            <p></p>
+            <ul>
+              <li></li>
+            </ul>
+          </div>
+          <div>
+            <h4>NATIONAL TEAMS</h4>
+            <p></p>
+            <ul>
+              <li></li>
+            </ul>
+          </div>
+          <div>
+            <h4>GRAN TEAMS</h4>
+            <p></p>
+            <ul>
+              <li></li>
+            </ul>
+          </div>
         </div>
 
         <div className={styles.botoneraDestacada}>
