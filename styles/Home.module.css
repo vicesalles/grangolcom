@@ -22,6 +22,7 @@
 
 .textMenu{
   height: 20%;
+  margin-top: 15px;
   flex: 1;
  
 }
@@ -202,4 +203,11 @@
   background-color: red;
   padding: 1em 1.5em 1em 1.5em;
   box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+}
+
+.botoneraContainer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 20%;
 }

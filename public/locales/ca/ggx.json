@@ -41,5 +41,11 @@
     "ggxSupportGGX":"Dóna suport al GGX",
     "ggxStadium":"Estadi GGx",
     "ggxStadiumSubtitol":"Com muntar l'estadi GGx.",
-    "ggxFitxaPilota":"Al GGx la pilota és una fitxa. Si la pilota es gira, la possessió canvia d'equip!"
+    "ggxFitxaPilota":"Al GGx la pilota és una fitxa. Si la pilota es gira, la possessió canvia d'equip!",
+    "england":"Lliga Anglesa",
+    "italy":"Lliga Italiana",
+    "spain":"Lliga Espanyola",
+    "germany":"Lliga Alemana",
+    "europe":"Equips Europeus",
+    "mainLeaguesTeams":"Tens disponibles els equips de les competicions més importants del món."
 }

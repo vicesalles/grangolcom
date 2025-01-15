@@ -41,7 +41,13 @@
     "ggxSupportGGX":"Apoya GGx",
     "ggxStadium":"Estadio GGx",
     "ggxStadiumSubtitol":"Cómo montar el estadio GGx",
-    "ggxFitxaPilota": "En el GGx la pelota es una ficha. ¡Si la pelota se gira, la posesión cambia de equipo!"
+    "ggxFitxaPilota": "En el GGx la pelota es una ficha. ¡Si la pelota se gira, la posesión cambia de equipo!",
+    "england":"Liga Inglesa",
+    "italy":"Liga Italiana",
+    "spain":"Liga Española",
+    "germany":"Liga Alemana",
+    "europe":"Equipos Europeos",
+    "mainLeaguesTeams":"Tienes disponibles los equipos de las competiciones más importantes del mundo."
 
     
 }

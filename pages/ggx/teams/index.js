@@ -109,24 +109,27 @@ export default function GGXTeams() {
         description={t('ggx:ggxTeamsDescription')}/>
                
         <div className={styles.article}>    
-          <h3>UNDER CONSTRUCTION</h3>
+          <h3>{t('ggx:ggxSubTitol')}</h3>
           <p>{t('ggx:ggxTeamsDisclaimer')}</p>         
           <div>
             <h4>CLUBS</h4>
-            <p></p>
+            <p>{t('ggx:mainLeaguesTeams')}</p>
             <ul>
-              <li></li>
+              <li>{t('ggx:england')}</li>
+              <li>{t('ggx:spain')}</li>
+              <li>{t('ggx:italy')}</li>
+              <li>{t('ggx:germany')}</li>
             </ul>
           </div>
           <div>
             <h4>NATIONAL TEAMS</h4>
             <p></p>
             <ul>
-              <li></li>
+              <li>{t('ggx:europe')}</li>
             </ul>
           </div>
           <div>
-            <h4>GRAN TEAMS</h4>
+            <h4>GRAN GOL TEAMS</h4>
             <p></p>
             <ul>
               <li></li>
