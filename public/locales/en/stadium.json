@@ -1,18 +1,19 @@
 {
     "titolStadium": "GGx Stadium",
     "subtitolStadium": "How to assemble the GGx Stadium",
-    "titolArticleStadium": "The pitch",
-    "peuFotoPorteriaV3": "This is the third version of the goal. It now attaches to the rest of the pitch much better.",
-    "introStadium": "The GGx stadium is easy and quick to assemble. It can be set up on any minimally smooth surface, from any sufficiently large table to the floor. If the chips slide, any place is good for a match. Easy and quick to disassemble, in the blink of an eye, the match is underway, played, and packed up before you need to set the table or go to bed. The playing field measures 71x109 cm but, when packed, it fits into a small box. The dimensions of the playing field are scaled to match UEFA Category 4 stadiums.",
-    "partsStadium": "The standard GGx stadium consists of 4 end fences, 10 side fences, 2 goals, 4 goal connectors, 12 fasteners, and 4 corner fasteners. In general, these are very sturdy pieces. The fasteners might be the most likely to break, so it's always worth having a few spares. Among the side fences, there are some special ones: they are accessory bars with two small attachment points where you can mount a scoreboard or other accessories.",
+    "titolArticleStadium": "The playing pitch",
+    "peuFotoPorteriaV3": "This is the third version of the goal. Now it fits much better with the rest of the pitch.",
+    "introStadium": "The GGx Stadium is quick and easy to assemble. It can be set up on any minimally smooth surface, from a large enough table to the floor. If the chips can slide, any place is good for a match. Easy and quick to disassemble, in no time the match is on, played, and packed up before having to clear the table or go to bed. The playing pitch measures 71x109 cm, but when packed, it fits in a small box. The dimensions of the playing pitch are scaled according to UEFA Category 4 stadiums.",
+    "partsStadium": "The standard GGx Stadium consists of 4 end fences, 10 side fences, 2 goals, 4 goal connectors, 12 fixers, and 4 corner fixers. In general, these are very durable pieces. The fixers might be the most likely to break, so it's always a good idea to have a few spares. Among the side bars, some are special: They are accessory bars with two small attachment points for mounting a scoreboard or other accessories.",
     "porteriesTitol": "How to assemble the goals",
-    "porteriesIntro": "The goals are made up of 5 pieces: the three posts, 2 side nets, the top net, and the back net. You should also consider the attachment fences.",
-    "porteries01": "The goals are made up of 5 pieces",
-    "porteries02": "The notch on the fasteners faces outward from the pitch.",
+    "porteriesIntro": "The goals consist of 5 pieces: The three posts, 2 side nets, the top net, and the back net. Also, keep in mind the two attachment fences. See the following photos to understand how to assemble them:",
+    "porteries01": "The goals are made of 5 pieces.",
+    "porteries02": "The notch of the fixers faces outward from the pitch.",
     "porteries03": "First, attach the side nets.",
     "porteries04": "Next, attach the back of the goal.",
     "porteries05": "Finally, attach the top net.",
-    "porteries06": "The goal is now ready for the match!",
-    "loopVideo":"Ready to play tabletop Football!"    
-    
+    "porteries06": "The goal is now ready to play the match!",
+    "loopVideo": "Ready to play football!",
+    "tanquesTitol": "How to assemble the pitch fences",
+    "tanquesIntro": "No outs in GGx! The fences with the inscription GRANGOL.COM are placed on the sides of the goal, one on each side of the goal. Each one is connected on one side to the goal support fence and on the other to the white corner connector. On each side of the pitch, there are 5 fences."
 }

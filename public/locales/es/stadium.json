@@ -1,17 +1,19 @@
 {
     "titolStadium": "Estadio GGx",
-    "subtitolStadium": "Cómo montar el Estadio GGx",
+    "subtitolStadium": "Cómo montar el estadio GGx",
     "titolArticleStadium": "El terreno de juego",
     "peuFotoPorteriaV3": "Esta es la tercera versión de la portería. Ahora queda fijada con el resto del campo mucho mejor.",
-    "introStadium": "El estadio GGx es fácil y rápido de montar. Se puede montar sobre cualquier superficie mínimamente deslizante. Desde cualquier mesa suficientemente grande hasta el suelo. Si las fichas se deslizan, cualquier lugar es bueno para un partido. Fácil y rápido de desmontar, en un abrir y cerrar de ojos, el partido está en marcha, jugado y recogido antes de tener que poner la mesa o irse a dormir. El terreno de juego mide 71x109 cm, pero recogido, cabe en una pequeña caja. Las dimensiones del terreno de juego están a escala respecto a los estadios de Categoría 4 de la UEFA.",
-    "partsStadium": "El estadio GGx estándar está compuesto por 4 vallas de fondo, 10 laterales, 2 porterías, 4 conectores de portería, 12 fijadores y 4 fijadores de esquina. En general, son piezas muy resistentes. Los fijadores quizás sean los más propensos a romperse, por lo que siempre merece la pena tener algunos de repuesto. Entre las barras laterales, hay unas especiales: son las barras de accesorios que tienen dos pequeños puntos de anclaje donde montar un marcador u otros accesorios.",
+    "introStadium": "El estadio GGx es fácil y rápido de montar. Se puede montar sobre cualquier superficie mínimamente lisa, desde una mesa lo suficientemente grande hasta el suelo. Si las fichas resbalan, cualquier lugar es bueno para jugar un partido. Fácil y rápido de desmontar, en un abrir y cerrar de ojos el partido está en marcha, jugado y recogido antes de tener que quitar la mesa o irse a dormir. El terreno de juego mide 71x109 cm, pero recogido, cabe en una caja pequeña. Las dimensiones del terreno de juego están a escala con respecto a los estadios de Categoría 4 de la UEFA.",
+    "partsStadium": "El estadio GGx estándar está formado por 4 vallas de fondo, 10 laterales, 2 porterías, 4 conectores de portería, 12 fijadores y 4 fijadores de esquina. En general, son piezas muy resistentes. Los fijadores quizás sean los más propensos a romperse, por lo que siempre vale la pena tener algunos de repuesto. Entre las barras laterales, hay algunas especiales: son las barras de accesorios que tienen dos pequeños puntos de enganche donde montar un marcador u otros accesorios.",
     "porteriesTitol": "Cómo montar las porterías",
-    "porteriesIntro": "Las porterías están compuestas por 5 piezas: los tres postes, 2 redes laterales, la red superior y la red trasera. También hay que tener en cuenta las vallas de anclaje.",
-    "porteries01": "Las porterías están compuestas por 5 piezas",
-    "porteries02": "La muesca de las fijaciones mira hacia fuera del campo.",
+    "porteriesIntro": "Las porterías están formadas por 5 piezas: Los tres postes, 2 redes laterales, la red superior y la red trasera. También hay que tener en cuenta las dos vallas de enganche. Observa las siguientes fotos para ver cómo se montan:",
+    "porteries01": "Las porterías están hechas de 5 piezas.",
+    "porteries02": "La muesca de los fijadores mira hacia fuera del campo.",
     "porteries03": "Primero, encaja las redes laterales.",
     "porteries04": "A continuación, la parte trasera de la portería.",
     "porteries05": "Finalmente, la red superior.",
-    "porteries06": "¡La portería ya está lista para el partido!",
-    "loopVideo":"Listo para jugar a Fútbol"
+    "porteries06": "¡La portería ya está lista para jugar el partido!",
+    "loopVideo": "¡Listo para jugar al fútbol!",
+    "tanquesTitol": "Cómo montar las vallas del campo",
+    "tanquesIntro": "¡No hay fueras en GGx!Las vallas con la inscripción GRANGOL.COM se colocan en los lados de la portería, una a cada lado de la portería. Cada una va conectada por un lado con la valla de soporte de la portería y por el otro con el conector blanco de esquina. En cada lateral del campo van 5 vallas."
 }

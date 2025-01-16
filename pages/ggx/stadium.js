@@ -19,8 +19,8 @@ export default function GGX() {
   const jsonLdData = {
     "@context": "https://schema.org",
     "@type": "Game",
-    "name": "GGx Stadium Setup",
-    "description": "GGx Stadium: How to setup GGx the tabletop football game.",
+    "name": t('stadium:titolStadium'),
+    "description": t('stadium:subtitolStadium'),
     "image": "https://grangol.com/grangol.jpg",
     "publisher": {
       "@type": "Organization",
@@ -30,54 +30,14 @@ export default function GGX() {
     "url": "https://grangol.com/ggx/stadium"
   };
 
-  useEffect(() => {
-    // This ensures that the component is mounted in the browser
-    setIsMounted(true);
-  }, []);
-
-  // Wait until translations are ready
-  if (!ready || !isMounted) {
-    return <div>
-      <Head>
-        <title>Gran Gol: GGx Stadium Setup</title>
-        <meta name="description" content="GGx Stadium: How to setup GGx the tabletop football game." />  
-
-        <link rel="icon" href="/futbol.ico?v=2"/>
-        <meta property="og:title" content="Gran Gol GGx Stadium"/>
-        <meta property="og:description" content="GGx Stadium: How to setup GGx the tabletop football game ❤️⚽."/>
-        <meta property="og:image" content="https://grangol.com/GGxFons.jpg"/>
-        <meta property="og:url" content="https://grangol.com/ggx"></meta>
-
-        <meta name="twitter:title" content="Gran Gol GGx Stadium"/>
-        <meta name="twitter:description" content="GGx Stadium: How to setup GGx the tabletop football game ❤️⚽."/>
-        <meta name="twitter:image" content="https://grangol.com/GGxFons.jpg"/>
-        <meta name="twitter:card" content="summary_large_image"></meta>
-        <meta name="robots" content="index, follow"/>    
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="canonical" href="https://www.grangol.com/ggx" />
-      <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.grangol.com/sitemap.xml" />
-
-      {/* Incrustar JSON-LD */}
-      <script 
-          type="application/ld+json" 
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }} 
-        />
-
-      
-      </Head>
-      <IoMdFootball fontSize={12} /></div>;
-  }
- 
-
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Gran Gol: {t('stadium:titolStadium')}</title>
-        <meta name="description" content={t('stadium:titolStadium')} />  
+  const MetaHead = ({ jsonLdData }) => (
+    <Head>
+    <title>{t('stadium:titolStadium')}</title>
+        <meta name="description" content={t('stadium:subtitolStadium')}/>  
 
         <link rel="icon" href="/futbol.ico?v=2"/>
         <meta property="og:title" content={t('stadium:titolStadium')}/>
-        <meta property="og:description" content={t('stadium:titolStadium')}/>
+        <meta property="og:description" content={t('stadium:subtitolStadium')}/>
         <meta property="og:image" content="https://grangol.com/GGxFons.jpg"/>
         <meta property="og:url" content="https://grangol.com"></meta>
 
@@ -95,8 +55,27 @@ export default function GGX() {
       <script 
           type="application/ld+json" 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }} 
-        />      
-      </Head>      
+        />
+      
+      </Head>
+  );
+
+  useEffect(() => {
+    // This ensures that the component is mounted in the browser
+    setIsMounted(true);
+  }, []);
+
+  // Wait until translations are ready
+  if (!ready || !isMounted) {
+    return <div>
+     <MetaHead jsonLdData={jsonLdData}/>     
+     <IoMdFootball fontSize={12} /></div>;
+  }
+ 
+
+  return (
+    <div className={styles.container}>
+     <MetaHead jsonLdData={jsonLdData}/>   
       <main className={styles.main}>
       <TopNavbar/>
         <PageHeader 
@@ -119,6 +98,9 @@ export default function GGX() {
                 <p className={styles.peuFoto}>{t('stadium:peuFotoPorteriaV3')}</p>
           </div>
           <p>{t('stadium:partsStadium')}</p>
+
+          <h3>{t('stadium:tanquesTitol')}</h3>
+          <p>{t('stadium:tanquesIntro')}</p>  
 
           <h3>{t('stadium:porteriesTitol')}</h3>
           <p>{t('stadium:porteriesIntro')}</p>  
