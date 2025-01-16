@@ -19,7 +19,7 @@ export default function GGX() {
   const jsonLdData = {
     "@context": "https://schema.org",
     "@type": "Game",
-    "name": "GGx Rules",
+    "name": t('ggx:ggxNormesTitol'),
     "description": "How to play GGx the tabletop football Game ❤️⚽.",
     "image": "https://grangol.com/grangol.jpg",
     "publisher": {
@@ -30,6 +30,35 @@ export default function GGX() {
     "url": "https://grangol.com/ggx/rules"
   };
 
+  const MetaHead = ({ jsonLdData }) => (
+    <Head>
+      <title>{t('ggx:ggxNormesTitol')}</title>
+        <meta name="description" content="How to play GGx the tabletop football Game" />  
+        <link rel="icon" href="/futbol.ico?v=2"/>
+
+        <meta property="og:title" content={t('ggx:ggxNormesTitol')}/>
+        <meta property="og:description" content="How to play GGx the tabletop football Game ❤️⚽"/>
+        <meta property="og:image" content="https://grangol.com/GGxFons.jpg"/>
+        <meta property="og:url" content="https://grangol.com/ggx"></meta>
+
+        <meta name="twitter:title" content={t('ggx:ggxNormesTitol')}/>
+        <meta name="twitter:description" content="How to play GGx the tabletop football Game ❤️⚽"/>
+        <meta name="twitter:image" content="https://grangol.com/GGxFons.jpg"/>
+        <meta name="twitter:card" content="summary_large_image"></meta>
+        <meta name="robots" content="index, follow"/>    
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="canonical" href="https://www.grangol.com/ggx" />
+      <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.grangol.com/sitemap.xml" />
+      {/* Incrustar JSON-LD */}
+      <script 
+          type="application/ld+json" 
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }} 
+        />
+      
+      </Head>
+  );
+
   useEffect(() => {
     // This ensures that the component is mounted in the browser
     setIsMounted(true);
@@ -38,67 +67,14 @@ export default function GGX() {
   // Wait until translations are ready
   if (!ready || !isMounted) {
     return <div>
-      <Head>
-        <title>Gran Gol: GGx Rules</title>
-        <meta name="description" content="How to play GGx the tabletop football Game" />  
-
-        <link rel="icon" href="/futbol.ico?v=2"/>
-        <meta property="og:title" content="Gran Gol: GGx Rules"/>
-        <meta property="og:description" content="How to play GGx the tabletop football Game ❤️⚽"/>
-        <meta property="og:image" content="https://grangol.com/GGxFons.jpg"/>
-        <meta property="og:url" content="https://grangol.com/ggx"></meta>
-
-        <meta name="twitter:title" content="Gran Gol GGx Rules"/>
-        <meta name="twitter:description" content="How to play GGx the tabletop football Game ❤️⚽"/>
-        <meta name="twitter:image" content="https://grangol.com/GGxFons.jpg"/>
-        <meta name="twitter:card" content="summary_large_image"></meta>
-        <meta name="robots" content="index, follow"/>    
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="canonical" href="https://www.grangol.com/ggx" />
-      <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.grangol.com/sitemap.xml" />
-
-      {/* Incrustar JSON-LD */}
-      <script 
-          type="application/ld+json" 
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }} 
-        />
-
-      
-      </Head>
+      <MetaHead jsonLdData={jsonLdData}/>   
       <IoMdFootball fontSize={12} /></div>;
   }
  
 
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Gran Gol: {t('ggx:ggxNormesTitol')}</title>
-        <meta name="description" content={t('ggx:ggxNormesSubTitol')} />  
-
-        <link rel="icon" href="/futbol.ico?v=2"/>
-        <meta property="og:title" content={t('ggx:ggxNormesTitol')}/>
-        <meta property="og:description" content={t('ggx:ggxNormesSubTitol')}/>
-        <meta property="og:image" content="https://grangol.com/GGxFons.jpg"/>
-        <meta property="og:url" content="https://grangol.com"></meta>
-
-        <meta name="twitter:title" content={t('ggx:ggxNormesTitol')}/>
-        <meta name="twitter:description" content={t('ggx:ggxNormesSubTitol')}/>
-        <meta name="twitter:image" content="https://grangol.com/GGxFons.jpg"/>
-        <meta name="twitter:card" content="summary_large_image"></meta>
-        <meta name="robots" content="index, follow"/>
-   
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="canonical" href="https://www.grangol.com/ggx" />
-        <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.grangol.com/sitemap.xml" />
-        
-      {/* Incrustar JSON-LD */}
-      <script 
-          type="application/ld+json" 
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }} 
-        />
-      
-      
-      </Head>      
+      <MetaHead jsonLdData={jsonLdData}/>    
       <main className={styles.main}>
       <TopNavbar/>
         <PageHeader 
