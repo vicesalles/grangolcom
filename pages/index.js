@@ -19,13 +19,13 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Game",
     "name": "Gran Gol",
-    "description": "Gran Gol és un joc de futbol.",
+    "description": "Gran Gol is a football game.",
     "image": "https://grangol.com/grangol.jpg",
     "publisher": {
       "@type": "Organization",
       "name": "Gran Gol"
     },
-    "genre": "Joc de futbol",
+    "genre": "Football Game",
     "url": "https://grangol.com"
   };
 
@@ -54,7 +54,6 @@ export default function Home() {
           type="application/ld+json" 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }} 
         />
-
       
       </Head>
   );
