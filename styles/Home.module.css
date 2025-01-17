@@ -20,6 +20,10 @@
   align-items: center;
 }
 
+.main p{
+  margin-top: 1em;
+}
+
 .textMenu{
   height: 20%;
   margin-top: 15px;
@@ -174,6 +178,7 @@
 
 .supportContainer{
   margin-top: 2em;
+  margin-bottom: 2em;
 
 }
 .support{

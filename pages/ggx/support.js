@@ -104,9 +104,10 @@ export default function MakerWorldLanding() {
       <h1 className={styles.titolPrincipal}>{t('ggx:ggxSupportGGX')}</h1>       
         <h3><FaHeart fontSize={100} color={'red'} /> <IoMdFootball fontSize={100} /></h3>
         <div className={styles.supportContainer}><a className={styles.support} href="https://grangol.kit.com/products/ggx" target='_blank'> € </a> <a className={styles.support} href="https://grangol.kit.com/products/ggx-uk" target='_blank'> £ </a> <a className={styles.support} href="https://grangol.kit.com/products/support-ggx" target='_blank'>  $ </a></div>
+        <div><p>{t('ggx:ggxSupportGGXtext')}</p></div>
       </main>
-      <div className={styles.textMenu}>
-      <Link href="./rules">{t('ggx:ggxNormesTitol')}</Link> | <Link href="./teams">{t('ggxTeams')}</Link> | <Link href="../teams">{t('granGolTeams')}</Link>
+      <div className={styles.botoneraContainer}>        
+      <Link className={styles.newsletter} href="/">{t('home')}</Link> <Link className={styles.newsletter} href="/ggx/">{t('ggx:queEsGGx')}</Link> <Link className={styles.newsletter} href="/ggx/rules">{t('ggx:ggxNormesTitol')}</Link> <Link className={styles.newsletter} href="/ggx/stadium">{t('ggx:ggxStadium')}</Link> <Link className={styles.newsletter} href="/ggx/teams">{t('ggxTeams')}</Link>
       </div>
       <Footer />
     </div>
