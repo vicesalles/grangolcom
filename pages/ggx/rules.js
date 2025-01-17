@@ -138,7 +138,6 @@ export default function GGX() {
           </div>
 
       </main>
-      <div className={styles.textMenu}><Link href="/">{t('home')}</Link> | <Link href="./">{t('ggx:queEsGGx')}</Link> | <Link href="./rules">{t('ggx:ggxNormesTitol')}</Link> |  <Link href="./stadium">{t('ggx:ggxStadium')}</Link> | <Link href="./teams">{t('ggxTeams')}</Link> | <Link href="./support">{t('ggx:ggxSupportGGX')}</Link></div>
       
       <Footer/>
     </div>
