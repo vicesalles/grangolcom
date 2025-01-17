@@ -19,8 +19,8 @@ export default function GGX() {
   const jsonLdData = {
     "@context": "https://schema.org",
     "@type": "Game",
-    "name": "GGx: The tabletop football game",
-    "description": "GGx is a tabletop football game for families and friends.",
+    "name": t('ggx:ggxTitol'),
+    "description": t('ggx:ggxSubTitol'),
     "image": "https://grangol.com/grangol.jpg",
     "publisher": {
       "@type": "Organization",
@@ -32,20 +32,19 @@ export default function GGX() {
 
   const MetaHead = ({ jsonLdData }) => (
     <Head>
-      <title>Gran Gol's GGx: The tabletop football game</title>
-        <meta name="description" content="GGx is a tabletop football game for families and friends." />  
+      <title>{t('ggx:ggxTitol')}</title>
+      <meta name="description" content={t('ggx:ggxSubTitol')} />  
 
-        <link rel="icon" href="/futbol.ico?v=2"/>
-        <meta property="og:title" content="GGx: The tabletop football game"/>
-        <meta property="og:description" content="GGx is a tabletop football game for families and friends."/>
-        <meta property="og:image" content="https://grangol.com/GGxFons.jpg"/>
-        <meta property="og:url" content="https://grangol.com/ggx"></meta>
-
-        <meta name="twitter:title" content="GGx: The tabletop football game"/>
-        <meta name="twitter:description" content="HGGx is a tabletop football game for families and friends."/>
-        <meta name="twitter:image" content="https://grangol.com/GGxFons.jpg"/>
-        <meta name="twitter:card" content="summary_large_image"></meta>
-        <meta name="robots" content="index, follow"/>    
+      <link rel="icon" href="/futbol.ico?v=2"/>
+      <meta property="og:title" content={t('ggx:ggxTitol')}/>
+      <meta property="og:description" content={t('ggx:ggxSubTitol')}/>
+      <meta property="og:image" content="https://grangol.com/GGxFons.jpg"/>
+      <meta property="og:url" content="https://grangol.com/ggx"></meta>
+      <meta name="twitter:title" content={t('ggx:ggxTitol')}/>
+      <meta name="twitter:description" content={t('ggx:ggxSubTitol')}/>
+      <meta name="twitter:image" content="https://grangol.com/GGxFons.jpg"/>
+      <meta name="twitter:card" content="summary_large_image"></meta>
+      <meta name="robots" content="index, follow"/>    
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="canonical" href="https://www.grangol.com/ggx" />
       <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.grangol.com/sitemap.xml" />
