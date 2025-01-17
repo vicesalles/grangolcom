@@ -32,6 +32,23 @@
     margin: auto;
     font-size: 14pt;
     max-width: 1200px;
+   
+}
+
+.articleTeams{
+  margin-top: 2em;
+  width: 80%;
+  margin: auto;
+  font-size: 14pt;
+  max-width: 1200px;
+  ul {
+    list-style: none; 
+    padding: 0; 
+}
+  li:before{
+    content: "⚽"; 
+    margin-right: 10px; 
+  }
 }
 
 .containerImatge{

@@ -108,7 +108,7 @@ export default function GGXTeams() {
         title={t('ggx:ggxTeamsTitle')}
         description={t('ggx:ggxTeamsDescription')}/>
                
-        <div className={styles.article}>    
+        <div className={styles.articleTeams}>    
           <h3>{t('ggx:ggxSubTitol')}</h3>
           <p>{t('ggx:ggxTeamsDisclaimer')}</p>         
           <div>
@@ -128,13 +128,7 @@ export default function GGXTeams() {
               <li>{t('ggx:europe')}</li>
             </ul>
           </div>
-          <div>
-            <h4>GRAN GOL TEAMS</h4>
-            <p></p>
-            <ul>
-              <li></li>
-            </ul>
-          </div>
+         
         </div>
 
         <div className={styles.botoneraDestacada}>
