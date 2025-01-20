@@ -101,7 +101,9 @@ export default function GGX() {
                     alt="{t('ggx:ggxDescripcio')}"
                 />
                 <p className={styles.peuFoto}>{t('ggx:ggxDescripcio')}</p>
-          </div>             
+          </div>            
+
+          <p>{t('ggx:ggxPare')}</p> 
 
             <div className={styles.containerImatge}>
           <Image
