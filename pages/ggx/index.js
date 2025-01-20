@@ -44,6 +44,7 @@ export default function GGX() {
       <meta name="twitter:description" content={t('ggx:ggxSubTitol')}/>
       <meta name="twitter:image" content="https://grangol.com/GGxFons.jpg"/>
       <meta name="twitter:card" content="summary_large_image"></meta>
+      <meta name="twitter:site" content="@GranGol11" />
       <meta name="robots" content="index, follow"/>    
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="canonical" href="https://www.grangol.com/ggx" />

@@ -47,6 +47,7 @@ export default function GGXTeams() {
       <meta name="robots" content="index, follow"/>    
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="canonical" href="https://www.grangol.com/ggx" />
+      <meta name="twitter:site" content="@GranGol11" />
       <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.grangol.com/sitemap.xml" />
 
       {/* Incrustar JSON-LD */}
