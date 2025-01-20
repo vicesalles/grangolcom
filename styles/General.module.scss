@@ -57,6 +57,12 @@
   align-items: center;
   flex-direction: column;  
   overflow: hidden;
+  p{
+    a:hover{
+      color: green;
+      text-decoration: underline;
+    }
+  }
 }
 
 .peuFoto{

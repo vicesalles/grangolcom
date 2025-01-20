@@ -19,8 +19,8 @@ export default function GGXTeams() {
   const jsonLdData = {
     "@context": "https://schema.org",
     "@type": "Game",
-    "name": "GGx",
-    "description": "GGx és un joc de futbol inspirat en el Subbuteo i les xapes.",
+    "name": "t('ggx:ggxTitol')",
+    "description": t('ggx:ggxSubTitol'),
     "image": "https://grangol.com/grangol.jpg",
     "publisher": {
       "@type": "Organization",
@@ -30,6 +30,34 @@ export default function GGXTeams() {
     "url": "https://grangol.com"
   };
 
+  const MetaHead = ({ jsonLdData }) => (
+    <Head>
+      <title>{t('ggx:ggxTeamsTitle')}</title>
+      <meta name="description" content={t('ggx:ggxTeamsDescription')} />  
+
+      <link rel="icon" href="/futbol.ico?v=2"/>
+      <meta property="og:title" content={t('ggx:ggxTeamsTitle')}/>
+      <meta property="og:description" content={t('ggx:ggxTeamsDescription')}/>
+      <meta property="og:image" content="https://grangol.com/GGxFons.jpg"/>
+      <meta property="og:url" content="https://grangol.com/ggx"></meta>
+      <meta name="twitter:title" content={t('ggx:ggxTeamsTitle')}/>
+      <meta name="twitter:description" content={t('ggx:ggxTeamsDescription')}/>
+      <meta name="twitter:image" content="https://grangol.com/GGxFons.jpg"/>
+      <meta name="twitter:card" content="summary_large_image"></meta>
+      <meta name="robots" content="index, follow"/>    
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="canonical" href="https://www.grangol.com/ggx" />
+      <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.grangol.com/sitemap.xml" />
+
+      {/* Incrustar JSON-LD */}
+      <script 
+          type="application/ld+json" 
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }} 
+        />
+      
+      </Head>
+  );
+
   useEffect(() => {
     // This ensures that the component is mounted in the browser
     setIsMounted(true);
@@ -38,70 +66,14 @@ export default function GGXTeams() {
   // Wait until translations are ready
   if (!ready || !isMounted) {
     return <div>
-      <Head>
-        <title>Gran Gol: GGx</title>
-        <meta name="description" content="GGx ❤️⚽" />  
-
-        <link rel="icon" href="/futbol.ico?v=2"/>
-        <meta property="og:title" content="Gran Gol GGx"/>
-        <meta property="og:description" content="❤️⚽"/>
-        <meta property="og:image" content="https://grangol.com/GGxFons.jpg"/>
-        <meta property="og:url" content="https://grangol.com/ggx"></meta>
-
-        <meta name="twitter:title" content="Gran Gol GGx"/>
-        <meta name="twitter:description" content="❤️⚽"/>
-        <meta name="twitter:image" content="https://grangol.com/GGxFons.jpg"/>
-        <meta name="twitter:card" content="summary_large_image"></meta>
-        <meta name="robots" content="index, follow"/>    
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="canonical" href="https://www.grangol.com/ggx" />
-      <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.grangol.com/sitemap.xml" />
-
-      {/* Incrustar JSON-LD */}
-      <script 
-          type="application/ld+json" 
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }} 
-        />
-
-      
-      </Head>
+      <MetaHead jsonLdData={jsonLdData}/>    
       <IoMdFootball fontSize={12} /></div>;
   }
  
 
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Gran Gol: {t('ggx:ggxTitol')}</title>
-        <meta name="description" content={t('ggxDescripcio')} />  
-
-        <link rel="icon" href="/futbol.ico?v=2"/>
-        <meta property="og:title" content={t('ggx:ggxTitol')}/>
-        <meta property="og:description" content={t('ggxDescripcio')}/>
-        <meta property="og:image" content="https://grangol.com/GGxFons.jpg"/>
-        <meta property="og:url" content="https://grangol.com"></meta>
-
-        <meta name="twitter:title" content={t('ggx:ggxTitol')}/>
-        <meta name="twitter:description" content={t('ggxDescripcio')}/>
-        <meta name="twitter:image" content="https://grangol.com/GGxFons.jpg"/>
-        <meta name="twitter:card" content="summary_large_image"></meta>
-        <meta name="robots" content="index, follow"/>
-
-        <Head>     
-
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="canonical" href="https://www.grangol.com/ggx" />
-      <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.grangol.com/sitemap.xml" />
-
-      {/* Incrustar JSON-LD */}
-      <script 
-          type="application/ld+json" 
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }} 
-        />
-
-      
-      </Head>
-      </Head>      
+      <MetaHead jsonLdData={jsonLdData}/>    
       <main className={styles.main}>
       <TopNavbar/>
         <PageHeader 
@@ -109,8 +81,17 @@ export default function GGXTeams() {
         description={t('ggx:ggxTeamsDescription')}/>
                
         <div className={styles.articleTeams}>    
-          <h3>{t('ggx:ggxSubTitol')}</h3>
-          <p>{t('ggx:ggxTeamsDisclaimer')}</p>         
+          <h3>{t('ggx:ggxTeamsDescription')}</h3>
+          <p>{t('ggx:ggxTeamsDisclaimer')}</p>    
+          <div className={styles.containerImatge}>
+          <Image
+                    src="https://gafrmmszazh98sh9.public.blob.vercel-storage.com/Teams/GGx_Teams_Stack_1-8dWTklVu8BUch2CfP7oDSqHM4fNp5Q.jpg"
+                    width={1200}
+                    height={612}
+                    alt="{t('ggx:teamsStack')}"
+                />
+                <p className={styles.peuFoto}>{t('ggx:teamsStack')}. <a href='https://makerworld.com/en/models/1014484' target='_blank' rel="noopener">{t('ggx:teamCarrier')}</a></p>
+          </div>     
           <div>
             <h4>CLUBS</h4>
             <p>{t('ggx:mainLeaguesTeams')}</p>
@@ -127,8 +108,8 @@ export default function GGXTeams() {
             <ul>
               <li>{t('ggx:europe')}</li>
             </ul>
-          </div>
-         
+          </div>          
+          
         </div>
 
         <div className={styles.botoneraDestacada}>

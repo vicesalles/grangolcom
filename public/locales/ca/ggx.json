@@ -35,8 +35,8 @@
     "ggxNormesPartitTemps": "Amb temps: Es juguen dues parts de 6 minuts cadascuna. Necessitaràs un cronòmetre per controlar el temps.",
     "ggxNormesPaperText":"Descarrega't les normes en PDF",
     "ggxNormesPaperURL":"https://grangol.ck.page/08b0016369",
-    "ggxTeamsTitle":"GGx Equips imprimibles",
-    "ggxTeamsDescription":"Aquí trobaràs tots els equips disponibles per imprimir.",
+    "ggxTeamsTitle":"GGx Equips de Futbol imprimibles",
+    "ggxTeamsDescription":"Tots els equips disponibles per al GGx futbol de taula.",
     "ggxTeamsDisclaimer":"Els equips imprimibles s'inspiren en clubs reals però en cap cas són o pretenen ser productes oficials o llicenciats per aquests clubs.",
     "ggxSupportGGX":"Dóna suport al GGX",
     "ggxSupportGGXtext": "Dóna suport a GGx, el joc de futbol de taula gratuït de Gran Gol. La teva donació ajuda a mantenir viu el projecte.",
@@ -48,5 +48,8 @@
     "spain":"Lliga Espanyola",
     "germany":"Lliga Alemana",
     "europe":"Equips Europeus",
-    "mainLeaguesTeams":"Tens disponibles els equips de les competicions més importants del món."
+    "mainLeaguesTeams":"Tens disponibles els equips de les competicions més importants del món.",
+    "teamsStack":"Els equips s'acumulen! Qui arribarà a la gran final?",
+    "teamCarrier":"El porta-equips està disponible aquí per imprimir [MakerWorld]",
+    "ggxPare":"L'èxit i la raó de ser del GGx és passar estones de qualitat amb el meu fill. Lluny de pantalles i de les presses del dia a dia, poder parlar amb ell, escoltar-lo, competir, riure, fer reflexions vitals amb el futbol com a excusa, parlar de geografia, del món, d'aritmètica, de probabilitat... Per a mi, el GGx és un espai-estona on el meu fill em regala la seva atenció i a mi m'és fàcil donar-li tota la meva. Crec que molts problemes de la mainada se solucionen donant-los atenció. Amb el ritme de vida que portem, no sempre donem l'atenció que mereixen les persones que més estimem. Crear i construir espais-temps on donar el 100% de la meva atenció al meu fill és important. No sé massa si aquesta reflexió de pare va aquí o no, però necessitava compartir-la."
 }

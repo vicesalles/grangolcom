@@ -35,8 +35,8 @@
     "ggxNormesPartitTemps": "Con tiempo: Se juegan dos partes de 6 minutos cada una. Necesitarás un cronómetro para controlar el tiempo.",
     "ggxNormesPaperText":"Descarga las reglas del GGx en PDF",
     "ggxNormesPaperURL":"https://grangol.ck.page/32c6f981d3",
-    "ggxTeamsTitle":"GGx Equipos imprimibles",
-    "ggxTeamsDescription":"Aquí encontrarás todos los equipos disponibles para imprimir.",
+    "ggxTeamsTitle":"GGx Equipos de Fútbol imprimibles",
+    "ggxTeamsDescription": "Todos los equipos disponibles para jugar en el GGx.",
     "ggxTeamsDisclaimer":"Los equipos imprimibles se inspiran en clubes reales pero en ningún caso son o prentenden ser productos oficiales o licenciados por esos clubs.",
     "ggxSupportGGX":"Apoya GGx",
     "ggxSupportGGXtext": "Apoya a GGx, el juego de fútbol de mesa gratuito de Gran Gol. Tu donación ayuda a mantener vivo el proyecto.",
@@ -48,7 +48,10 @@
     "spain":"Liga Española",
     "germany":"Liga Alemana",
     "europe":"Equipos Europeos",
-    "mainLeaguesTeams":"Tienes disponibles los equipos de las competiciones más importantes del mundo."
+    "mainLeaguesTeams":"Tienes disponibles los equipos de las competiciones más importantes del mundo.",
+    "teamsStack": "¡Los equipos se acumulan! ¿Quién llegará a la gran final?",
+    "teamCarrier": "El porta-equipos está disponible aquí para imprimir [MakerWorld]",
+    "ggxPare":"El éxito y la razón de ser de GGx es pasar tiempo de calidad con mi hijo. Lejos de las pantallas y las prisas del día a día, poder hablar con él, escucharle, competir, reír, hacer reflexiones vitales con el fútbol como excusa, hablar de geografía, del mundo, de aritmética, de probabilidad... Para mí, GGx es un espacio-momento donde mi hijo me regala su atención y a mí me resulta fácil darle toda la mía. Creo que muchos problemas de los niños se resuelven dándoles atención. Con el ritmo de vida que llevamos, no siempre damos la atención que merecen las personas que más queremos. Crear y construir espacios-tiempo donde dar el 100% de mi atención a mi hijo es importante. No sé muy bien si esta reflexión de padre encaja aquí o no, pero necesitaba compartirla."
 
     
 }
