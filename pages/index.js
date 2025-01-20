@@ -31,15 +31,15 @@ export default function Home() {
 
   const MetaHead = ({ jsonLdData }) => (
     <Head>
-      <title>Gran Gol</title>
+      <title>{t('mainTitle')}</title>
       <link rel="icon" href="/futbol.ico?v=2" />
-      <meta name="description" content="Gran Gol és un joc de futbol." />        
-      <meta property="og:title" content="Gran Gol" />
-      <meta property="og:description" content="Gran Gol futbol, futebol, calcio, football, fut, fussball, voetball, كرة القدم." />
+      <meta name="description" content={t('mainSubtitle')} />        
+      <meta property="og:title" content={t('mainTitle')} />
+      <meta property="og:description" content={t('mainSubtitle')} />
       <meta property="og:image" content="https://grangol.com/grangol.jpg" />
       <meta property="og:url" content="https://grangol.com" />
-      <meta name="twitter:title" content="Gran Gol" />
-      <meta name="twitter:description" content="Gran Gol futbol, futebol, calcio, football, fut, fussball, voetball, كرة القدم." />
+      <meta name="twitter:title" content={t('mainTitle')} />
+      <meta name="twitter:description" content={t('mainSubtitle')} />
       <meta name="twitter:image" content="https://grangol.com/grangol.jpg" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="yandex-verification" content="20bb35cc90f332ef" />
