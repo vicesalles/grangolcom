@@ -42,6 +42,7 @@ export default function Home() {
       <meta name="twitter:description" content={t('mainSubtitle')} />
       <meta name="twitter:image" content="https://grangol.com/grangol.jpg" />
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@GranGol11" />
       <meta name="yandex-verification" content="20bb35cc90f332ef" />
       <meta name="robots" content="index, follow" />  
 
