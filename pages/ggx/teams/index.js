@@ -97,19 +97,19 @@ export default function GGXTeams() {
             <h4>CLUBS</h4>
             <p>{t('ggx:mainLeaguesTeams')}</p>
             <ul>
-              <li>{t('ggx:england')}</li>
-              <li>{t('ggx:spain')}</li>
-              <li>{t('ggx:italy')}</li>
-              <li>{t('ggx:germany')}</li>
+              <li><Link href="https://makerworld.com/en/models/1032308" target='_blank' rel="noopener">{t('ggx:england')}</Link></li>
+              <li><Link href="https://makerworld.com/en/models/1032387" target='_blank' rel="noopener">{t('ggx:spain')}</Link></li>
+              <li><Link href="https://makerworld.com/en/models/1032339" target='_blank' rel="noopener">{t('ggx:italy')}</Link></li>
+              <li><Link href="https://makerworld.com/en/models/1032432" target='_blank' rel="noopener">{t('ggx:germany')}</Link></li>
             </ul>
           </div>
-          <div>
+          {/*<div>
             <h4>NATIONAL TEAMS</h4>
             <p></p>
             <ul>
               <li>{t('ggx:europe')}</li>
             </ul>
-          </div>          
+          </div>       */}   
           
         </div>
 

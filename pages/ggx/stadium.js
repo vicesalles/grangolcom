@@ -86,7 +86,9 @@ export default function GGX() {
         <div>          
           <div className={styles.article}>    
           <h3>{t('stadium:titolArticleStadium')}</h3>
-          <p>{t('stadium:introStadium')}</p>         
+          <p>{t('stadium:introStadium')}</p>        
+          
+          <p><Link className={styles.newsletter} href="https://makerworld.com/en/models/1032252" target='_blank' rel="noopener">{t('stadium:printStadium')}</Link></p> 
                     
           
           <div className={styles.containerImatge}>

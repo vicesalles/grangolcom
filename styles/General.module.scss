@@ -44,10 +44,16 @@
   ul {
     list-style: none; 
     padding: 0; 
-}
+  }
   li:before{
     content: "⚽"; 
     margin-right: 10px; 
+    
+  }
+  li:hover{
+    background-color: green;
+    color: white;
+    font-weight: bold;
   }
 }
 
