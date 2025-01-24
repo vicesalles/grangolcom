@@ -115,6 +115,18 @@ export default function GGX() {
                 </div>
             
           </div>
+
+          <div className={styles.containerImatge}>
+          <Image
+                    src="https://gafrmmszazh98sh9.public.blob.vercel-storage.com/Teams/4-fbcCQP587AOkm8mWNjM4R0beekXZly.JPG"
+                    width={1200}
+                    height={900}
+                    alt="{t('ggx:ggxFotoForaDeJoc')}"
+                />
+                <p className={styles.peuFoto}>{t('ggx:ggxFotoForaDeJoc')}</p>
+          </div>
+
+
           <div className={styles.containerImatge}>
           <Image
                     src="/img/articles/areaJoc.jpg"
@@ -134,6 +146,7 @@ export default function GGX() {
                 <p className={styles.peuFoto}>{t('ggx:ggxFotoAreaGol')}</p>
           </div>
         </div>
+
         <div className={styles.botoneraDestacada}>
           <Link className={styles.newsletter} href="/ggx/">{t('ggx:queEsGGx')}</Link> <Link className={styles.newsletter} href="/ggx/stadium">{t('ggx:ggxStadium')}</Link> <Link className={styles.newsletter} href="/ggx/teams">{t('ggxTeams')}</Link> <Link className={styles.newsletter} href="/ggx/support">{t('ggx:ggxSupportGGX')}</Link>
           </div>
