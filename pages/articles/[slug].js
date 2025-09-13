@@ -87,7 +87,7 @@ export default function ArticlePage({ mdxSource, frontMatter }) {
                         )}
                     </article>
                     <div className={styles.botoneraDestacada}>
-                        <Link className={styles.newsletter} href="/">{t('home')}</Link>  <Link className={styles.newsletter} href="/articles/">{t('common:devLog')}</Link>
+                        <Link className={styles.newsletter} href="/">{t('common:home')}</Link>  <Link className={styles.newsletter} href="/articles/">{t('common:devLog')}</Link>
                     </div>
                 </main>
             </div>
