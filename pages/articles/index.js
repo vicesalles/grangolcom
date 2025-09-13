@@ -1,6 +1,9 @@
 import Link from 'next/link';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'react-i18next';
+import PageHeader from '../../components/PageHeader';
+import Footer from '../../components/Footer';
+import styles from '../../styles/General.module.scss'
 
 export async function getStaticProps({locale}) {
   const { getAllPostsMeta } = await import('../../lib/mdx.server'); // ← import al servidor
@@ -19,9 +22,11 @@ export async function getStaticProps({locale}) {
 
 export default function ArticlesIndex({posts}) {
     const { t, ready } = useTranslation('common');
-  return (
-    <main className="container">
-      <h1>{t('common:devLog')}</h1>
+  return (<>
+  <div className={styles.container}>
+  <PageHeader title={t('common:devLog')}/>   
+      
+      <article className={styles.articleTeams}>
       <ul>
         {posts.map(p => (
           <li key={`${p.locale}-${p.slug}`}>
@@ -34,6 +39,8 @@ export default function ArticlesIndex({posts}) {
           </li>
         ))}
       </ul>
-    </main>
+      </article>   
+      <Footer/>
+   </div></>
   );
 }
