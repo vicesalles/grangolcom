@@ -21,7 +21,7 @@ export default function GGX() {
     "@type": "Game",
     "name": t('stadium:titolStadium'),
     "description": t('stadium:subtitolStadium'),
-    "image": "https://grangol.com/grangol.jpg",
+    "image": "https://grangol.com/img/articles/GGxFons.jpg",
     "publisher": {
       "@type": "Organization",
       "name": "Gran Gol"
@@ -38,12 +38,12 @@ export default function GGX() {
         <link rel="icon" href="/futbol.ico?v=2"/>
         <meta property="og:title" content={t('stadium:titolStadium')}/>
         <meta property="og:description" content={t('stadium:subtitolStadium')}/>
-        <meta property="og:image" content="https://grangol.com/GGxFons.jpg"/>
+        <meta property="og:image" content="https://grangol.com/img/articles/GGxFons.jpg"/>
         <meta property="og:url" content="https://grangol.com"></meta>
 
         <meta name="twitter:title" content={t('stadium:titolStadium')}/>
         <meta name="twitter:description" content={t('stadium:subtitolStadium')}/>
-        <meta name="twitter:image" content="https://grangol.com/GGxFons.jpg"/>
+        <meta name="twitter:image" content="https://grangol.com/img/articles/GGxFons.jpg"/>
         <meta name="twitter:card" content="summary_large_image"></meta>        
         <meta name="twitter:site" content="@GranGol11" />
         

@@ -20,7 +20,7 @@ export default function MakerWorldLanding() {
     "@type": "Game",
     "name": "Gran Gol",
     "description": "Gran Gol is a football game.",
-    "image": "https://grangol.com/grangol.jpg",
+    "image": "https://grangol.com/img/articles/GGxFons.jpg",
     "publisher": {
       "@type": "Organization",
       "name": "Gran Gol"
@@ -36,11 +36,11 @@ export default function MakerWorldLanding() {
       <meta name="description" content="Gran Gol's GGx is a tabletop football game for family and friends." />  
       <meta property="og:title" content="Gran Gol at MakerWorld" />
       <meta property="og:description" content="Gran Gol's GGx is a tabletop football game for family and friends." />
-      <meta property="og:image" content="https://grangol.com/grangol.jpg" />
+      <meta property="og:image" content="https://grangol.com/img/articles/GGxFons.jpg" />
       <meta property="og:url" content="https://grangol.com" />
       <meta name="twitter:title" content="Gran Gol at MakerWorld" />
       <meta name="twitter:description" content="Gran Gol's GGx is a tabletop football game for family and friends." />
-      <meta name="twitter:image" content="https://grangol.com/grangol.jpg" />
+      <meta name="twitter:image" content="https://grangol.com/img/articles/GGxFons.jpg" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="yandex-verification" content="20bb35cc90f332ef" />
       <meta name="robots" content="index, follow" />  

@@ -33,11 +33,11 @@ export default function EuropeanFootballOfficialStats() {
         <link rel="icon" href="/futbol.ico?v=2"/>
         <meta property="og:title" content="Gran Gol"/>
         <meta property="og:description" content="Gran Gol: European Big Leagues Stats."/>
-        <meta property="og:image" content="https://www.grangol.com/grangol.jpg"/>
+        <meta property="og:image" content="https://grangol.com/img/articles/GGxFons.jpg"/>
         <meta property="og:url" content="https://www.grangol.com"></meta>
         <meta name="twitter:title" content="Gran Gol"/>
         <meta name="twitter:description" content="Gran Gol: European Big Leagues Stats."/>
-        <meta name="twitter:image" content="https://www.grangol.com/grangol.jpg"/>
+        <meta name="twitter:image" content="https://grangol.com/img/articles/GGxFons.jpg"/>
         <meta name="twitter:card" content="summary_large_image"></meta>
         <meta name="robots" content="index, follow"/>
       </Head>

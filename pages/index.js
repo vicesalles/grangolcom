@@ -20,7 +20,7 @@ export default function Home() {
     "@type": "Game",
     "name": "Gran Gol",
     "description": "Gran Gol is a football game.",
-    "image": "https://grangol.com/grangol.jpg",
+    "image": "https://grangol.com/img/articles/GGxFons.jpg",
     "publisher": {
       "@type": "Organization",
       "name": "Gran Gol"
@@ -36,11 +36,11 @@ export default function Home() {
       <meta name="description" content={t('mainSubtitle')} />        
       <meta property="og:title" content={t('mainTitle')} />
       <meta property="og:description" content={t('mainSubtitle')} />
-      <meta property="og:image" content="https://grangol.com/grangol.jpg" />
+      <meta property="og:image" content="https://grangol.com/img/articles/GGxFons.jpg" />
       <meta property="og:url" content="https://grangol.com" />
       <meta name="twitter:title" content={t('mainTitle')} />
       <meta name="twitter:description" content={t('mainSubtitle')} />
-      <meta name="twitter:image" content="https://grangol.com/grangol.jpg" />
+      <meta name="twitter:image" content="https://grangol.com/img/articles/GGxFons.jpg" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@GranGol11" />
       <meta name="yandex-verification" content="20bb35cc90f332ef" />

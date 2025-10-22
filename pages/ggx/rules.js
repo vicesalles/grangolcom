@@ -21,7 +21,7 @@ export default function GGX() {
     "@type": "Game",
     "name": t('ggx:ggxNormesTitol'),
     "description": "How to play GGx the tabletop football Game ❤️⚽.",
-    "image": "https://grangol.com/grangol.jpg",
+    "image": "https://grangol.com/img/articles/GGxFons.jpg",
     "publisher": {
       "@type": "Organization",
       "name": "Gran Gol"
@@ -38,12 +38,12 @@ export default function GGX() {
 
         <meta property="og:title" content={t('ggx:ggxNormesTitol')}/>
         <meta property="og:description" content="How to play GGx the tabletop football Game ❤️⚽"/>
-        <meta property="og:image" content="https://grangol.com/GGxFons.jpg"/>
+        <meta property="og:image" content="https://grangol.com/img/articles/GGxFons.jpg"/>
         <meta property="og:url" content="https://grangol.com/ggx"></meta>
 
         <meta name="twitter:title" content={t('ggx:ggxNormesTitol')}/>
         <meta name="twitter:description" content="How to play GGx the tabletop football Game ❤️⚽"/>
-        <meta name="twitter:image" content="https://grangol.com/GGxFons.jpg"/>
+        <meta name="twitter:image" content="https://grangol.com/img/articles/GGxFons.jpg"/>
         <meta name="twitter:card" content="summary_large_image"></meta>
         <meta name="twitter:site" content="@GranGol11" />
         <meta name="robots" content="index, follow"/>    
