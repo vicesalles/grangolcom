@@ -102,14 +102,14 @@ export default function GGXTeams() {
               <li><Link href="https://makerworld.com/en/models/1032339" target='_blank' rel="noopener">{t('ggx:italy')}</Link></li>
               <li><Link href="https://makerworld.com/en/models/1032432" target='_blank' rel="noopener">{t('ggx:germany')}</Link></li>
             </ul>
-          </div>
-          {/*<div>
-            <h4>NATIONAL TEAMS</h4>
+             <h4>NATIONAL TEAMS</h4>
             <p></p>
             <ul>
-              <li>{t('ggx:europe')}</li>
+              <li><Link href="https://makerworld.com/en/models/1611918-european-national-football-teams-ggx" target='_blank' rel="noopener">{t('ggx:europe')}</Link></li>
+              <li><Link href="https://makerworld.com/en/models/1792002-american-national-soccer-teams-for-ggx" target='_blank' rel="noopener">{t('ggx:america')}</Link></li>
             </ul>
-          </div>       */}   
+          </div>
+              
           
         </div>
 
