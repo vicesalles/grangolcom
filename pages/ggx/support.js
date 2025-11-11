@@ -103,7 +103,7 @@ export default function MakerWorldLanding() {
       <main className={styles.main}>  
       <h1 className={styles.titolPrincipal}>{t('ggx:ggxSupportGGX')}</h1>       
         <h3><FaHeart fontSize={100} color={'red'} /> <IoMdFootball fontSize={100} /></h3>
-        <div className={styles.supportContainer}><a className={styles.support} href="https://grangol.kit.com/products/ggx" target='_blank'> € </a> <a className={styles.support} href="https://grangol.kit.com/products/ggx-uk" target='_blank'> £ </a> <a className={styles.support} href="https://grangol.kit.com/products/support-ggx" target='_blank'>  $ </a></div>
+        <div className={styles.supportContainer}><a className={styles.support} href={t('common:shareNewsletter')} target='_blank'> {t('common:newsLetterMaker')} </a> <a className={styles.support} href="https://discord.gg/UYAeS6Jv" target='_blank'> {t('common:joinDiscord')} </a> </div>
         <div><p>{t('ggx:ggxSupportGGXtext')}</p></div>
       </main>
       <div className={styles.botoneraContainer}>        
