@@ -14,6 +14,7 @@
     h2{
         padding-left: 1em;
         font-size: 14pt;
+        text-align: center;
         margin-top: 0px;
         background-color: #268b07;
         color: white;
@@ -23,8 +24,8 @@
     .TitleLine{
         display: flex;
         flex-direction: row;
-        justify-content: initial;
-        align-items: initial;
+        justify-content: center;
+        align-items: center;
     }
     .pilota{
         margin-right: 0.5em;   
@@ -52,8 +53,8 @@
     .TitleLine{
         display: flex;
         flex-direction: row;
-        justify-content: initial;
-        align-items: initial;
+        justify-content: center;
+        align-items: center;
     }
     .pilota{
         margin-right: 0.5em;   

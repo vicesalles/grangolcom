@@ -84,7 +84,9 @@ export default function GGX() {
     
         <div>          
           <div className={styles.article}>  
-
+<div className={styles.botoneraDestacada}>
+          <Link className={styles.newsletter} href="/ggx/">{t('ggx:queEsGGx')}</Link> <Link className={styles.newsletter} href="/ggx/stadium">{t('ggx:ggxStadium')}</Link> <Link className={styles.newsletter} href="/ggx/teams">{t('ggxTeams')}</Link> <Link className={styles.newsletter} href="/ggx/support">{t('ggx:ggxSupportGGX')}</Link>
+          </div>
           <h3>{t('ggx:ggxNormesSubTitol')}</h3>
           <p>{t('ggx:ggxNormesPartit')}</p>
           <p><ul>
