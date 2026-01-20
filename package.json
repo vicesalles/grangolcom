@@ -16,7 +16,7 @@
     "bulma": "^0.9.4",
     "gray-matter": "^4.0.3",
     "i18next": "^23.16.8",
-    "next": "15.5.3",
+    "next": "15.5.9",
     "next-i18next": "^15.4.2",
     "next-mdx-remote": "^5.0.0",
     "react": "19.1.1",
