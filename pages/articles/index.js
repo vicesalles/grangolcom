@@ -16,7 +16,7 @@ export async function getStaticProps({locale}) {
   return {
     props: {
       posts,
-       ...(await serverSideTranslations(locale, ['common'])),
+       ...(await serverSideTranslations(locale, ['common','ggx'])),
     }
   };
 }
@@ -42,6 +42,9 @@ export default function ArticlesIndex({posts}) {
         ))}
       </ul>
       </article>   
+       <div className={styles.botoneraContainer}>        
+        <Link className={styles.newsletter} href="/">{t('common:home')}</Link> <Link className={styles.newsletter} href="/ggx/">{t('ggx:GGxEljocDeTaula')}</Link>  <Link className={styles.newsletter} href="/books/">{t('common:footballBooks')}</Link> 
+      </div>  
       <Footer/>
    </div></>
   );
