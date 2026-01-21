@@ -82,7 +82,7 @@ export default function Home() {
         <a className={styles.newsletter} href={t('shareNewsletter')} target='_blank'> {t('newsLetterCTA')} </a> 
       </main>
       <div className={styles.botoneraContainer}>        
-        <Link className={styles.newsletter} href="/articles/">{t('common:devLog')}</Link> <Link className={styles.newsletter} href="/ggx/">{t('ggx:GGxEljocDeTaula')}</Link> 
+        <Link className={styles.newsletter} href="/articles/">{t('common:devLog')}</Link> <Link className={styles.newsletter} href="/ggx/">{t('ggx:GGxEljocDeTaula')}</Link>  <Link className={styles.newsletter} href="/books/">{t('common:footballBooks')}</Link> 
       </div>   
       <Footer />
     </div>

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link';
 import useSWR from 'swr'
 import styles from '../styles/Books.module.scss'
+import gStyles from '../styles/Home.module.css';
 import Footer from '../components/Footer';
 import Book from '../components/Book';
 import PageHeader from '../components/PageHeader';
@@ -48,12 +49,14 @@ export default function Books() {
         <PageHeader title={t('topFootballBooks')}
           description="Everything is going digital. Football is no excepcion. Those books are a great aproach to the new way football is understood. The digital transformation of football."
         />
-        {data.map((bookData) => <Book data={bookData}/>)}
+        {data.map((bookData) => <Book key={bookData.slug} data={bookData}/>)}
       </main>
+
+      <div className={gStyles.botoneraContainer}>        
+        <Link className={gStyles.newsletter} href="/">{t('home')}</Link>  <Link className={gStyles.newsletter} href="./ggx">GGx</Link>  <Link className={gStyles.newsletter} href="/stats">{t('footballStats')}</Link>  
+      </div>   
       
-      <div className={styles.textMenu}>
-        <Link href="/">{t('home')}</Link> | <Link href="./ggx">GGx</Link> | <Link href="/stats">{t('footballStats')}</Link> | <Link href="/games">{t('footballGames')}</Link>
-      </div>
+     
       <Footer/>
     </div>
   )
