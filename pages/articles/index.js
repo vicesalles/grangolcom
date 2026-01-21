@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'react-i18next';
 import PageHeader from '../../components/PageHeader';
+import TopNavbar from '../../components/TopNavbar';
 import Footer from '../../components/Footer';
 import styles from '../../styles/General.module.scss'
 
@@ -24,8 +25,9 @@ export default function ArticlesIndex({posts}) {
     const { t, ready } = useTranslation('common');
   return (<>
   <div className={styles.container}>
+    <TopNavbar /> 
   <PageHeader title={t('common:devLog')}/>   
-      
+           
       <article className={styles.articleTeams}>
       <ul>
         {posts.map(p => (
