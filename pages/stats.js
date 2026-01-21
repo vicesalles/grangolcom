@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import gStyles from '../styles/Home.module.css';
 import styles from '../styles/OfficialStats.module.scss';
 import Footer from '../components/Footer';
 import VisitButton from '../components/VisitButton';
@@ -65,8 +66,10 @@ export default function EuropeanFootballOfficialStats() {
                 <div className={styles.row}><div>Champions League</div><div>UEFA</div><div><StarsDisplayer id={"champions"} number={3}/></div><div><VisitButton url="https://www.uefa.com/uefachampionsleague/statistics/"/></div></div>
                 <div className={styles.row}><div>Premier League</div><div>ORACLE</div><div><StarsDisplayer number={3} id={"premier"}/></div><div><VisitButton url="https://www.premierleague.com/stats"/></div></div>
                 <div className={styles.row}><div>La Liga</div><div>Microsoft</div><div><StarsDisplayer id={"laLiga"} number={1}/></div><div><VisitButton url="https://www.laliga.com/en-ES/advanced-stats"/></div></div>
+                <div className={styles.row}><div>La Liga Beyond Stats</div><div>Microsoft</div><div><StarsDisplayer id={"laLiga"} number={5}/></div><div><VisitButton url="https://www.laliga.com/beyondstats"/></div></div>
                 <div className={styles.row}><div>Bundesliga</div><div>AWS</div><div><StarsDisplayer id={"bundesliga"} number={4}/></div><div><VisitButton url="https://www.bundesliga.com/en/bundesliga/stats"/></div></div>
-                <div className={styles.row}><div>Serie A</div><div>-</div><div><StarsDisplayer id={"serieA"} number={3}/></div><div><VisitButton url="https://www.legaseriea.it/it/serie-a/statistiche"/></div></div>
+                <div className={styles.row}><div>Serie A</div><div>-</div><div><StarsDisplayer id={"serieA"} number={3}/></div><div><VisitButton url="https://www.legaseriea.it/serie-a/statistiche"/></div></div>
+                
               </div>
             </div>
             <div>
@@ -79,9 +82,9 @@ export default function EuropeanFootballOfficialStats() {
         )}
       </main>
 
-      <div className={styles.textMenu}>
-        <Link href="/">{t('home')}</Link> | <Link href="./ggx">GGx</Link> | <Link href="/books">{t('footballBooks')}</Link> | <Link href="/games">{t('footballGames')}</Link>
-      </div>
+      <div className={gStyles.botoneraContainer}>        
+        <Link className={gStyles.newsletter} href="/">{t('home')}</Link>  <Link className={gStyles.newsletter} href="./ggx">GGx</Link>  <Link className={gStyles.newsletter} href="/stats">{t('footballStats')}</Link>  
+      </div>   
 
       <Footer />
     </div>
