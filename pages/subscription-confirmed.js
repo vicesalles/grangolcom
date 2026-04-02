@@ -46,7 +46,7 @@ export default function Subscription() {
         <h1><FaHeart fontSize={100} color={'red'} /> <IoMdFootball fontSize={100} /></h1>
       </main>
       <div className={styles.textMenu}>
-      <Link href="./ggx">GGx</Link> | <Link href="./books">{t('footballBooks')}</Link> | <Link href="./stats">{t('footballStats')}</Link> | <Link href="./games">{t('footballGames')}</Link>
+      <Link href="./ggx">GGx</Link> | <Link href="./stats">{t('footballStats')}</Link> | <Link href="./games">{t('footballGames')}</Link>
       </div>
       <Footer />
     </div>

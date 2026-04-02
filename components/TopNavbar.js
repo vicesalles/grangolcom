@@ -1,17 +1,29 @@
 import styles from '../styles/TopNavBar.module.scss'
 import { useRouter } from 'next/router';
-import Link from 'next/link';
 
 export default function TopNavbar(props) {
-    const router = useRouter();
+  const router = useRouter();
+  const locales = router.locales ?? [];
 
   const changeLanguage = (lang) => {
     router.push(router.pathname, router.asPath, { locale: lang });
   };
 
   return (
-    <nav className={styles.contenidorNav}>      
-      | <a className={styles.botoIdioma} onClick={() => changeLanguage('es')}>ES</a> | <a className={styles.botoIdioma} onClick={() => changeLanguage('en')}>EN</a> | <a className={styles.botoIdioma} onClick={() => changeLanguage('ca')}>CA</a> | 
-     </nav>
+    <nav className={styles.contenidorNav}>
+      {'| '}
+      {locales.map((locale, index) => (
+        <span key={locale}>
+          <button
+            type="button"
+            className={styles.botoIdioma}
+            onClick={() => changeLanguage(locale)}
+          >
+            {locale.toUpperCase()}
+          </button>
+          {' | '}
+        </span>
+      ))}
+    </nav>
   );
 }

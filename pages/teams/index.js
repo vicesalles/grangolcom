@@ -46,8 +46,8 @@ export default function TeamsPage({ teams }) {
       </div>
       
     </main>
-    <div className={styles.textMenu}>
-        <Link href="/ggx">GGx</Link> | <Link href="/books">{t('footballBooks')}</Link> | <Link href="/stats">{t('footballStats')}</Link> | <Link href="/games">{t('footballGames')}</Link>
+      <div className={styles.textMenu}>
+        <Link href="/ggx">GGx</Link> | <Link href="/stats">{t('footballStats')}</Link> | <Link href="/games">{t('footballGames')}</Link>
       </div>
       <Footer />
     </div>);
