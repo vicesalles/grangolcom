@@ -43,7 +43,7 @@ export default function ArticlesIndex({posts}) {
       </ul>
       </article>   
        <div className={styles.botoneraContainer}>        
-        <Link className={styles.newsletter} href="/">{t('common:home')}</Link> <Link className={styles.newsletter} href="/ggx/">{t('ggx:GGxEljocDeTaula')}</Link>  <Link className={styles.newsletter} href="/books/">{t('common:footballBooks')}</Link> 
+        <Link className={styles.newsletter} href="/">{t('common:home')}</Link> <Link className={styles.newsletter} href="/ggx/">{t('ggx:GGxEljocDeTaula')}</Link>  <Link className={styles.newsletter} href="/stats/">{t('common:footballStats')}</Link> 
       </div>  
       <Footer/>
    </div></>

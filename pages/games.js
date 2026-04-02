@@ -71,7 +71,7 @@ export default function Games() {
         </div>
         
       </main>
-      <div className={styles.textMenu}><Link href="/">{t('home')}</Link> | <Link href="/ggx">GGx</Link> | <Link href="/stats">{t('footballStats')}</Link> | <Link href="/books">{t('footballBooks')}</Link></div>
+      <div className={styles.textMenu}><Link href="/">{t('home')}</Link> | <Link href="/ggx">GGx</Link> | <Link href="/stats">{t('footballStats')}</Link></div>
       
       <Footer/>
     </div>

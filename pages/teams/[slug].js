@@ -7,6 +7,7 @@ import { IoMdFootball } from '@react-icons/all-files/io/IoMdFootball';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import { getTeamBySlugAndLocale, getAllTeamsByLocale } from '../../lib/teams'; // Adjust path as needed
+const { SUPPORTED_LOCALES } = require('../../lib/i18n');
 
 export default function TeamPage({ team, locale }) {
   const router = useRouter();
@@ -52,11 +53,10 @@ export default function TeamPage({ team, locale }) {
 
 // Step 1: Generate paths for each team and each locale
 export async function getStaticPaths() {
-  const locales = ['ca', 'en', 'es']; // Define your locales
   let paths = [];
 
   // Loop over each locale and generate paths for teams
-  locales.forEach(locale => {
+  SUPPORTED_LOCALES.forEach(locale => {
     const teams = getAllTeamsByLocale(locale);
     const localePaths = teams.map(team => ({
       params: { slug: team.slug }, // Slug for dynamic routing

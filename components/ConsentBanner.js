@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import styles from '../styles/CookieConsentBanner.module.scss';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 import { setConsent, loadGTM, checkConsent } from '../utils/consent'; // Import functions
 
 function ConsentBanner() {

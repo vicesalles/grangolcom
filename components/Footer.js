@@ -1,7 +1,7 @@
 import styles from '../styles/Home.module.css';
 import { FaXTwitter, FaFacebook, FaDiscord } from "react-icons/fa6";
 import { IoMdFootball } from 'react-icons/io'; // Ensure this is imported
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 import { useEffect, useState } from 'react';
 
 export default function Footer() {
@@ -52,13 +52,4 @@ export default function Footer() {
       </a>
     </footer>
   );
-}
-
-// Use getStaticProps to load the translations
-export async function getStaticProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ['common'])), // Load translations
-    },
-  };
 }
