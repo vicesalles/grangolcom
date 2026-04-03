@@ -1,6 +1,13 @@
 import styles from '../styles/TopNavBar.module.scss'
 import { useRouter } from 'next/router';
 
+const LOCALE_LABELS = {
+  ca: 'CA',
+  en: 'EN',
+  es: 'ES',
+  zh: '中文',
+};
+
 export default function TopNavbar(props) {
   const router = useRouter();
   const locales = router.locales ?? [];
@@ -19,7 +26,7 @@ export default function TopNavbar(props) {
             className={styles.botoIdioma}
             onClick={() => changeLanguage(locale)}
           >
-            {locale.toUpperCase()}
+            {LOCALE_LABELS[locale] ?? locale.toUpperCase()}
           </button>
           {' | '}
         </span>
