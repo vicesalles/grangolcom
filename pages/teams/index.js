@@ -5,13 +5,19 @@ import { IoMdFootball } from '@react-icons/all-files/io/IoMdFootball';
 import { useTranslation } from 'next-i18next';
 import Footer from '../../components/Footer';
 import PageHeader from '../../components/PageHeader';
+import SeoHead from '../../components/SeoHead';
 import TopNavbar from '../../components/TopNavbar';
 import styles from '../../styles/General.module.scss'
 import { getAllTeamsByLocale } from '../../lib/teams'; // Import direct data access
+import { buildBreadcrumbJsonLd, getAbsoluteUrl } from '../../lib/seo';
 
 export default function TeamsPage({ teams }) {
-  const { t, ready } = useTranslation(['common']);
+  const { t, ready } = useTranslation(['common', 'seo']);
   const [isMounted, setIsMounted] = useState(false);
+  const breadcrumbs = buildBreadcrumbJsonLd([
+    { name: t('common:home'), url: getAbsoluteUrl('/') },
+    { name: t('common:granGolTeams'), url: getAbsoluteUrl('/teams') },
+  ]);
 
   useEffect(() => {
     setIsMounted(true);
@@ -23,6 +29,12 @@ export default function TeamsPage({ teams }) {
 
   return (
     <div className={styles.container}>
+    <SeoHead
+      title={t('seo:teamsTitle')}
+      description={t('seo:teamsDescription')}
+      path="/teams"
+      breadcrumbs={breadcrumbs}
+    />
     <main className={styles.main}>
       <TopNavbar/>
         <PageHeader 
@@ -61,7 +73,7 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       teams,  // List of teams for the current locale
-      ...(await serverSideTranslations(locale, ['common'])),  // Localization data
+      ...(await serverSideTranslations(locale, ['common', 'seo'])),
     }   
   };
 }

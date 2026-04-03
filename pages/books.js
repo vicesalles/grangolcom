@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Link from 'next/link';
 import useSWR from 'swr'
 import styles from '../styles/Books.module.scss'
@@ -6,9 +5,11 @@ import gStyles from '../styles/Home.module.css';
 import Footer from '../components/Footer';
 import Book from '../components/Book';
 import PageHeader from '../components/PageHeader';
+import SeoHead from '../components/SeoHead';
 import TopNavbar from '../components/TopNavbar';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'react-i18next';
+import { buildBreadcrumbJsonLd, getAbsoluteUrl } from '../lib/seo';
 
 const hackers = {
   slug: "hackers",
@@ -21,7 +22,11 @@ const hackers = {
 }
 const fetcher = (url) => fetch(url).then((res) => res.json())
 export default function Books() {
-  const { t, ready } = useTranslation('common');
+  const { t } = useTranslation(['common', 'seo']);
+  const breadcrumbs = buildBreadcrumbJsonLd([
+    { name: t('common:home'), url: getAbsoluteUrl('/') },
+    { name: t('common:footballBooks'), url: getAbsoluteUrl('/books') },
+  ]);
  
   const {data, error} = useSWR('/api/books', fetcher)
 
@@ -30,24 +35,17 @@ export default function Books() {
 
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Gran Gol: Best books about modern Football</title>
-        <link rel="icon" href="/futbol.ico?v=2"/>
-        <meta property="og:title" content="Gran Gol"/>
-        <meta property="og:description" content={t('topFootballBooks')} />
-        <meta property="og:image" content="https://grangol.com/img/articles/GGxFons.jpg"/>
-        <meta property="og:url" content="https://www.grangol.com"></meta>
-
-        <meta name="twitter:title" content="Gran Gol"/>
-        <meta name="twitter:description" content={t('topFootballBooks')}/>
-        <meta name="twitter:image" content="https://grangol.com/img/articles/GGxFons.jpg"/>
-        <meta name="twitter:card" content="summary_large_image"></meta>
-      </Head>
+      <SeoHead
+        title={t('seo:booksTitle')}
+        description={t('seo:booksDescription')}
+        path="/books"
+        breadcrumbs={breadcrumbs}
+      />
       
       <main className={styles.main}>
         <TopNavbar/>
         <PageHeader title={t('topFootballBooks')}
-          description="Everything is going digital. Football is no excepcion. Those books are a great aproach to the new way football is understood. The digital transformation of football."
+          description={t('seo:booksDescription')}
         />
         {data.map((bookData) => <Book key={bookData.slug} data={bookData}/>)}
       </main>
@@ -66,7 +64,7 @@ export default function Books() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common'])),
+      ...(await serverSideTranslations(locale, ['common', 'seo'])),
     },
   };
 }

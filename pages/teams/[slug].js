@@ -1,17 +1,33 @@
 import { useRouter } from 'next/router';
 import TeamHeader from '../../components/TeamHeader';
 import Footer from '../../components/Footer';
+import SeoHead from '../../components/SeoHead';
 import styles from '../../styles/Home.module.css';
 import Link from 'next/link';
 import { IoMdFootball } from '@react-icons/all-files/io/IoMdFootball';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import { getTeamBySlugAndLocale, getAllTeamsByLocale } from '../../lib/teams'; // Adjust path as needed
+import { buildBreadcrumbJsonLd, getAbsoluteUrl, getLocalizedPath } from '../../lib/seo';
 const { SUPPORTED_LOCALES } = require('../../lib/i18n');
 
 export default function TeamPage({ team, locale }) {
   const router = useRouter();
-  const { t, ready } = useTranslation(['common']);
+  const { t, ready } = useTranslation(['common', 'seo']);
+  const teamUrl = getAbsoluteUrl(getLocalizedPath(`/teams/${team.slug}`, locale));
+  const breadcrumbs = buildBreadcrumbJsonLd([
+    { name: t('common:home'), url: getAbsoluteUrl('/') },
+    { name: t('common:granGolTeams'), url: getAbsoluteUrl('/teams') },
+    { name: team.name, url: teamUrl },
+  ]);
+  const teamJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'SportsTeam',
+    name: team.name,
+    description: t('seo:teamDescription', { teamName: team.name }),
+    url: teamUrl,
+    sport: 'Football',
+  };
 
   // Handle fallback state
   if (router.isFallback) {
@@ -25,6 +41,14 @@ export default function TeamPage({ team, locale }) {
 
   return (
     <>
+      <SeoHead
+        title={t('seo:teamTitle', { teamName: team.name })}
+        description={t('seo:teamDescription', { teamName: team.name })}
+        path={`/teams/${team.slug}`}
+        locale={locale}
+        breadcrumbs={breadcrumbs}
+        jsonLd={teamJsonLd}
+      />
       <div>
         {/* Use the TeamHeader component */}
         <TeamHeader 
@@ -84,7 +108,8 @@ export async function getStaticProps({ params, locale }) {
   return {
     props: {
       team, // Pass the fetched team data to the page
-      ...(await serverSideTranslations(locale, ['common'])), // Fetch translations
+      locale,
+      ...(await serverSideTranslations(locale, ['common', 'seo'])),
     }
   };
 }

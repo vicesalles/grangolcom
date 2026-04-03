@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Link from 'next/link';
 import gStyles from '../styles/Home.module.css';
 import styles from '../styles/OfficialStats.module.scss';
@@ -6,16 +5,22 @@ import Footer from '../components/Footer';
 import VisitButton from '../components/VisitButton';
 import StarsDisplayer from '../components/StarsDisplayer';
 import PageHeader from '../components/PageHeader';
+import SeoHead from '../components/SeoHead';
 import { IoMdFootball } from '@react-icons/all-files/io/IoMdFootball';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'react-i18next';
 import TopNavbar from '../components/TopNavbar';
 import { useEffect, useState } from 'react';
+import { buildBreadcrumbJsonLd, getAbsoluteUrl } from '../lib/seo';
 
 
 export default function EuropeanFootballOfficialStats() {
-  const { t, ready } = useTranslation(['common', 'games']);
+  const { t, ready } = useTranslation(['common', 'stats', 'seo']);
   const [isMounted, setIsMounted] = useState(false);
+  const breadcrumbs = buildBreadcrumbJsonLd([
+    { name: t('common:home'), url: getAbsoluteUrl('/') },
+    { name: t('common:footballStats'), url: getAbsoluteUrl('/stats') },
+  ]);
 
   useEffect(() => {
     // This ensures that the component is mounted in the browser
@@ -29,19 +34,12 @@ export default function EuropeanFootballOfficialStats() {
 
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Gran Gol: European Big Leagues Stats</title>
-        <link rel="icon" href="/futbol.ico?v=2"/>
-        <meta property="og:title" content="Gran Gol"/>
-        <meta property="og:description" content="Gran Gol: European Big Leagues Stats."/>
-        <meta property="og:image" content="https://grangol.com/img/articles/GGxFons.jpg"/>
-        <meta property="og:url" content="https://www.grangol.com"></meta>
-        <meta name="twitter:title" content="Gran Gol"/>
-        <meta name="twitter:description" content="Gran Gol: European Big Leagues Stats."/>
-        <meta name="twitter:image" content="https://grangol.com/img/articles/GGxFons.jpg"/>
-        <meta name="twitter:card" content="summary_large_image"></meta>
-        <meta name="robots" content="index, follow"/>
-      </Head>
+      <SeoHead
+        title={t('seo:statsTitle')}
+        description={t('seo:statsDescription')}
+        path="/stats"
+        breadcrumbs={breadcrumbs}
+      />
 
       <main className={styles.main}>
         <TopNavbar />
@@ -94,7 +92,7 @@ export default function EuropeanFootballOfficialStats() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common', 'stats'])),
+      ...(await serverSideTranslations(locale, ['common', 'stats', 'seo'])),
     },
   };
 }

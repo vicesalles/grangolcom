@@ -1,8 +1,8 @@
-import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../../styles/General.module.scss'
 import Footer from '../../components/Footer';
 import PageHeader from '../../components/PageHeader';
+import SeoHead from '../../components/SeoHead';
 import TopNavbar from '../../components/TopNavbar';
 import { IoMdFootball } from '@react-icons/all-files/io/IoMdFootball';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -20,19 +20,12 @@ export default function Games() {
 
     return (
         <div>
-            <Head>
-                <title>Gran Gol: Les mides del camp de futbol</title>
-                <link rel="icon" href="/futbol.ico?v=2" />
-                <meta property="og:title" content="Gran Gol" />
-                <meta property="og:description" content="Gran Gol: Les mides del camp de futbol" />
-                <meta property="og:image" content="https://grangol.com/grangol.jpg" />
-                <meta property="og:url" content="https://grangol.com"></meta>
-
-                <meta name="twitter:title" content="Gran Gol" />
-                <meta name="twitter:description" content="Gran Gol: Les mides del camp de futbol" />
-                <meta name="twitter:image" content="https://grangol.com/grangol.jpg" />
-                <meta name="twitter:card" content="summary_large_image"></meta>
-            </Head>
+            <SeoHead
+                title="Gran Gol Devlog | El terreny de joc"
+                description="Entrada de desenvolupament sobre les dimensions del camp de futbol i les categories UEFA."
+                path="/dev/pitch"
+                noindex
+            />
             
             <main className={styles.main}>
                 <TopNavbar />
