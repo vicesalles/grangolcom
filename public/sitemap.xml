@@ -1,63 +1,728 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.grangol.com</loc>
-    <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="https://www.grangol.com/en"/>
-    <xhtml:link
-               rel="alternate"
-               hreflang="es"
-               href="https://www.grangol.com/es"/>
-    
+    <loc>https://www.grangol.com/articles/sprint3</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/articles/sprint3" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/articles/sprint3" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/articles/sprint3" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/articles/sprint3" />
   </url>
   <url>
-    <loc>https://www.grangol.com/ggx</loc>
-    <xhtml:link
-               rel="alternate"
-               hreflang="es"
-               href="https://www.grangol.com/es/ggx"/>
-    <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="https://www.grangol.com/en/ggx"/>
+    <loc>https://www.grangol.com/articles</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/articles" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/articles" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/articles" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/articles" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/articles" />
   </url>
   <url>
     <loc>https://www.grangol.com/books</loc>
-    <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="https://www.grangol.com/en/books"/>
-    <xhtml:link
-               rel="alternate"
-               hreflang="es"
-               href="https://www.grangol.com/es/books"/>
-    
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/books" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/books" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/books" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/books" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/books" />
   </url>
   <url>
-    <loc>https://www.grangol.com/stats</loc>
-    <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="https://www.grangol.com/en/stats"/>
-    <xhtml:link
-               rel="alternate"
-               hreflang="es"
-               href="https://www.grangol.com/es/stats"/>
-    
+    <loc>https://www.grangol.com/ca/articles/sprint3</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/articles/sprint3" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/articles/sprint3" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/articles/sprint3" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/articles/sprint3" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ca/articles</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/articles" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/articles" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/articles" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/articles" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/articles" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ca/books</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/books" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/books" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/books" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/books" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/books" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ca/games</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/games" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/games" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/games" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/games" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/games" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ca/ggx/rules</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/ggx/rules" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/ggx/rules" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/ggx/rules" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/ggx/rules" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/ggx/rules" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ca/ggx/stadium</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/ggx/stadium" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/ggx/stadium" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/ggx/stadium" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/ggx/stadium" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/ggx/stadium" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ca/ggx/support</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/ggx/support" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/ggx/support" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/ggx/support" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/ggx/support" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/ggx/support" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ca/ggx/teams</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/ggx/teams" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/ggx/teams" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/ggx/teams" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/ggx/teams" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/ggx/teams" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ca/ggx</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/ggx" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/ggx" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/ggx" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/ggx" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/ggx" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ca/makerworld</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/makerworld" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/makerworld" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/makerworld" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/makerworld" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/makerworld" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ca/stats</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/stats" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/stats" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/stats" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/stats" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/stats" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ca/teams/dos_fars</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/dos_fars" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/dos_fars" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/dos_fars" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/dos_fars" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/dos_fars" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ca/teams/guilla</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/guilla" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/guilla" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/guilla" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/guilla" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/guilla" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ca/teams/miner</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/miner" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/miner" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/miner" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/miner" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/miner" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ca/teams/nautic</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/nautic" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/nautic" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/nautic" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/nautic" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/nautic" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ca/teams/nou_vapor</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/nou_vapor" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/nou_vapor" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/nou_vapor" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/nou_vapor" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/nou_vapor" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ca/teams/olivera</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/olivera" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/olivera" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/olivera" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/olivera" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/olivera" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ca/teams/pescador</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/pescador" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/pescador" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/pescador" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/pescador" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/pescador" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ca/teams/politecnic</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/politecnic" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/politecnic" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/politecnic" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/politecnic" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/politecnic" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ca/teams/vapor</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/vapor" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/vapor" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/vapor" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/vapor" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/vapor" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ca/teams/victoria</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/victoria" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/victoria" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/victoria" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/victoria" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/victoria" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ca/teams</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ca</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/es/articles/sprint3</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/articles/sprint3" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/articles/sprint3" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/articles/sprint3" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/articles/sprint3" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/es/articles</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/articles" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/articles" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/articles" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/articles" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/articles" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/es/books</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/books" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/books" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/books" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/books" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/books" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/es/games</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/games" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/games" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/games" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/games" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/games" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/es/ggx/rules</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/ggx/rules" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/ggx/rules" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/ggx/rules" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/ggx/rules" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/ggx/rules" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/es/ggx/stadium</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/ggx/stadium" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/ggx/stadium" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/ggx/stadium" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/ggx/stadium" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/ggx/stadium" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/es/ggx/support</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/ggx/support" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/ggx/support" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/ggx/support" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/ggx/support" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/ggx/support" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/es/ggx/teams</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/ggx/teams" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/ggx/teams" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/ggx/teams" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/ggx/teams" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/ggx/teams" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/es/ggx</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/ggx" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/ggx" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/ggx" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/ggx" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/ggx" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/es/makerworld</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/makerworld" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/makerworld" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/makerworld" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/makerworld" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/makerworld" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/es/stats</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/stats" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/stats" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/stats" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/stats" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/stats" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/es/teams/dos_fars</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/dos_fars" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/dos_fars" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/dos_fars" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/dos_fars" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/dos_fars" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/es/teams/guilla</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/guilla" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/guilla" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/guilla" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/guilla" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/guilla" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/es/teams/miner</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/miner" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/miner" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/miner" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/miner" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/miner" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/es/teams/nautic</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/nautic" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/nautic" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/nautic" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/nautic" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/nautic" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/es/teams/nou_vapor</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/nou_vapor" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/nou_vapor" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/nou_vapor" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/nou_vapor" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/nou_vapor" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/es/teams/olivera</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/olivera" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/olivera" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/olivera" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/olivera" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/olivera" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/es/teams/pescador</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/pescador" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/pescador" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/pescador" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/pescador" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/pescador" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/es/teams/politecnic</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/politecnic" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/politecnic" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/politecnic" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/politecnic" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/politecnic" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/es/teams/vapor</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/vapor" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/vapor" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/vapor" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/vapor" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/vapor" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/es/teams/victoria</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/victoria" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/victoria" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/victoria" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/victoria" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/victoria" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/es/teams</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/es</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com" />
   </url>
   <url>
     <loc>https://www.grangol.com/games</loc>
-    <xhtml:link
-               rel="alternate"
-               hreflang="en"
-               href="https://www.grangol.com/en/games"/>
-    <xhtml:link
-               rel="alternate"
-               hreflang="es"
-               href="https://www.grangol.com/es/games"/>
-    
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/games" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/games" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/games" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/games" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/games" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ggx/rules</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/ggx/rules" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/ggx/rules" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/ggx/rules" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/ggx/rules" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/ggx/rules" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ggx/stadium</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/ggx/stadium" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/ggx/stadium" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/ggx/stadium" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/ggx/stadium" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/ggx/stadium" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ggx/support</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/ggx/support" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/ggx/support" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/ggx/support" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/ggx/support" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/ggx/support" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ggx/teams</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/ggx/teams" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/ggx/teams" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/ggx/teams" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/ggx/teams" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/ggx/teams" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ggx</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/ggx" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/ggx" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/ggx" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/ggx" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/ggx" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/makerworld</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/makerworld" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/makerworld" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/makerworld" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/makerworld" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/makerworld" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/stats</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/stats" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/stats" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/stats" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/stats" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/stats" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/teams/dos_fars</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/dos_fars" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/dos_fars" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/dos_fars" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/dos_fars" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/dos_fars" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/teams/guilla</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/guilla" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/guilla" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/guilla" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/guilla" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/guilla" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/teams/miner</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/miner" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/miner" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/miner" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/miner" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/miner" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/teams/nautic</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/nautic" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/nautic" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/nautic" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/nautic" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/nautic" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/teams/nou_vapor</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/nou_vapor" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/nou_vapor" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/nou_vapor" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/nou_vapor" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/nou_vapor" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/teams/olivera</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/olivera" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/olivera" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/olivera" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/olivera" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/olivera" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/teams/pescador</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/pescador" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/pescador" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/pescador" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/pescador" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/pescador" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/teams/politecnic</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/politecnic" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/politecnic" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/politecnic" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/politecnic" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/politecnic" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/teams/vapor</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/vapor" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/vapor" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/vapor" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/vapor" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/vapor" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/teams/victoria</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/victoria" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/victoria" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/victoria" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/victoria" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/victoria" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/teams</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/zh/articles</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/articles" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/articles" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/articles" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/articles" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/articles" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/zh/books</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/books" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/books" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/books" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/books" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/books" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/zh/games</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/games" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/games" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/games" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/games" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/games" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/zh/ggx/rules</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/ggx/rules" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/ggx/rules" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/ggx/rules" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/ggx/rules" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/ggx/rules" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/zh/ggx/stadium</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/ggx/stadium" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/ggx/stadium" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/ggx/stadium" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/ggx/stadium" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/ggx/stadium" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/zh/ggx/support</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/ggx/support" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/ggx/support" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/ggx/support" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/ggx/support" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/ggx/support" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/zh/ggx/teams</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/ggx/teams" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/ggx/teams" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/ggx/teams" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/ggx/teams" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/ggx/teams" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/zh/ggx</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/ggx" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/ggx" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/ggx" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/ggx" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/ggx" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/zh/makerworld</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/makerworld" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/makerworld" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/makerworld" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/makerworld" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/makerworld" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/zh/stats</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/stats" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/stats" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/stats" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/stats" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/stats" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/zh/teams/dos_fars</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/dos_fars" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/dos_fars" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/dos_fars" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/dos_fars" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/dos_fars" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/zh/teams/guilla</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/guilla" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/guilla" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/guilla" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/guilla" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/guilla" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/zh/teams/miner</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/miner" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/miner" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/miner" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/miner" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/miner" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/zh/teams/nautic</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/nautic" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/nautic" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/nautic" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/nautic" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/nautic" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/zh/teams/nou_vapor</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/nou_vapor" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/nou_vapor" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/nou_vapor" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/nou_vapor" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/nou_vapor" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/zh/teams/olivera</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/olivera" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/olivera" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/olivera" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/olivera" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/olivera" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/zh/teams/pescador</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/pescador" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/pescador" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/pescador" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/pescador" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/pescador" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/zh/teams/politecnic</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/politecnic" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/politecnic" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/politecnic" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/politecnic" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/politecnic" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/zh/teams/vapor</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/vapor" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/vapor" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/vapor" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/vapor" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/vapor" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/zh/teams/victoria</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams/victoria" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams/victoria" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams/victoria" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams/victoria" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams/victoria" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/zh/teams</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/teams" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/teams" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/teams" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh/teams" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/teams" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/zh</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.grangol.com/zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com" />
   </url>
 </urlset>

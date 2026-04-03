@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 import { FaHeart } from '@react-icons/all-files/fa/FaHeart';
@@ -8,56 +7,30 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useEffect, useState } from 'react';
 
 import Footer from '../components/Footer';
+import SeoHead from '../components/SeoHead';
 import TopNavbar from '../components/TopNavbar';
+import { buildBreadcrumbJsonLd, getAbsoluteUrl } from '../lib/seo';
 
 export default function Home() {
-  const { t, ready } = useTranslation('common');
+  const { t, ready } = useTranslation(['common', 'seo']);
   const [isMounted, setIsMounted] = useState(false);
 
-  // Metadades
   const jsonLdData = {
     "@context": "https://schema.org",
     "@type": "Game",
     "name": "Gran Gol",
-    "description": "Gran Gol is a football game.",
+    "description": t('seo:homeDescription'),
     "image": "https://grangol.com/img/articles/GGxFons.jpg",
     "publisher": {
       "@type": "Organization",
       "name": "Gran Gol"
     },
     "genre": "Football Game",
-    "url": "https://grangol.com"
+    "url": "https://www.grangol.com"
   };
-
-  const MetaHead = ({ jsonLdData }) => (
-    <Head>
-      <title>{t('mainTitle')}</title>
-      <link rel="icon" href="/futbol.ico?v=2" />
-      <meta name="description" content={t('mainSubtitle')} />        
-      <meta property="og:title" content={t('mainTitle')} />
-      <meta property="og:description" content={t('mainSubtitle')} />
-      <meta property="og:image" content="https://grangol.com/img/articles/GGxFons.jpg" />
-      <meta property="og:url" content="https://grangol.com" />
-      <meta name="twitter:title" content={t('mainTitle')} />
-      <meta name="twitter:description" content={t('mainSubtitle')} />
-      <meta name="twitter:image" content="https://grangol.com/img/articles/GGxFons.jpg" />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@GranGol11" />
-      <meta name="yandex-verification" content="20bb35cc90f332ef" />
-      <meta name="robots" content="index, follow" />  
-
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="canonical" href="https://www.grangol.com/" />
-      <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.grangol.com/sitemap.xml" />
-
-      {/* Incrustar JSON-LD */}
-      <script 
-          type="application/ld+json" 
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }} 
-        />
-      
-      </Head>
-  );
+  const breadcrumbs = buildBreadcrumbJsonLd([
+    { name: 'Home', url: getAbsoluteUrl('/') },
+  ]);
 
   useEffect(() => {
     // This ensures that the component is mounted in the browser
@@ -67,13 +40,25 @@ export default function Home() {
   // Wait until translations are ready
   if (!ready || !isMounted) {
     return <div>
-      <MetaHead jsonLdData={jsonLdData}/>      
+      <SeoHead
+        title={t('seo:homeTitle')}
+        description={t('seo:homeDescription')}
+        path="/"
+        jsonLd={jsonLdData}
+        breadcrumbs={breadcrumbs}
+      />
       <IoMdFootball fontSize={12} /></div>;
   }  
 
   return (
     <div className={styles.container}>
-      <MetaHead jsonLdData={jsonLdData}/>
+      <SeoHead
+        title={t('seo:homeTitle')}
+        description={t('seo:homeDescription')}
+        path="/"
+        jsonLd={jsonLdData}
+        breadcrumbs={breadcrumbs}
+      />
       <TopNavbar />      
       <main className={styles.main}>
         <h1 className={styles.titolPrincipal}>{t('mainTitle')}</h1>
@@ -92,7 +77,7 @@ export default function Home() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common', 'ggx'])), // Load both common and cookies namespaces
+      ...(await serverSideTranslations(locale, ['common', 'ggx', 'seo'])),
     },
   };
 }

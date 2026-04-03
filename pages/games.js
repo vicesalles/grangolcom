@@ -1,9 +1,9 @@
-import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/General.module.scss'
 
 import Footer from '../components/Footer';
 import PageHeader from '../components/PageHeader';
+import SeoHead from '../components/SeoHead';
 import TopNavbar from '../components/TopNavbar';
 
 import {IoMdFootball} from '@react-icons/all-files/io/IoMdFootball';
@@ -11,10 +11,15 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { buildBreadcrumbJsonLd, getAbsoluteUrl } from '../lib/seo';
 
 export default function Games() {
-  const { t, ready } = useTranslation(['common', 'games']);
+  const { t, ready } = useTranslation(['common', 'games', 'seo', 'ggx']);
   const [isMounted, setIsMounted] = useState(false);
+  const breadcrumbs = buildBreadcrumbJsonLd([
+    { name: t('common:home'), url: getAbsoluteUrl('/') },
+    { name: t('common:footballGames'), url: getAbsoluteUrl('/games') },
+  ]);
 
   useEffect(() => {
     // This ensures that the component is mounted in the browser
@@ -29,20 +34,12 @@ export default function Games() {
 
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Gran Gol: {t('footballGames')}</title>
-        <link rel="icon" href="/futbol.ico?v=2"/>
-        <meta property="og:title" content="Gran Gol"/>
-        <meta property="og:description" content={t('footballGames')}/>
-        <meta property="og:image" content="https://grangol.com/img/articles/GGxFons.jpgg"/>
-        <meta property="og:url" content="https://www.grangol.com"></meta>
-
-        <meta name="twitter:title" content="Gran Gol"/>
-        <meta name="twitter:description" content={t('footballGames')}/>
-        <meta name="twitter:image" content="https://grangol.com/img/articles/GGxFons.jpgg"/>
-        <meta name="twitter:card" content="summary_large_image"></meta>
-        <meta name="robots" content="index, follow"/>
-      </Head>      
+      <SeoHead
+        title={t('seo:gamesTitle')}
+        description={t('seo:gamesDescription')}
+        path="/games"
+        breadcrumbs={breadcrumbs}
+      />
       <main className={styles.main}>
       <TopNavbar/>
         <PageHeader 
@@ -82,7 +79,7 @@ export default function Games() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common', 'games','ggx'])),
+      ...(await serverSideTranslations(locale, ['common', 'games', 'ggx', 'seo'])),
     },
   };
 }

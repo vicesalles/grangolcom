@@ -1,4 +1,6 @@
 User-agent: *
-Disallow: /api/
 Allow: /
+Disallow: /api/
+Disallow: /dev/
+Disallow: /subscription-confirmed
 Sitemap: https://www.grangol.com/sitemap.xml

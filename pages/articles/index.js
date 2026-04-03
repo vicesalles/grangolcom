@@ -2,9 +2,11 @@ import Link from 'next/link';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'react-i18next';
 import PageHeader from '../../components/PageHeader';
+import SeoHead from '../../components/SeoHead';
 import TopNavbar from '../../components/TopNavbar';
 import Footer from '../../components/Footer';
 import styles from '../../styles/General.module.scss'
+import { buildBreadcrumbJsonLd, getAbsoluteUrl } from '../../lib/seo';
 
 export async function getStaticProps({locale}) {
   const { getAllPostsMeta } = await import('../../lib/mdx.server'); // ← import al servidor
@@ -16,17 +18,27 @@ export async function getStaticProps({locale}) {
   return {
     props: {
       posts,
-       ...(await serverSideTranslations(locale, ['common','ggx'])),
+       ...(await serverSideTranslations(locale, ['common', 'ggx', 'seo'])),
     }
   };
 }
 
 export default function ArticlesIndex({posts}) {
-    const { t, ready } = useTranslation('common');
+    const { t } = useTranslation(['common', 'ggx', 'seo']);
+    const breadcrumbs = buildBreadcrumbJsonLd([
+      { name: t('common:home'), url: getAbsoluteUrl('/') },
+      { name: t('common:devLog'), url: getAbsoluteUrl('/articles') },
+    ]);
   return (<>
   <div className={styles.container}>
+    <SeoHead
+      title={t('seo:articlesTitle')}
+      description={t('seo:articlesDescription')}
+      path="/articles"
+      breadcrumbs={breadcrumbs}
+    />
     <TopNavbar /> 
-  <PageHeader title={t('common:devLog')}/>   
+  <PageHeader title={t('common:devLog')} description={t('seo:articlesDescription')}/>   
            
       <article className={styles.articleTeams}>
       <ul>

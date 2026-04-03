@@ -1,9 +1,9 @@
-import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../../styles/General.module.scss'
 
 import Footer from '../../components/Footer';
 import PageHeader from '../../components/PageHeader';
+import SeoHead from '../../components/SeoHead';
 import TopNavbar from '../../components/TopNavbar';
 
 import {IoMdFootball} from '@react-icons/all-files/io/IoMdFootball';
@@ -11,53 +11,29 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { buildBreadcrumbJsonLd, getAbsoluteUrl } from '../../lib/seo';
 
 export default function GGX() {
-  const { t, ready } = useTranslation(['common', 'ggx']);
+  const { t, ready } = useTranslation(['common', 'ggx', 'seo']);
   const [isMounted, setIsMounted] = useState(false);
+  const breadcrumbs = buildBreadcrumbJsonLd([
+    { name: t('common:home'), url: getAbsoluteUrl('/') },
+    { name: t('ggx:ggxTitol'), url: getAbsoluteUrl('/ggx') },
+  ]);
 
   const jsonLdData = {
     "@context": "https://schema.org",
     "@type": "Game",
     "name": t('ggx:ggxTitol'),
-    "description": t('ggx:ggxSubTitol'),
+    "description": t('seo:ggxDescription'),
     "image": "https://grangol.com/img/articles/GGxFons.jpg",
     "publisher": {
       "@type": "Organization",
       "name": "Gran Gol"
     },
     "genre": "Joc de futbol",
-    "url": "https://grangol.com"
+    "url": "https://www.grangol.com/ggx"
   }
-
-  const MetaHead = ({ jsonLdData }) => (
-    <Head>
-      <title>{t('ggx:ggxTitol')}</title>
-      <meta name="description" content={t('ggx:ggxSubTitol')} />  
-
-      <link rel="icon" href="/futbol.ico?v=2"/>
-      <meta property="og:title" content={t('ggx:ggxTitol')}/>
-      <meta property="og:description" content={t('ggx:ggxSubTitol')}/>
-      <meta property="og:image" content="https://grangol.com/img/articles/GGxFons.jpg"/>
-      <meta property="og:url" content="https://grangol.com/ggx"></meta>
-      <meta name="twitter:title" content={t('ggx:ggxTitol')}/>
-      <meta name="twitter:description" content={t('ggx:ggxSubTitol')}/>
-      <meta name="twitter:image" content="https://grangol.com/img/articles/GGxFons.jpg"/>
-      <meta name="twitter:card" content="summary_large_image"></meta>
-      <meta name="twitter:site" content="@GranGol11" />
-      <meta name="robots" content="index, follow"/>    
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="canonical" href="https://www.grangol.com/ggx" />
-      <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.grangol.com/sitemap.xml" />
-
-      {/* Incrustar JSON-LD */}
-      <script 
-          type="application/ld+json" 
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }} 
-        />
-      
-      </Head>
-  );
 
   useEffect(() => {
     // This ensures that the component is mounted in the browser
@@ -67,13 +43,25 @@ export default function GGX() {
   // Wait until translations are ready
   if (!ready || !isMounted) {
     return <div>
-      <MetaHead jsonLdData={jsonLdData}/>     
+      <SeoHead
+        title={t('seo:ggxTitle')}
+        description={t('seo:ggxDescription')}
+        path="/ggx"
+        jsonLd={jsonLdData}
+        breadcrumbs={breadcrumbs}
+      />
       <IoMdFootball fontSize={12} /></div>;
   }
  
   return (
     <div className={styles.container}>
-      <MetaHead jsonLdData={jsonLdData}/>     
+      <SeoHead
+        title={t('seo:ggxTitle')}
+        description={t('seo:ggxDescription')}
+        path="/ggx"
+        jsonLd={jsonLdData}
+        breadcrumbs={breadcrumbs}
+      />
 
       <main className={styles.main}>
       <TopNavbar/>
@@ -171,7 +159,7 @@ export default function GGX() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common', 'ggx'])),
+      ...(await serverSideTranslations(locale, ['common', 'ggx', 'seo'])),
     },
   };
 }
