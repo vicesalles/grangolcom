@@ -1,11 +1,11 @@
 import styles from '../styles/TopNavBar.module.scss'
 import { useRouter } from 'next/router';
 
-const LOCALE_LABELS = {
-  ca: 'CA',
+const LOCALE_LABELS = {  
   en: 'EN',
   es: 'ES',
   zh: '中文',
+  ca: 'CA',
 };
 
 export default function TopNavbar(props) {
