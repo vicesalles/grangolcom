@@ -73,6 +73,7 @@ export default function MakerWorldLanding() {
         <Link className={styles.newsletter} href="/ggx/stadium">{t('ggx:ggxStadium')}</Link>
         <Link className={styles.newsletter} href="/ggx/teams">{t('ggxTeams')}</Link>
         <Link className={styles.newsletter} href="/ggx/support">{t('ggx:ggxSupportGGX')}</Link>
+        <Link className={gStyles.newsletter} href="/books">{t('footballBooks')}</Link>
       </div>
       <Footer />
     </div>

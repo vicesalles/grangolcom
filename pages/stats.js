@@ -81,7 +81,7 @@ export default function EuropeanFootballOfficialStats() {
       </main>
 
       <div className={gStyles.botoneraContainer}>        
-        <Link className={gStyles.newsletter} href="/">{t('home')}</Link>  <Link className={gStyles.newsletter} href="./ggx">GGx</Link>  <Link className={gStyles.newsletter} href="/stats">{t('footballStats')}</Link>  
+        <Link className={gStyles.newsletter} href="/">{t('home')}</Link>  <Link className={gStyles.newsletter} href="./ggx">GGx</Link>  <Link className={gStyles.newsletter} href="/books">{t('footballBooks')}</Link>  
       </div>   
 
       <Footer />
