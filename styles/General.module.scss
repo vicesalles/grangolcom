@@ -59,7 +59,7 @@
     
   }
   li:hover{
-    background-color: green;
+    background-color: #26b840;
     color: white;
     font-weight: bold;
   }
@@ -73,7 +73,7 @@
   overflow: hidden;
   p{
     a:hover{
-      color: green;
+      color: #26b840;
       text-decoration: underline;
     }
   }
@@ -135,3 +135,5 @@
   align-content: center;
 
 }
+
+$grangol-green:#26b840;

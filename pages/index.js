@@ -5,7 +5,7 @@ import { IoMdFootball } from '@react-icons/all-files/io/IoMdFootball';
 import { useTranslation } from 'react-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useEffect, useState } from 'react';
-
+import Image from 'next/image';
 import Footer from '../components/Footer';
 import SeoHead from '../components/SeoHead';
 import TopNavbar from '../components/TopNavbar';
@@ -61,6 +61,12 @@ export default function Home() {
       />
       <TopNavbar />      
       <main className={styles.main}>
+        <Image
+                    src="/img/grangol.svg"
+                    width={600}
+                    height={200}
+                    alt="{t('stadium:peuFotoPorteriaV3')}"
+                />
         <h1 className={styles.titolPrincipal}>{t('mainTitle')}</h1>
         <h2  className={styles.subtitolPrincipal}>{t('mainSubtitle')}</h2>
         <h3><FaHeart fontSize={100} color={'red'} /> <IoMdFootball fontSize={100} /></h3>
