@@ -160,7 +160,7 @@
 }
 
 .titolPrincipal {
-  -webkit-text-stroke: 3px black;
+  -webkit-text-stroke: .5px black;
   font-family: 'Anton';
   font-size: 4em;
   max-width: 900px;
@@ -169,6 +169,12 @@
   margin-bottom: 0px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .titolPrincipal {
+    font-size: 2em;
+  }
 }
 
 .subtitolPrincipal{
@@ -219,4 +225,11 @@
   gap:10px;
   height: 20%;
   margin-bottom: 1em;
+}
+
+.logoPrincipal{
+  width: 70%;
+  max-width: 600px;
+  height: auto;
+
 }

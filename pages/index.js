@@ -62,10 +62,11 @@ export default function Home() {
       <TopNavbar />      
       <main className={styles.main}>
         <Image
+                    className={styles.logoPrincipal}
                     src="/img/grangol.svg"
-                    width={600}
+                    width={600}                    
                     height={200}
-                    alt="{t('stadium:peuFotoPorteriaV3')}"
+                    alt="{t('mainTitle')}"
                 />
         <h1 className={styles.titolPrincipal}>{t('mainTitle')}</h1>
         <h2  className={styles.subtitolPrincipal}>{t('mainSubtitle')}</h2>
