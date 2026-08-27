@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.grangol.com/articles/assetsEverywhere</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/articles/assetsEverywhere" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/articles/assetsEverywhere" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/articles/assetsEverywhere" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/articles/assetsEverywhere" />
+  </url>
+  <url>
     <loc>https://www.grangol.com/articles/sprint3</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/articles/sprint3" />
     <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/articles/sprint3" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/articles/sprint3" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/articles/sprint3" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/articles/sunCup</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/articles/sunCup" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/articles/sunCup" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/articles/version04</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/articles/version04" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/articles/version04" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/articles/version04" />
   </url>
   <url>
     <loc>https://www.grangol.com/articles</loc>
@@ -24,11 +42,29 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/books" />
   </url>
   <url>
+    <loc>https://www.grangol.com/ca/articles/assetsEverywhere</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/articles/assetsEverywhere" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/articles/assetsEverywhere" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/articles/assetsEverywhere" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/articles/assetsEverywhere" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ca/articles/copaSol</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/articles/copaSol" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/articles/copaSol" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/ca/articles/copaSol" />
+  </url>
+  <url>
     <loc>https://www.grangol.com/ca/articles/sprint3</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/articles/sprint3" />
     <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/articles/sprint3" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/articles/sprint3" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/articles/sprint3" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ca/articles/versio04</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/articles/versio04" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/ca/articles/versio04" />
   </url>
   <url>
     <loc>https://www.grangol.com/ca/articles</loc>
@@ -207,11 +243,30 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com" />
   </url>
   <url>
+    <loc>https://www.grangol.com/es/articles/assetsEverywhere</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/articles/assetsEverywhere" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/articles/assetsEverywhere" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/articles/assetsEverywhere" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/articles/assetsEverywhere" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/es/articles/copaSol</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/articles/copaSol" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/articles/copaSol" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/ca/articles/copaSol" />
+  </url>
+  <url>
     <loc>https://www.grangol.com/es/articles/sprint3</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/articles/sprint3" />
     <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/articles/sprint3" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/articles/sprint3" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/articles/sprint3" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/es/articles/version04</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/articles/version04" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/articles/version04" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/articles/version04" />
   </url>
   <url>
     <loc>https://www.grangol.com/es/articles</loc>

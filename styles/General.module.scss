@@ -1,10 +1,5 @@
-@font-face {
-    font-family: 'Anton';
-    src: url(../public/fonts/Anton-Regular.ttf ) format('truetype');
-}
-
 .granGolTipo{
-    font-family: 'Anton';
+    font-family: var(--font-heading);
 }
 
 .container {
@@ -37,7 +32,7 @@
 
 .dataArticles{
   font-size: 11px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: var(--font-body);
   margin-top: 0.1em;
   margin-top: 0.5em;
   text-align: left;
@@ -81,7 +76,7 @@
 
 .peuFoto{
   font-size: 10pt;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: var(--font-body);
 }
 
 .botoCTA{
