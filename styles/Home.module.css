@@ -230,20 +230,20 @@
 }
 
 .landingHighlight {
-  font-size: 1.55rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 700;
   color: #111;
-  margin: 1.25rem 0 0.5rem;
+  margin: 1.25rem 0 0.75rem;
   max-width: 600px;
   text-align: center;
-  line-height: 1.35;
+  line-height: 1.3;
   padding: 0 1rem;
 }
 
 @media (max-width: 600px) {
   .landingHighlight {
-    font-size: 1.2rem;
-    line-height: 1.4;
+    font-size: 1.35rem;
+    line-height: 1.35;
   }
 }
 
@@ -253,8 +253,8 @@
   background-color: black;
   padding: 1em 2.5em;
   font-size: 1.25rem;
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0.25rem;
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -282,7 +282,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin-top: 2.5rem;
+  margin-top: 1.25rem;
   margin-bottom: 1rem;
   opacity: 0.6;
   transition: opacity 0.2s ease;
@@ -310,11 +310,26 @@
 
 @media (max-width: 600px) {
   .makerworldNav {
-    margin-top: 2rem;
+    margin-top: 1rem;
     gap: 6px;
   }
   .navLinkSecondary {
     font-size: 0.8rem;
     padding: 0.35em 0.6em;
+  }
+}
+
+.landingNarrow {
+  max-width: 520px;
+  text-align: center;
+  line-height: 1.45;
+  padding: 0 1rem;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 600px) {
+  .landingNarrow {
+    max-width: 100%;
+    line-height: 1.5;
   }
 }

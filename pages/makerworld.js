@@ -72,7 +72,7 @@ export default function MakerWorldLanding() {
         </h3>
         <p className={styles.landingHighlight}>{t('ggx:ggxLandingText1')}</p>
         <h2>{t('ggx:ggxLandingText2')}</h2>
-        <h2>{t('ggx:ggxLandingText3')}</h2>
+        <h2 className={styles.landingNarrow}>{t('ggx:ggxLandingText3')}</h2>
         <a className={styles.ctaPrimary} href={t('shareNewsletter')} target="_blank" rel="noopener noreferrer">
           {t('joinTheClub')}
         </a>
