@@ -5,6 +5,7 @@ import { IoMdFootball } from '@react-icons/all-files/io/IoMdFootball';
 import { useTranslation } from 'react-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 import Footer from '../components/Footer';
 import SeoHead from '../components/SeoHead';
@@ -58,22 +59,29 @@ export default function MakerWorldLanding() {
       />
       <TopNavbar />
       <main className={styles.main}>
-        <h1 className={styles.titolPrincipal}>{t('makerWelcome')}</h1>
+        <Image
+          className={styles.logoPrincipal}
+          src="/img/grangol.svg"
+          width={600}
+          height={200}
+          alt={t('seo:makerworldTitle')}
+        />
+        <h1 className={styles.titolPrincipal}>{t('ggx:ggxLandingTitle')}</h1>
         <h3>
           <FaHeart fontSize={100} color={'red'} /> <IoMdFootball fontSize={100} />
         </h3>
-        <h2>Get updates by e-mail</h2>
-        <a className={styles.newsletter} href={t('shareNewsletter')} target="_blank" rel="noopener noreferrer">
-          {t('newsLetterMaker')}
+        <p className={styles.landingHighlight}>{t('ggx:ggxLandingText1')}</p>
+        <h2>{t('ggx:ggxLandingText2')}</h2>
+        <h2>{t('ggx:ggxLandingText3')}</h2>
+        <a className={styles.ctaPrimary} href={t('shareNewsletter')} target="_blank" rel="noopener noreferrer">
+          {t('joinTheClub')}
         </a>
       </main>
-      <div className={styles.textMenu}>
-        <Link className={styles.newsletter} href="./ggx/">{t('ggx:queEsGGx')}</Link>
-        <Link className={styles.newsletter} href="/ggx/rules">{t('ggx:ggxNormesTitol')}</Link>
-        <Link className={styles.newsletter} href="/ggx/stadium">{t('ggx:ggxStadium')}</Link>
-        <Link className={styles.newsletter} href="/ggx/teams">{t('ggxTeams')}</Link>
-        <Link className={styles.newsletter} href="/ggx/support">{t('ggx:ggxSupportGGX')}</Link>
-        <Link className={gStyles.newsletter} href="/books">{t('footballBooks')}</Link>
+      <div className={styles.makerworldNav}>
+        <Link className={styles.navLinkSecondary} href="./ggx/">{t('ggx:queEsGGx')}</Link>
+        <Link className={styles.navLinkSecondary} href="/ggx/rules">{t('ggx:ggxNormesTitol')}</Link>
+        <Link className={styles.navLinkSecondary} href="/ggx/stadium">{t('ggx:ggxStadium')}</Link>
+        <Link className={styles.navLinkSecondary} href="/ggx/teams">{t('ggxTeams')}</Link>  
       </div>
       <Footer />
     </div>

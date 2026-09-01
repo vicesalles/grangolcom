@@ -8,6 +8,11 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/articles/assetsEverywhere" />
   </url>
   <url>
+    <loc>https://www.grangol.com/articles/makingTutorial</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/articles/makingTutorial" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/articles/makingTutorial" />
+  </url>
+  <url>
     <loc>https://www.grangol.com/articles/sprint3</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.grangol.com/articles/sprint3" />
     <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/articles/sprint3" />
@@ -53,6 +58,11 @@
     <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/articles/copaSol" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/articles/copaSol" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/ca/articles/copaSol" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/ca/articles/creantTutorial</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/articles/creantTutorial" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/ca/articles/creantTutorial" />
   </url>
   <url>
     <loc>https://www.grangol.com/ca/articles/sprint3</loc>
@@ -254,6 +264,11 @@
     <xhtml:link rel="alternate" hreflang="ca" href="https://www.grangol.com/ca/articles/copaSol" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/articles/copaSol" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/ca/articles/copaSol" />
+  </url>
+  <url>
+    <loc>https://www.grangol.com/es/articles/creandoTutorial</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.grangol.com/es/articles/creandoTutorial" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.grangol.com/es/articles/creandoTutorial" />
   </url>
   <url>
     <loc>https://www.grangol.com/es/articles/sprint3</loc>

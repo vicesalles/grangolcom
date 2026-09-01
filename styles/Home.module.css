@@ -228,3 +228,93 @@
   height: auto;
 
 }
+
+.landingHighlight {
+  font-size: 1.55rem;
+  font-weight: 600;
+  color: #111;
+  margin: 1.25rem 0 0.5rem;
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.35;
+  padding: 0 1rem;
+}
+
+@media (max-width: 600px) {
+  .landingHighlight {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+}
+
+.ctaPrimary {
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  padding: 1em 2.5em;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.ctaPrimary:hover {
+  color: black;
+  background-color: yellow;
+  box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+}
+
+@media (max-width: 600px) {
+  .ctaPrimary {
+    font-size: 1.1rem;
+    padding: 0.9em 2em;
+    margin-top: 1.5rem;
+  }
+}
+
+.makerworldNav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+  padding: 0 1rem;
+}
+
+.makerworldNav:hover {
+  opacity: 0.9;
+}
+
+.navLinkSecondary {
+  color: white;
+  font-weight: normal;
+  background-color: black;
+  padding: 0.4em 0.8em;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.navLinkSecondary:hover {
+  color: black;
+  background-color: yellow;
+}
+
+@media (max-width: 600px) {
+  .makerworldNav {
+    margin-top: 2rem;
+    gap: 6px;
+  }
+  .navLinkSecondary {
+    font-size: 0.8rem;
+    padding: 0.35em 0.6em;
+  }
+}
