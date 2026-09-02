@@ -12,7 +12,7 @@ import { getAllTeamsByLocale } from '../../lib/teams'; // Import direct data acc
 import { buildBreadcrumbJsonLd, getAbsoluteUrl } from '../../lib/seo';
 
 export default function TeamsPage({ teams }) {
-  const { t, ready } = useTranslation(['common', 'seo']);
+  const { t, ready } = useTranslation(['common', 'seo', 'teams']);
   const [isMounted, setIsMounted] = useState(false);
   const breadcrumbs = buildBreadcrumbJsonLd([
     { name: t('common:home'), url: getAbsoluteUrl('/') },
@@ -49,7 +49,7 @@ export default function TeamsPage({ teams }) {
           {teams.map((team) => (
             <li key={team.slug}>
               <Link href={`/teams/${team.slug}`}>
-                {team.name} {/* Display team name */}
+                {t(team.nameKey)}
               </Link>
             </li>
           ))}
@@ -73,7 +73,7 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       teams,  // List of teams for the current locale
-      ...(await serverSideTranslations(locale, ['common', 'seo'])),
+      ...(await serverSideTranslations(locale, ['common', 'seo', 'teams'])),
     }   
   };
 }

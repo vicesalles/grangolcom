@@ -1,19 +1,23 @@
-// /components/TeamHeader.js
+import styles from '../styles/TeamHeader.module.scss';
 
-const TeamHeader = ({ name, mainColor, secondColor }) => {
-    const headerStyle = {
-      backgroundColor: mainColor,  // Team's main color for background
-      color: secondColor,          // Team's second color for text
-      padding: '20px',
-      textAlign: 'center'
-    };
-  
+const TeamHeader = ({ name, mainColor, secondColor, textColor }) => {
+    const effectiveTextColor = textColor || secondColor;
+
     return (
-      <header style={headerStyle}>
-        <h1>{name}</h1>
+      <header
+        className={styles.teamHeader}
+        style={{ backgroundColor: mainColor, color: effectiveTextColor }}
+      >
+        <div
+          className={styles.teamBadge}
+          style={{ backgroundColor: secondColor, color: mainColor }}
+          aria-hidden="true"
+        >
+          <span>{name.charAt(0)}</span>
+        </div>
+        <h1 className={styles.teamName}>{name}</h1>
       </header>
     );
   };
-  
+
   export default TeamHeader;
-  
