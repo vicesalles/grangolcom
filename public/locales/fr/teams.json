@@ -1,0 +1,85 @@
+```json
+{
+  "vapor_name": "Union Sportive Textile",
+  "vapor_shortName": "",
+  "vapor_nickname": "",
+  "vapor_description": "L'Union Sportive Textile est une équipe d'une ville moyenne située au bord de la rivière, dans une petite plaine entre les montagnes. Autrefois, la ville possédait une importante industrie textile.",
+  "vapor_rivals": "Le principal rival de l'Union Sportive Textile est le Club Athlétique Minier. Le club entretient également une rivalité avec le Nouveau Club Sportif Textile, originaire de la même ville.",
+  "vapor_stadium": "",
+
+  "olivera_name": "Football Club Olivier",
+  "olivera_shortName": "",
+  "olivera_nickname": "",
+  "olivera_description": "Le Football Club Olivier est implanté dans un petit village agricole.",
+  "olivera_rivals": "Le principal rival de l'Olivier est le Sporting des Hauts-Bois. Le club entretient également une rivalité avec le Nouveau Club Sportif Textile.",
+  "olivera_stadium": "",
+
+  "miner_name": "Club Athlétique Minier",
+  "miner_shortName": "",
+  "miner_nickname": "",
+  "miner_description": "Le Club Athlétique Minier est un club d'un petit village situé sur le cours supérieur de la rivière. Ancienne colonie minière, le village a perdu une grande partie de sa population après la fermeture des mines.",
+  "miner_rivals": "Le principal rival du Club Athlétique Minier est l'Union Sportive Textile.",
+  "miner_stadium": "",
+
+  "victoria_name": "Football Club Victoire",
+  "victoria_shortName": "",
+  "victoria_nickname": "",
+  "victoria_description": "Le Football Club Victoire est un prestigieux club de football situé dans les hauteurs de Terradell. Le Victoire est toujours un candidat au titre.",
+  "victoria_rivals": "Le principal rival du Victoire est l'Institut Polytechnique.",
+  "victoria_stadium": "",
+
+  "nautic_name": "Club Nautique",
+  "nautic_shortName": "",
+  "nautic_nickname": "",
+  "nautic_description": "Le Club Nautique est un club omnisports situé dans une ville moyenne à l'embouchure de la rivière.",
+  "nautic_rivals": "Le principal rival du Club Nautique est le Club Sportif Pêcheur. Il entretient également une rivalité avec le Deux Phares Football Club.",
+  "nautic_stadium": "",
+
+  "dos_fars_name": "Deux Phares Football Club",
+  "dos_fars_shortName": "",
+  "dos_fars_nickname": "",
+  "dos_fars_description": "Le Deux Phares Football Club est implanté dans un petit village situé au bord d'une petite baie. Les deux phares qui signalent aux navires les extrémités de la baie ont donné leur nom à l'équipe.",
+  "dos_fars_rivals": "Le principal rival des Deux Phares est le Club Nautique. Le club entretient également une rivalité avec le Club Sportif Pêcheur.",
+  "dos_fars_stadium": "",
+
+  "pescador_name": "Club Sportif Pêcheur",
+  "pescador_shortName": "",
+  "pescador_nickname": "",
+  "pescador_description": "Le Club Sportif Pêcheur est situé dans une ville moyenne à l'embouchure de la rivière. Le club est né dans le quartier historiquement habité par les pêcheurs.",
+  "pescador_rivals": "Le principal rival du Pêcheur est le Club Nautique. Il entretient également une rivalité avec les Deux Phares.",
+  "pescador_stadium": "",
+
+  "nou_vapor_name": "Nouveau Club Sportif Textile",
+  "nou_vapor_shortName": "",
+  "nou_vapor_nickname": "",
+  "nou_vapor_description": "Le Nouveau Club Sportif Textile est une équipe d'une ville moyenne située au bord de la rivière, dans une petite plaine entre les montagnes. Autrefois, la ville possédait une importante industrie textile. Le club est né d'une scission de l'Union Sportive Textile.",
+  "nou_vapor_rivals": "",
+  "nou_vapor_stadium": "",
+
+  "politecnic_name": "Institut Polytechnique",
+  "politecnic_shortName": "",
+  "politecnic_nickname": "",
+  "politecnic_description": "L'Institut Polytechnique est l'équipe du prestigieux institut technologique de Terradell. Réputé pour l'excellence de ses étudiants, le Polytechnique possède une importante section sportive. Son équipe de football obtient régulièrement de très bons résultats.",
+  "politecnic_rivals": "Le principal rival du Polytechnique est le Victoire. Il entretient également une rivalité avec le Racing des Halles.",
+  "politecnic_stadium": "",
+
+  "guilla_name": "Sporting des Hauts-Bois",
+  "guilla_shortName": "",
+  "guilla_nickname": "",
+  "guilla_description": "Le Sporting des Hauts-Bois est un club situé dans un petit village au cœur d'une vaste région boisée réputée pour ses sources. L'industrie du bois y occupe également une place importante.",
+  "guilla_rivals": "Le principal rival des Hauts-Bois est l'Olivier. Le club entretient également des rivalités avec le Nouveau Club Sportif Textile et le Victoire.",
+  "guilla_stadium": "",
+
+  "mainPlayerLabel": "Joueur principal",
+  "aboutTeam": "À propos de l'équipe",
+  "mainPlayers": "Joueurs principaux",
+  "teamModel": "Modèle de l'équipe",
+  "modelComingSoon": "Modèle 3D prochainement",
+  "backToTeams": "Retour aux équipes",
+
+  "role_goalkeeper": "Gardien",
+  "role_defender": "Défenseur",
+  "role_midfielder": "Milieu de terrain",
+  "role_attacker": "Attaquant"
+}
+```

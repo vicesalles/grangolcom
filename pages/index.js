@@ -71,7 +71,7 @@ export default function Home() {
         <h1 className={styles.titolPrincipal}>{t('mainTitle')}</h1>
         <h2  className={styles.subtitolPrincipal}>{t('mainSubtitle')}</h2>
         <h3><FaHeart fontSize={100} color={'red'} /> <IoMdFootball fontSize={100} /></h3>
-        <a className={styles.newsletter} href={t('shareNewsletter')} target='_blank'> {t('newsLetterCTA')} </a> 
+        <a className={styles.ctaPrimary} href={t('shareNewsletter')} target='_blank' rel="noopener noreferrer">{t('joinTheClub')}</a> 
       </main>
       <div className={styles.botoneraContainer}>        
         <Link className={styles.newsletter} href="/articles/">{t('common:devLog')}</Link> <Link className={styles.newsletter} href="/ggx/">{t('ggx:GGxEljocDeTaula')}</Link>  <Link className={styles.newsletter} href="/stats/">{t('common:footballStats')}</Link> 

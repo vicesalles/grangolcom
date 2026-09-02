@@ -1,0 +1,85 @@
+```json
+{
+  "vapor_name": "Società Sportiva Tessile",
+  "vapor_shortName": "",
+  "vapor_nickname": "",
+  "vapor_description": "La Società Sportiva Tessile è una squadra di una cittadina di medie dimensioni situata lungo il fiume, in una piccola pianura tra le montagne. In passato la località aveva una forte industria tessile.",
+  "vapor_rivals": "La principale rivale della Società Sportiva Tessile è l'Associazione Sportiva Mineraria. Mantiene inoltre una rivalità con la Nuova Società Sportiva Tessile, che proviene dalla stessa località.",
+  "vapor_stadium": "",
+
+  "olivera_name": "Oliveto Calcio",
+  "olivera_shortName": "",
+  "olivera_nickname": "",
+  "olivera_description": "L'Oliveto Calcio ha sede in un piccolo paese agricolo.",
+  "olivera_rivals": "La principale rivale dell'Oliveto è l'Associazione Calcio Volpe. Mantiene inoltre una rivalità con la Nuova Società Sportiva Tessile.",
+  "olivera_stadium": "",
+
+  "miner_name": "Associazione Sportiva Mineraria",
+  "miner_shortName": "",
+  "miner_nickname": "",
+  "miner_description": "L'Associazione Sportiva Mineraria è un club di un piccolo paese situato nella parte alta del corso del fiume. Antica colonia mineraria, perse gran parte della sua popolazione quando le miniere furono chiuse.",
+  "miner_rivals": "La principale rivale dell'Associazione Sportiva Mineraria è la Società Sportiva Tessile.",
+  "miner_stadium": "",
+
+  "victoria_name": "Football Club Vittoria",
+  "victoria_shortName": "",
+  "victoria_nickname": "",
+  "victoria_description": "Il Football Club Vittoria è un prestigioso club calcistico situato nella zona alta di Terradell. Il Vittoria è sempre una delle candidate al titolo.",
+  "victoria_rivals": "La principale rivale del Vittoria è l'Istituto Politecnico.",
+  "victoria_stadium": "",
+
+  "nautic_name": "Club Nautico",
+  "nautic_shortName": "",
+  "nautic_nickname": "",
+  "nautic_description": "Il Club Nautico è una società polisportiva situata in una cittadina di medie dimensioni alla foce del fiume.",
+  "nautic_rivals": "La principale rivale del Club Nautico è l'Unione Sportiva Pescatori. Mantiene inoltre una rivalità con il Due Fari Calcio.",
+  "nautic_stadium": "",
+
+  "dos_fars_name": "Due Fari Calcio",
+  "dos_fars_shortName": "",
+  "dos_fars_nickname": "",
+  "dos_fars_description": "Il Due Fari Calcio ha sede in un piccolo paese situato in una piccola baia. I due fari che segnalano alle imbarcazioni le estremità della baia danno il nome alla squadra.",
+  "dos_fars_rivals": "La principale rivale del Due Fari è il Club Nautico. Mantiene inoltre una rivalità con l'Unione Sportiva Pescatori.",
+  "dos_fars_stadium": "",
+
+  "pescador_name": "Unione Sportiva Pescatori",
+  "pescador_shortName": "",
+  "pescador_nickname": "",
+  "pescador_description": "L'Unione Sportiva Pescatori ha sede in una cittadina di medie dimensioni alla foce del fiume. Il club nacque nel quartiere storicamente abitato dai pescatori.",
+  "pescador_rivals": "La principale rivale dei Pescatori è il Club Nautico. Mantiene inoltre una rivalità con il Due Fari Calcio.",
+  "pescador_stadium": "",
+
+  "nou_vapor_name": "Nuova Società Sportiva Tessile",
+  "nou_vapor_shortName": "",
+  "nou_vapor_nickname": "",
+  "nou_vapor_description": "La Nuova Società Sportiva Tessile è una squadra di una cittadina di medie dimensioni situata lungo il fiume, in una piccola pianura tra le montagne. In passato la località aveva una forte industria tessile. Il club nacque da una scissione della Società Sportiva Tessile.",
+  "nou_vapor_rivals": "",
+  "nou_vapor_stadium": "",
+
+  "politecnic_name": "Istituto Politecnico",
+  "politecnic_shortName": "",
+  "politecnic_nickname": "",
+  "politecnic_description": "L'Istituto Politecnico è la squadra del prestigioso istituto tecnologico di Terradell. Famoso per l'eccellenza dei suoi studenti, il Politecnico dispone di un'ampia sezione sportiva. Nel calcio ottiene spesso risultati di grande rilievo.",
+  "politecnic_rivals": "La principale rivale del Politecnico è il Vittoria. Mantiene inoltre una rivalità con il Circolo Sportivo Mercantile.",
+  "politecnic_stadium": "",
+
+  "guilla_name": "Associazione Calcio Volpe",
+  "guilla_shortName": "",
+  "guilla_nickname": "",
+  "guilla_description": "L'Associazione Calcio Volpe è un club situato in un piccolo paese al centro di un'ampia zona boschiva famosa per le sue sorgenti d'acqua. Anche l'industria del legname ha un peso importante nell'economia locale.",
+  "guilla_rivals": "La principale rivale della Volpe è l'Oliveto. Mantiene inoltre rivalità con la Nuova Società Sportiva Tessile e il Vittoria.",
+  "guilla_stadium": "",
+
+  "mainPlayerLabel": "Giocatore principale",
+  "aboutTeam": "La squadra",
+  "mainPlayers": "Giocatori principali",
+  "teamModel": "Modello della squadra",
+  "modelComingSoon": "Modello 3D prossimamente",
+  "backToTeams": "Torna alle squadre",
+
+  "role_goalkeeper": "Portiere",
+  "role_defender": "Difensore",
+  "role_midfielder": "Centrocampista",
+  "role_attacker": "Attaccante"
+}
+```

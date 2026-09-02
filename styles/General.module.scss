@@ -121,14 +121,15 @@
   box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
 }
 
-.botoneraDestacada{
-
+.botoneraDestacada,
+.botoneraContainer {
   margin-top: 1em;
   margin-bottom: 2em;
   display: flex;
   justify-content: center;
   align-content: center;
-
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 $grangol-green:#26b840;
@@ -192,5 +193,76 @@ $grangol-green:#26b840;
 @media (max-width: 480px) {
   .teamGrid {
     grid-template-columns: 1fr;
+  }
+}
+
+.articleList {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.articleList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0.9rem 1.2rem;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.articleList li::before {
+  content: "⚽";
+  margin-right: 12px;
+  font-size: 1.1em;
+  flex-shrink: 0;
+}
+
+.articleList li:hover {
+  background-color: $grangol-green;
+  color: #fff;
+  border-color: $grangol-green;
+  box-shadow: 0 6px 14px rgba(38, 184, 64, 0.25);
+  transform: translateY(-2px);
+}
+
+.articleList li a {
+  color: #111;
+  font-weight: 600;
+  text-decoration: none;
+  flex: 1;
+  min-width: 0;
+}
+
+.articleList li:hover a {
+  color: #fff;
+}
+
+.articleList li small {
+  color: #888;
+  font-size: 0.85em;
+  margin-left: 12px;
+  white-space: nowrap;
+}
+
+.articleList li:hover small {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 480px) {
+  .articleList li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+
+  .articleList li small {
+    margin-left: 28px;
   }
 }

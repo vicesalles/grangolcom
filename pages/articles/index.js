@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 import PageHeader from '../../components/PageHeader';
 import SeoHead from '../../components/SeoHead';
 import TopNavbar from '../../components/TopNavbar';
@@ -37,26 +37,26 @@ export default function ArticlesIndex({posts}) {
       path="/articles"
       breadcrumbs={breadcrumbs}
     />
-    <TopNavbar /> 
-  <PageHeader title={t('common:devLog')} description={t('seo:articlesDescription')}/>   
-           
+    <TopNavbar />
+  <PageHeader title={t('common:devLog')} description={t('seo:articlesDescription')}/>
+
       <article className={styles.articleTeams}>
-      <ul>
+      <ul className={styles.articleList}>
         {posts.map(p => (
           <li key={`${p.locale}-${p.slug}`}>
             <Link href={`/articles/${p.slug}`} locale={p.locale}>
               {p.title}
             </Link>
             {p.date && (
-              <small> — {new Date(p.date).toLocaleDateString(p.locale)}</small>
+              <small>{new Date(p.date).toLocaleDateString(p.locale)}</small>
             )}
           </li>
         ))}
       </ul>
-      </article>   
-       <div className={styles.botoneraContainer}>        
-        <Link className={styles.newsletter} href="/">{t('common:home')}</Link> <Link className={styles.newsletter} href="/ggx/">{t('ggx:GGxEljocDeTaula')}</Link>  <Link className={styles.newsletter} href="/stats/">{t('common:footballStats')}</Link> 
-      </div>  
+      </article>
+       <div className={styles.botoneraContainer}>
+        <Link className={styles.newsletter} href="/">{t('common:home')}</Link> <Link className={styles.newsletter} href="/ggx/">{t('ggx:GGxEljocDeTaula')}</Link>  <Link className={styles.newsletter} href="/stats/">{t('common:footballStats')}</Link>
+      </div>
       <Footer/>
    </div></>
   );

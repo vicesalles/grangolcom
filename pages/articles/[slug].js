@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { MDXRemote } from 'next-mdx-remote';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 import components from '../../components/MDXComponents';
 import PageHeader from '../../components/PageHeader';
 import Footer from '../../components/Footer';
