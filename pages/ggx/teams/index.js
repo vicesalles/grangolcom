@@ -81,6 +81,11 @@ export default function GGXTeams() {
             </p>
           </div>
           <div>
+            <h4>GRAN GOL</h4>
+            <p>{t('ggx:granGolTeams')}</p>
+            <ul>
+              <li><Link href="https://makerworld.com/en/models/2682084-ggx-provincial-league-teams" target="_blank" rel="noopener noreferrer">Gran Gol</Link></li>            
+            </ul>
             <h4>CLUBS</h4>
             <p>{t('ggx:mainLeaguesTeams')}</p>
             <ul>
