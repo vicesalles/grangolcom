@@ -132,3 +132,65 @@
 }
 
 $grangol-green:#26b840;
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 2rem 0;
+}
+
+.teamGridItem {
+  padding: 0;
+  margin: 0;
+}
+
+.teamGridItem::before {
+  content: none !important;
+}
+
+.teamGridItem:hover {
+  background-color: transparent !important;
+  color: inherit !important;
+  font-weight: inherit !important;
+}
+
+.teamCard {
+  display: block;
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.teamCard:hover {
+  background-color: $grangol-green;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.teamCard:active {
+  background-color: #1a8c2e;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .teamGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .teamGrid {
+    grid-template-columns: 1fr;
+  }
+}

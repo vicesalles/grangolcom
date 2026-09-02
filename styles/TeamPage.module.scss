@@ -1,0 +1,126 @@
+.teamPage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teamContent {
+  width: 80%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  font-size: 14pt;
+}
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.sectionTitle {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 0.5rem;
+}
+
+.playersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.playerCard {
+  border: 2px solid #eaeaea;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:hover {
+    box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+  }
+}
+
+.playerModelPlaceholder {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background-color: #fafafa;
+  margin-bottom: 1rem;
+}
+
+.playerNumber {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.playerName {
+  font-weight: bold;
+  font-size: 1.15rem;
+  margin-bottom: 0.25rem;
+}
+
+.playerRole {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.placeholder3d {
+  width: 100%;
+  height: 300px;
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  background-color: #fafafa;
+}
+
+.backLink {
+  margin-top: 2rem;
+
+  a {
+    color: #26b840;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .teamContent {
+    width: 90%;
+    margin: 1.5rem auto;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .playersGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}

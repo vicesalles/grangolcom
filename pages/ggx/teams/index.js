@@ -83,21 +83,49 @@ export default function GGXTeams() {
           <div>
             <h4>GRAN GOL</h4>
             <p>{t('ggx:granGolTeams')}</p>
-            <ul>
-              <li><Link href="https://makerworld.com/en/models/2682084-ggx-provincial-league-teams" target="_blank" rel="noopener noreferrer">Gran Gol</Link></li>            
+            <ul className={styles.teamGrid}>
+              <li className={styles.teamGridItem}>
+                <Link className={styles.teamCard} href="https://makerworld.com/en/models/2682084-ggx-provincial-league-teams" target="_blank" rel="noopener noreferrer">
+                  Gran Gol
+                </Link>
+              </li>
             </ul>
             <h4>CLUBS</h4>
             <p>{t('ggx:mainLeaguesTeams')}</p>
-            <ul>
-              <li><Link href="https://makerworld.com/en/models/1032308" target="_blank" rel="noopener noreferrer">{t('ggx:england')}</Link></li>
-              <li><Link href="https://makerworld.com/en/models/1032387" target="_blank" rel="noopener noreferrer">{t('ggx:spain')}</Link></li>
-              <li><Link href="https://makerworld.com/en/models/1032339" target="_blank" rel="noopener noreferrer">{t('ggx:italy')}</Link></li>
-              <li><Link href="https://makerworld.com/en/models/1032432" target="_blank" rel="noopener noreferrer">{t('ggx:germany')}</Link></li>
+            <ul className={styles.teamGrid}>
+              <li className={styles.teamGridItem}>
+                <Link className={styles.teamCard} href="https://makerworld.com/en/models/1032308" target="_blank" rel="noopener noreferrer">
+                  {t('ggx:england')}
+                </Link>
+              </li>
+              <li className={styles.teamGridItem}>
+                <Link className={styles.teamCard} href="https://makerworld.com/en/models/1032387" target="_blank" rel="noopener noreferrer">
+                  {t('ggx:spain')}
+                </Link>
+              </li>
+              <li className={styles.teamGridItem}>
+                <Link className={styles.teamCard} href="https://makerworld.com/en/models/1032339" target="_blank" rel="noopener noreferrer">
+                  {t('ggx:italy')}
+                </Link>
+              </li>
+              <li className={styles.teamGridItem}>
+                <Link className={styles.teamCard} href="https://makerworld.com/en/models/1032432" target="_blank" rel="noopener noreferrer">
+                  {t('ggx:germany')}
+                </Link>
+              </li>
             </ul>
             <h4>NATIONAL TEAMS</h4>
-            <ul>
-              <li><Link href="https://makerworld.com/en/models/1611918-european-national-football-teams-ggx" target="_blank" rel="noopener noreferrer">{t('ggx:europe')}</Link></li>
-              <li><Link href="https://makerworld.com/en/models/1792002-american-national-soccer-teams-for-ggx" target="_blank" rel="noopener noreferrer">{t('ggx:america')}</Link></li>
+            <ul className={styles.teamGrid}>
+              <li className={styles.teamGridItem}>
+                <Link className={styles.teamCard} href="https://makerworld.com/en/models/1611918-european-national-football-teams-ggx" target="_blank" rel="noopener noreferrer">
+                  {t('ggx:europe')}
+                </Link>
+              </li>
+              <li className={styles.teamGridItem}>
+                <Link className={styles.teamCard} href="https://makerworld.com/en/models/1792002-american-national-soccer-teams-for-ggx" target="_blank" rel="noopener noreferrer">
+                  {t('ggx:america')}
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
