@@ -11,7 +11,6 @@
     "ggxFotoXapesVelles": "Se puede jugar con chapas y botones",
     "ggxFotoAreaPenal": "La longitud de la última valla lateral marca el área de penalti. Se chuta desde el centro.",
     "ggxFotoAreaGol": "Sólo se puede marcar gol desde las dos vallas más cercanas a la portería. Lo llamamos área de gol.",
-    "ggxIntro": "GGx es una revisión del antiguo juego de las chapas. Las chapas fueron uno de los primeros simuladores de fútbol de la historia. Hoy, mientras desarrollamos el juego Gran Gol, recuperamos este fantástico juego que tantas buenas horas ha brindado a la gente. Todo lo que se muestra aquí, se puede hacer con chapas de bebidas y botones.",
     "ggxNormesTitol": "Normas del GGx",
     "ggxNormesSubTitol": "¿Cómo se juega al GGx?",
     "ggxNormesIntro": "Estas son las normas del GGx. En esta lista de 16 puntos hay todo lo que hay que saber para jugar un partido.",
@@ -59,7 +58,15 @@
     "granGolTeams": "¡Descarga e imprime gratis las fichas 3D de la Liga Provincial! Disfruta del fútbol de mesa real mientras esperas el lanzamiento de Gran Gol para PC.",
     "teamsStack": "¡Los equipos se acumulan! ¿Quién llegará a la gran final?",
     "teamCarrier": "El porta-equipos está disponible aquí para imprimir [MakerWorld]",
-    "ggxPare":"El éxito y la razón de ser de GGx es pasar tiempo de calidad con mi hijo. Lejos de las pantallas y las prisas del día a día, poder hablar con él, escucharle, competir, reír, hacer reflexiones vitales con el fútbol como excusa, hablar de geografía, del mundo, de aritmética, de probabilidad... Para mí, GGx es un espacio-momento donde mi hijo me regala su atención y a mí me resulta fácil darle toda la mía. Creo que muchos problemas de los niños se resuelven dándoles atención. Con el ritmo de vida que llevamos, no siempre damos la atención que merecen las personas que más queremos. Crear y construir espacios-tiempo donde dar el 100% de mi atención a mi hijo es importante. No sé muy bien si esta reflexión de padre encaja aquí o no, pero necesitaba compartirla."
+    "ggxIntro": "GGx es una revisión del antiguo juego de las chapas. O del fútbol de botones, según dónde hayas crecido. Durante generaciones, chapas de bebidas y botones se convirtieron en futbolistas improvisados sobre suelos, mesas y campos dibujados a mano. Con muy poca cosa se podía montar un partido, inventar equipos, organizar campeonatos y reproducir los grandes momentos del fútbol.",
+
+"ggxbotonsxapes": "GGx —Gran Gol Xapes— recupera aquella idea y la lleva un poco más allá. Gracias a la impresión 3D, el print-and-play ha adquirido una nueva dimensión. Ahora va mucho más allá de los PDFs. La base de GGx es esencialmente el fútbol de chapas, pero con jugadores a todo color impresos en PLA. Este es un proyecto doméstico, el hobby de un padre que, a fuerza de jugar, ha ido incorporando ideas inspiradas en otros grandes juegos de fútbol de mesa, como Subbuteo y Tipp-Kick. Todo lo que hacemos con Gran Gol Xapes se puede hacer con chapas de bebidas y/o botones. No hace falta una impresora 3D... pero, caramba, ¡qué bonitas quedan las cosas impresas en 3D!",
+
+"tevesnormes": "Los campos, las porterías, los balones, las chapas y las reglas han ido evolucionando partido tras partido hasta llegar a la versión actual. Pero no voy a hacer como los adultos que se ponen serios con el UNO y creerme que mis reglas son las buenas. No. Las tuyas son las buenas. Las mías —las que jugamos en casa— solo son un punto de partida, una inspiración. La idea es jugar al fútbol en el suelo o encima de una mesa y poder recogerlo todo justo antes de cenar.",
+
+"ggxTrampes": "GGx empezó como una manera de pasar tiempo de calidad con mi hijo. Aprendimos los colores, los números, los nombres de países y ciudades y ahora ya ha aprendido incluso a hacer trampas. Ahora estamos trabajando el mal perder... xD",
+
+"ggxPare": "Lejos de las pantallas y de las prisas del día a día, jugar nos permite hablar, escucharnos, competir, reír y acabar saltando del fútbol a la geografía, los números, la probabilidad o cualquier otra cosa que aparezca durante una partida. Para mí, GGx es un espacio y un momento en el que mi hijo me regala su atención y yo puedo ofrecerle TODA la mía. Paso muchas horas delante del ordenador y no siempre dedico toda la atención que merecen las personas que quiero. Crear momentos en los que eso sea posible es, para mí, el gran valor de GGx."
 
     
 }

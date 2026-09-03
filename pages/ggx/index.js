@@ -85,6 +85,8 @@ export default function GGX() {
                 />
                 <p className={styles.peuFoto}>{t('ggx:ggxFotoXapesVelles')}</p>
           </div> 
+          <p>{t('ggx:ggxbotonsxapes')}</p>
+          <p>{t('ggx:tevesnormes')}</p>
           <div className={styles.containerImatge}>
           <Image
                     src="/img/articles/GGxFons.jpg"
@@ -94,7 +96,7 @@ export default function GGX() {
                 />
                 <p className={styles.peuFoto}>{t('ggx:ggxDescripcio')}</p>
           </div>            
-
+          <p>{t('ggx:ggxTrampes')}</p> 
           <p>{t('ggx:ggxPare')}</p> 
 
             <div className={styles.containerImatge}>

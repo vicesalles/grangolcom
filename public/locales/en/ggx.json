@@ -11,7 +11,6 @@
     "ggxFotoAreaPenal": "The length of the last side fence marks the penalty area. The shot is taken from the center.",
     "ggxQcExperts":"Our QA/QC experts on duty",
     "ggxFotoAreaGol": "Goals can only be scored from the two fences closest to the goal. We call this the goal area.",
-    "ggxIntro": "GGx is a revision of the old bottle cap game. Bottle caps were one of the first football simulators in history. Today, while we develop the game Gran Gol, we recover this fantastic game that has provided so many good times to people. Everything shown here can be done with drink caps and buttons.",
     "ggxNormesTitol": "The Rules of GGx",
     "ggxNormesSubTitol": "How to play GGx?",
     "ggxNormesIntro": "These are the rules of GGx. In this list of 16 points, there is everything you need to know to play a match.",
@@ -59,7 +58,15 @@
     "granGolTeams": "Download and 3D print the Provincial League teams for free! Enjoy real tabletop football while you wait for Gran Gol to launch on PC.",
     "teamsStack": "The teams are stacking up! Who will make it to the grand final?",
     "teamCarrier": "The team carrier is available here for printing [MakerWorld]",
-    "ggxPare":"The success and purpose of GGx is to spend quality time with my son. Away from screens and the rush of daily life, being able to talk to him, listen to him, compete, laugh, and reflect on life with football as an excuse, talk about geography, the world, arithmetic, probability... For me, GGx is a time-space where my son gives me his attention, and it’s easy for me to give him all of mine. I believe many of children’s problems can be solved by giving them attention. With the pace of life we lead, we don’t always give the attention the people we love the most deserve. Creating and building time-spaces where I can give 100% of my attention to my son is important. I’m not sure if this reflection as a father belongs here, but I felt the need to share it."
+    "ggxIntro": "GGx is a modern take on the old bottle-cap football game. Or button football, depending on where you grew up. For generations, bottle caps and buttons became makeshift footballers on floors, tables and hand-drawn pitches. With very little, you could set up a match, invent teams, organise tournaments and recreate football's greatest moments.",
+
+"ggxbotonsxapes": "GGx —Gran Gol Xapes— takes that old idea and pushes it a little further. Thanks to 3D printing, print-and-play has taken on a whole new dimension. These days, it can go far beyond PDFs. At its core, GGx is still bottle-cap football, but with full-colour players printed in PLA. This is a homemade project, the hobby of a dad who, through countless games, has gradually borrowed ideas from other great tabletop football games such as Subbuteo and Tipp-Kick. Everything we do with Gran Gol Xapes can also be done with bottle caps and/or buttons. You don't need a 3D printer... but, damn, 3D-printed stuff does look good!",
+
+"tevesnormes": "The pitches, goals, balls, caps and rules have evolved game after game into the version we play today. But I'm not going to be one of those grown-ups who takes UNO far too seriously and starts believing my rules are the right ones. Nope. Your rules are the right ones. Mine —the ones we play at home— are just a starting point, a bit of inspiration. The idea is to play football on the floor or on a table and be able to pack everything away just before dinner.",
+
+"ggxTrampes": "GGx started as a way to spend quality time with my son. We learned colours, numbers, the names of countries and cities, and now he has even learned how to cheat. We're currently working on being a better loser... xD",
+
+"ggxPare": "Away from screens and the rush of everyday life, playing gives us time to talk, listen to each other, compete, laugh and somehow jump from football to geography, numbers, probability or whatever else comes up during a game. For me, GGx is a place and a moment where my son gives me his attention and I can give him ALL of mine. I spend a lot of hours in front of a computer and I don't always give the people I love all the attention they deserve. Creating moments where I can do that is, for me, the greatest value of GGx."
 
 
 }
