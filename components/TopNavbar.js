@@ -6,6 +6,7 @@ const LOCALE_LABELS = {
   es: 'ES',
   zh: '中文',
   ca: 'CA',
+  fr: 'FR',
 };
 
 export default function TopNavbar(props) {
