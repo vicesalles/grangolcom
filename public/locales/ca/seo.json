@@ -30,5 +30,7 @@
   "teamTitle": "{{teamName}} | Equips Gran Gol",
   "teamDescription": "Descobreix {{teamName}}, un dels clubs de la història provincial de futbol de Gran Gol.",
   "articleTitle": "{{title}} | Gran Gol",
-  "articleDescriptionFallback": "Llegeix aquest article de Gran Gol sobre jocs de futbol, futbol taula i desenvolupament del projecte."
+  "articleDescriptionFallback": "Llegeix aquest article de Gran Gol sobre jocs de futbol, futbol taula i desenvolupament del projecte.",
+  "ggxPnpTitle": "GGx de Gran Gol — Joc de futbol Print & Play 3D gratuït",
+  "ggxPnpDescription": "GGx de Gran Gol és un joc de futbol Print & Play 3D gratuït."
 }

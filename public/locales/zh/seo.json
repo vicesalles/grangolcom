@@ -30,5 +30,7 @@
   "teamTitle": "{{teamName}} | Gran Gol 球队",
   "teamDescription": "了解 {{teamName}}，Gran Gol 省级足球故事中的一支球队。",
   "articleTitle": "{{title}} | Gran Gol",
-  "articleDescriptionFallback": "阅读这篇 Gran Gol 文章，了解足球游戏、桌上足球和项目开发。"
+  "articleDescriptionFallback": "阅读这篇 Gran Gol 文章，了解足球游戏、桌上足球和项目开发。",
+  "ggxPnpTitle": "Gran Gol 的 GGx — 免费 3D Print & Play 桌上足球游戏",
+  "ggxPnpDescription": "Gran Gol 的 GGx 是一款免费的 3D Print & Play 足球游戏。"
 }

@@ -25,8 +25,8 @@ export default function GGXPrintAndPlay() {
   const jsonLdData = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: t('ggx_pnp:ggxpnp_seo_title'),
-    description: t('ggx_pnp:ggxpnp_seo_description'),
+    name: t('seo:ggxPnpTitle'),
+    description: t('seo:ggxPnpDescription'),
     image: 'https://www.grangol.com/img/articles/GGxNit.JPG',
     url: 'https://www.grangol.com/ggx/print-and-play',
   };
@@ -39,8 +39,8 @@ export default function GGXPrintAndPlay() {
     return (
       <div>
         <SeoHead
-          title={t('ggx_pnp:ggxpnp_seo_title')}
-          description={t('ggx_pnp:ggxpnp_seo_description')}
+          title={t('seo:ggxPnpTitle')}
+          description={t('seo:ggxPnpDescription')}
           path="/ggx/print-and-play"
           jsonLd={jsonLdData}
           breadcrumbs={breadcrumbs}
@@ -53,8 +53,8 @@ export default function GGXPrintAndPlay() {
   return (
     <div className={styles.container}>
       <SeoHead
-        title={t('ggx_pnp:ggxpnp_seo_title')}
-        description={t('ggx_pnp:ggxpnp_seo_description')}
+        title={t('seo:ggxPnpTitle')}
+        description={t('seo:ggxPnpDescription')}
         path="/ggx/print-and-play"
         jsonLd={jsonLdData}
         breadcrumbs={breadcrumbs}
