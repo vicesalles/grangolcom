@@ -98,6 +98,38 @@
   margin-bottom: 2em;
 }
 
+.ctaPrimary {
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  padding: 1em 2.5em;
+  font-size: 1.25rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0.25rem;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.ctaPrimary:hover {
+  color: black;
+  background-color: yellow;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .ctaPrimary {
+    font-size: 1.1rem;
+    padding: 0.9em 2em;
+    margin-top: 1.5rem;
+  }
+}
+
 .newsletter{
   color: white;
   font-weight: bold;

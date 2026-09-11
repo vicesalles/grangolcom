@@ -5,6 +5,8 @@
     padding-right: .75em;
     display: flex;    
     justify-content: flex-end;
+    position: relative;
+    z-index: 2;
 }
 .botoIdioma{
     text-transform: uppercase;
@@ -13,4 +15,16 @@
     cursor: pointer;
     margin-left: .75em;
     margin-right: .751em;
+}
+
+.botoIdiomaLight {
+    color: white;
+}
+
+.botoIdiomaHero {
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 0.15em 0.5em;
 }

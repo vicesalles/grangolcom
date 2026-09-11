@@ -1,0 +1,52 @@
+.hero {
+  width: 100%;
+  background-color: #268b07;
+  color: white;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.heroImage {
+  background-color: transparent;
+}
+
+.heroImage::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+
+.content {
+  text-align: center;
+  padding: 7em 1em 8em;
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 2.8rem;
+  margin: 0 0 0.3em;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  margin: 0;
+  opacity: 0.92;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 4.5em 1em 5.5em;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1.05rem;
+  }
+}

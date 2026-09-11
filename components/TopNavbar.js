@@ -9,7 +9,7 @@ const LOCALE_LABELS = {
   fr: 'FR',
 };
 
-export default function TopNavbar(props) {
+export default function TopNavbar({ light, hero }) {
   const router = useRouter();
   const locales = router.locales ?? [];
 
@@ -17,14 +17,26 @@ export default function TopNavbar(props) {
     router.push(router.pathname, router.asPath, { locale: lang });
   };
 
+  const navClass = [
+    styles.contenidorNav,
+    light && styles.light,
+    hero && styles.hero,
+  ].filter(Boolean).join(' ');
+
+  const btnClass = [
+    styles.botoIdioma,
+    light && styles.botoIdiomaLight,
+    hero && styles.botoIdiomaHero,
+  ].filter(Boolean).join(' ');
+
   return (
-    <nav className={styles.contenidorNav}>
+    <nav className={navClass}>
       {'| '}
       {locales.map((locale, index) => (
         <span key={locale}>
           <button
             type="button"
-            className={styles.botoIdioma}
+            className={btnClass}
             onClick={() => changeLanguage(locale)}
           >
             {LOCALE_LABELS[locale] ?? locale.toUpperCase()}
