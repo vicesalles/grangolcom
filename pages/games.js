@@ -28,7 +28,15 @@ export default function Games() {
 
   // Wait until translations are ready
   if (!ready || !isMounted) {
-    return <div><IoMdFootball fontSize={12} /></div>;
+    return <div>
+      <SeoHead
+        title={t('seo:gamesTitle')}
+        description={t('seo:gamesDescription')}
+        path="/games"
+        breadcrumbs={breadcrumbs}
+      />
+      <IoMdFootball fontSize={12} />
+    </div>;
   }
 
 

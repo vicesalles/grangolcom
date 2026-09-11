@@ -29,7 +29,15 @@ export default function EuropeanFootballOfficialStats() {
 
   // Wait until translations are ready
   if (!ready || !isMounted) {
-    return <div><IoMdFootball fontSize={12} /></div>;
+    return <div>
+      <SeoHead
+        title={t('seo:statsTitle')}
+        description={t('seo:statsDescription')}
+        path="/stats"
+        breadcrumbs={breadcrumbs}
+      />
+      <IoMdFootball fontSize={12} />
+    </div>;
   }
 
   return (

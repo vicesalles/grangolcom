@@ -1,11 +1,13 @@
 import Link from 'next/link';
 import { MDXRemote } from 'next-mdx-remote';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useTranslation } from 'next-i18next';
+import { useTranslation } from 'react-i18next';
+import { useState, useEffect } from 'react';
 import components from '../../components/MDXComponents';
 import PageHeader from '../../components/PageHeader';
 import Footer from '../../components/Footer';
 import SeoHead from '../../components/SeoHead';
+import { IoMdFootball } from '@react-icons/all-files/io/IoMdFootball';
 import styles from '../../styles/General.module.scss'
 import { buildBreadcrumbJsonLd, getAbsoluteUrl, getLocalizedPath } from '../../lib/seo';
 
@@ -39,7 +41,8 @@ export async function getStaticProps({ params, locale }) {
 
 export default function ArticlePage({ mdxSource, frontMatter }) {
     const { title, summary, date, cover, slug, locale, author, alternates } = frontMatter;
-    const { t } = useTranslation(['common', 'seo']);
+    const { t, ready } = useTranslation(['common', 'seo']);
+    const [isMounted, setIsMounted] = useState(false);
     const localeAlternates = {
         [locale]: `/articles/${slug}`,
         ...(alternates
@@ -69,6 +72,31 @@ export default function ArticlePage({ mdxSource, frontMatter }) {
         mainEntityOfPage: articleUrl,
         inLanguage: locale,
     };
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
+
+    if (!ready || !isMounted) {
+        return <div>
+            <SeoHead
+                title={t('seo:articleTitle', { title })}
+                description={articleDescription}
+                path={`/articles/${slug}`}
+                image={cover || undefined}
+                type="article"
+                alternates={localeAlternates}
+                availableLocales={availableLocales}
+                locale={locale}
+                breadcrumbs={breadcrumbs}
+                publishedTime={date || undefined}
+                modifiedTime={date || undefined}
+                author={author || undefined}
+                jsonLd={articleJsonLd}
+            />
+            <IoMdFootball fontSize={12} />
+        </div>;
+    }
 
     return (
         <>

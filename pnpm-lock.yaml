@@ -38,14 +38,14 @@ importers:
         specifier: ^4.0.3
         version: 4.0.3
       i18next:
-        specifier: ^23.16.8
-        version: 23.16.8
+        specifier: ^25.4.1
+        version: 25.10.10
       next:
         specifier: 15.5.23
         version: 15.5.23(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(sass@1.92.1)
       next-i18next:
         specifier: ^15.4.2
-        version: 15.4.2(@types/react@18.3.12)(i18next@23.16.8)(next@15.5.23(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(sass@1.92.1))(react-i18next@15.7.3(i18next@23.16.8)(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react@19.1.1)
+        version: 15.4.2(@types/react@18.3.12)(i18next@25.10.10)(next@15.5.23(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(sass@1.92.1))(react-i18next@15.7.3(i18next@25.10.10)(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react@19.1.1)
       next-mdx-remote:
         specifier: ^6.0.0
         version: 6.0.0(@types/react@18.3.12)(react@19.1.1)
@@ -57,7 +57,7 @@ importers:
         version: 19.1.1(react@19.1.1)
       react-i18next:
         specifier: ^15.7.3
-        version: 15.7.3(i18next@23.16.8)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+        version: 15.7.3(i18next@25.10.10)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       react-icons:
         specifier: ^4.12.0
         version: 4.12.0(react@19.1.1)
@@ -90,6 +90,10 @@ packages:
 
   '@babel/runtime@7.28.4':
     resolution: {integrity: sha512-Q/N6JNWvIvPnLDvjlE1OUBLPQHH6l3CltCEsHIujp45zQUSSh8K+gHnaEX45yAT1nyngnINhvWtzN+Nb9D8RAQ==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/runtime@7.29.7':
+    resolution: {integrity: sha512-Nq8OhGWiZIZGV6hLHoyAKLLcJihP/xFeBMGJoUrxTX2psI8dCifzLhZISFb+VWS3wFMRDmCGw5R+dOySCqPLhw==}
     engines: {node: '>=6.9.0'}
 
   '@emnapi/runtime@1.11.3':
@@ -687,8 +691,13 @@ packages:
   i18next-fs-backend@2.6.7:
     resolution: {integrity: sha512-nN2TIycyR/d+OVuLm1ugPyOlMprqPRnQ7QktBgn44F3H8l7TeTH4ffHJ7nUsd4QVJfetWW7/VZ3s+4g7FoAZUA==}
 
-  i18next@23.16.8:
-    resolution: {integrity: sha512-06r/TitrM88Mg5FdUXAKL96dJMzgqLE5dv3ryBAra4KCwD9mJ4ndOTS95ZuymIGoE+2hzfdaMak2X11/es7ZWg==}
+  i18next@25.10.10:
+    resolution: {integrity: sha512-cqUW2Z3EkRx7NqSyywjkgCLK7KLCL6IFVFcONG7nVYIJ3ekZ1/N5jUsihHV6Bq37NfhgtczxJcxduELtjTwkuQ==}
+    peerDependencies:
+      typescript: ^5 || ^6
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   immutable@5.1.9:
     resolution: {integrity: sha512-m8nVez3rwrgmWxtLMt1ZYXB2Lv7OKYn/disyxAlSDYAlKSlFoPPfIAmAM/M5xqL4m4C/wAPw7S2/CNaUii1Hxg==}
@@ -1191,6 +1200,8 @@ snapshots:
   '@babel/helper-validator-identifier@7.27.1': {}
 
   '@babel/runtime@7.28.4': {}
+
+  '@babel/runtime@7.29.7': {}
 
   '@emnapi/runtime@1.11.3':
     dependencies:
@@ -1696,9 +1707,9 @@ snapshots:
 
   i18next-fs-backend@2.6.7: {}
 
-  i18next@23.16.8:
+  i18next@25.10.10:
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.29.7
 
   immutable@5.1.9: {}
 
@@ -2182,17 +2193,17 @@ snapshots:
 
   nanoid@3.3.18: {}
 
-  next-i18next@15.4.2(@types/react@18.3.12)(i18next@23.16.8)(next@15.5.23(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(sass@1.92.1))(react-i18next@15.7.3(i18next@23.16.8)(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react@19.1.1):
+  next-i18next@15.4.2(@types/react@18.3.12)(i18next@25.10.10)(next@15.5.23(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(sass@1.92.1))(react-i18next@15.7.3(i18next@25.10.10)(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react@19.1.1):
     dependencies:
       '@babel/runtime': 7.28.4
       '@types/hoist-non-react-statics': 3.3.7(@types/react@18.3.12)
       core-js: 3.45.1
       hoist-non-react-statics: 3.3.2
-      i18next: 23.16.8
+      i18next: 25.10.10
       i18next-fs-backend: 2.6.7
       next: 15.5.23(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(sass@1.92.1)
       react: 19.1.1
-      react-i18next: 15.7.3(i18next@23.16.8)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      react-i18next: 15.7.3(i18next@25.10.10)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
     transitivePeerDependencies:
       - '@types/react'
 
@@ -2266,11 +2277,11 @@ snapshots:
       react: 19.1.1
       scheduler: 0.26.0
 
-  react-i18next@15.7.3(i18next@23.16.8)(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
+  react-i18next@15.7.3(i18next@25.10.10)(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
     dependencies:
       '@babel/runtime': 7.28.4
       html-parse-stringify: 3.0.1
-      i18next: 23.16.8
+      i18next: 25.10.10
       react: 19.1.1
     optionalDependencies:
       react-dom: 19.1.1(react@19.1.1)

@@ -20,7 +20,7 @@
     "@vercel/speed-insights": "^1.2.0",
     "bulma": "^0.9.4",
     "gray-matter": "^4.0.3",
-    "i18next": "^23.16.8",
+    "i18next": "^25.4.1",
     "next": "15.5.23",
     "next-i18next": "^15.4.2",
     "next-mdx-remote": "^6.0.0",

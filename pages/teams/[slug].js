@@ -9,7 +9,7 @@ import teamStyles from '../../styles/TeamPage.module.scss';
 import Link from 'next/link';
 import { IoMdFootball } from '@react-icons/all-files/io/IoMdFootball';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useTranslation } from 'next-i18next';
+import { useTranslation } from 'react-i18next';
 import { getTeamBySlugAndLocale, getAllTeamsByLocale } from '../../lib/teams';
 import { buildBreadcrumbJsonLd, getAbsoluteUrl, getLocalizedPath } from '../../lib/seo';
 const { SUPPORTED_LOCALES } = require('../../lib/i18n');
@@ -38,7 +38,17 @@ export default function TeamPage({ team, locale }) {
   }
 
   if (!ready) {
-    return <div><IoMdFootball fontSize={50} /></div>;
+    return <div>
+      <SeoHead
+        title={t('seo:teamTitle', { teamName })}
+        description={t('seo:teamDescription', { teamName })}
+        path={`/teams/${team.slug}`}
+        locale={locale}
+        breadcrumbs={breadcrumbs}
+        jsonLd={teamJsonLd}
+      />
+      <IoMdFootball fontSize={50} />
+    </div>;
   }
 
   const mainPlayers = team.players.filter((p) => p.isMainPlayer);

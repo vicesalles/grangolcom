@@ -22,7 +22,7 @@ const hackers = {
 }
 const fetcher = (url) => fetch(url).then((res) => res.json())
 export default function Books() {
-  const { t } = useTranslation(['common', 'seo']);
+  const { t, ready } = useTranslation(['common', 'seo']);
   const breadcrumbs = buildBreadcrumbJsonLd([
     { name: t('common:home'), url: getAbsoluteUrl('/') },
     { name: t('common:footballBooks'), url: getAbsoluteUrl('/books') },
@@ -30,8 +30,16 @@ export default function Books() {
  
   const {data, error} = useSWR('/api/books', fetcher)
 
-  if (!data) 
-    return <div>Loading the best football books...</div>
+  if (!data || !ready) 
+    return <div>
+      <SeoHead
+        title={t('seo:booksTitle')}
+        description={t('seo:booksDescription')}
+        path="/books"
+        breadcrumbs={breadcrumbs}
+      />
+      Loading the best football books...
+    </div>
 
   return (
     <div className={styles.container}>

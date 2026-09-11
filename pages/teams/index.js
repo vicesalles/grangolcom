@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { IoMdFootball } from '@react-icons/all-files/io/IoMdFootball';
-import { useTranslation } from 'next-i18next';
+import { useTranslation } from 'react-i18next';
 import Footer from '../../components/Footer';
 import PageHeader from '../../components/PageHeader';
 import SeoHead from '../../components/SeoHead';
@@ -24,7 +24,15 @@ export default function TeamsPage({ teams }) {
   }, []);
 
   if (!ready || !isMounted) {
-    return <div><IoMdFootball fontSize={50} /></div>; 
+    return <div>
+      <SeoHead
+        title={t('seo:teamsTitle')}
+        description={t('seo:teamsDescription')}
+        path="/teams"
+        breadcrumbs={breadcrumbs}
+      />
+      <IoMdFootball fontSize={50} />
+    </div>;
   }
 
   return (
