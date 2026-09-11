@@ -9,13 +9,11 @@ import TopNavbar from '../../components/TopNavbar';
 import {IoMdFootball} from '@react-icons/all-files/io/IoMdFootball';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'react-i18next';
-import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { buildBreadcrumbJsonLd, getAbsoluteUrl } from '../../lib/seo';
 
 export default function GGX() {
   const { t, ready } = useTranslation(['common', 'ggx', 'seo']);
-  const [isMounted, setIsMounted] = useState(false);
   const breadcrumbs = buildBreadcrumbJsonLd([
     { name: t('common:home'), url: getAbsoluteUrl('/') },
     { name: t('ggx:ggxTitol'), url: getAbsoluteUrl('/ggx') },
@@ -36,13 +34,8 @@ export default function GGX() {
     "url": "https://www.grangol.com/ggx/rules"
   };
 
-  useEffect(() => {
-    // This ensures that the component is mounted in the browser
-    setIsMounted(true);
-  }, []);
-
   // Wait until translations are ready
-  if (!ready || !isMounted) {
+  if (!ready) {
     return <div>
       <SeoHead
         title={t('seo:ggxRulesTitle')}

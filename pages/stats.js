@@ -10,25 +10,18 @@ import { IoMdFootball } from '@react-icons/all-files/io/IoMdFootball';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'react-i18next';
 import TopNavbar from '../components/TopNavbar';
-import { useEffect, useState } from 'react';
 import { buildBreadcrumbJsonLd, getAbsoluteUrl } from '../lib/seo';
 
 
 export default function EuropeanFootballOfficialStats() {
   const { t, ready } = useTranslation(['common', 'stats', 'seo']);
-  const [isMounted, setIsMounted] = useState(false);
   const breadcrumbs = buildBreadcrumbJsonLd([
     { name: t('common:home'), url: getAbsoluteUrl('/') },
     { name: t('common:footballStats'), url: getAbsoluteUrl('/stats') },
   ]);
 
-  useEffect(() => {
-    // This ensures that the component is mounted in the browser
-    setIsMounted(true);
-  }, []);
-
   // Wait until translations are ready
-  if (!ready || !isMounted) {
+  if (!ready) {
     return <div>
       <SeoHead
         title={t('seo:statsTitle')}

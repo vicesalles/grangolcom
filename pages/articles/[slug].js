@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { MDXRemote } from 'next-mdx-remote';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'react-i18next';
-import { useState, useEffect } from 'react';
 import components from '../../components/MDXComponents';
 import PageHeader from '../../components/PageHeader';
 import Footer from '../../components/Footer';
@@ -42,7 +41,6 @@ export async function getStaticProps({ params, locale }) {
 export default function ArticlePage({ mdxSource, frontMatter }) {
     const { title, summary, date, cover, slug, locale, author, alternates } = frontMatter;
     const { t, ready } = useTranslation(['common', 'seo']);
-    const [isMounted, setIsMounted] = useState(false);
     const localeAlternates = {
         [locale]: `/articles/${slug}`,
         ...(alternates
@@ -73,11 +71,7 @@ export default function ArticlePage({ mdxSource, frontMatter }) {
         inLanguage: locale,
     };
 
-    useEffect(() => {
-        setIsMounted(true);
-    }, []);
-
-    if (!ready || !isMounted) {
+    if (!ready) {
         return <div>
             <SeoHead
                 title={t('seo:articleTitle', { title })}

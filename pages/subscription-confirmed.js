@@ -4,21 +4,13 @@ import { FaHeart } from '@react-icons/all-files/fa/FaHeart';
 import { IoMdFootball } from '@react-icons/all-files/io/IoMdFootball';
 import { useTranslation } from 'react-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useEffect, useState } from 'react';
-
 import Footer from '../components/Footer';
 import SeoHead from '../components/SeoHead';
 import TopNavbar from '../components/TopNavbar';
 
 export default function Subscription() {
   const { t, ready } = useTranslation(['common', 'seo']);
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  if (!ready || !isMounted) {
+  if (!ready) {
     return <div><IoMdFootball fontSize={12} /></div>;
   }
 

@@ -3,26 +3,18 @@ import styles from '../styles/Home.module.css';
 import { IoMdFootball } from '@react-icons/all-files/io/IoMdFootball';
 import { useTranslation } from 'react-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useEffect, useState } from 'react';
-
 import Footer from '../components/Footer';
 import SeoHead from '../components/SeoHead';
 import TopNavbar from '../components/TopNavbar';
 
 export default function Custom404() {
   const { t, ready } = useTranslation(['common', 'ggx', 'seo']);
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
   function getGif() {
     const gifs = ['1', '1', '2', '3', '4', '5', '6', '7', '8', '9', '404'];
     return gifs[Math.floor(Math.random() * gifs.length)];
   }
 
-  if (!ready || !isMounted) {
+  if (!ready) {
     return (
       <div>
         <SeoHead

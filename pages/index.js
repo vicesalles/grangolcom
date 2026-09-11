@@ -4,7 +4,6 @@ import { FaHeart } from '@react-icons/all-files/fa/FaHeart';
 import { IoMdFootball } from '@react-icons/all-files/io/IoMdFootball';
 import { useTranslation } from 'react-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Footer from '../components/Footer';
 import SeoHead from '../components/SeoHead';
@@ -13,8 +12,6 @@ import { buildBreadcrumbJsonLd, getAbsoluteUrl } from '../lib/seo';
 
 export default function Home() {
   const { t, ready } = useTranslation(['common', 'seo']);
-  const [isMounted, setIsMounted] = useState(false);
-
   const jsonLdData = {
     "@context": "https://schema.org",
     "@type": "Game",
@@ -32,13 +29,8 @@ export default function Home() {
     { name: 'Home', url: getAbsoluteUrl('/') },
   ]);
 
-  useEffect(() => {
-    // This ensures that the component is mounted in the browser
-    setIsMounted(true);
-  }, []);
-
   // Wait until translations are ready
-  if (!ready || !isMounted) {
+  if (!ready) {
     return <div>
       <SeoHead
         title={t('seo:homeTitle')}

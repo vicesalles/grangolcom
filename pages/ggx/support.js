@@ -4,8 +4,6 @@ import { FaHeart } from '@react-icons/all-files/fa/FaHeart';
 import { IoMdFootball } from '@react-icons/all-files/io/IoMdFootball';
 import { useTranslation } from 'react-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useEffect, useState } from 'react';
-
 import Footer from '../../components/Footer';
 import SeoHead from '../../components/SeoHead';
 import TopNavbar from '../../components/TopNavbar';
@@ -13,7 +11,6 @@ import { buildBreadcrumbJsonLd, getAbsoluteUrl } from '../../lib/seo';
 
 export default function SupportGGX() {
   const { t, ready } = useTranslation(['common', 'ggx', 'seo']);
-  const [isMounted, setIsMounted] = useState(false);
   const breadcrumbs = buildBreadcrumbJsonLd([
     { name: t('common:home'), url: getAbsoluteUrl('/') },
     { name: t('ggx:ggxTitol'), url: getAbsoluteUrl('/ggx') },
@@ -29,11 +26,7 @@ export default function SupportGGX() {
     url: 'https://www.grangol.com/ggx/support',
   };
 
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  if (!ready || !isMounted) {
+  if (!ready) {
     return (
       <div>
         <SeoHead

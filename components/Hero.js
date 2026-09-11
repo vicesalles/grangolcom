@@ -13,7 +13,7 @@ export default function Hero({ title, subtitle, image, children }) {
       <TopNavbar hero />
       <div className={styles.content}>
         <h1 className={styles.title}>{title}</h1>
-        {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
+        {subtitle && <h2 className={styles.subtitle}>{subtitle}</h2>}
         {children}
       </div>
     </section>

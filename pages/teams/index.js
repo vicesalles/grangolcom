@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { IoMdFootball } from '@react-icons/all-files/io/IoMdFootball';
 import { useTranslation } from 'react-i18next';
@@ -13,17 +12,12 @@ import { buildBreadcrumbJsonLd, getAbsoluteUrl } from '../../lib/seo';
 
 export default function TeamsPage({ teams }) {
   const { t, ready } = useTranslation(['common', 'seo', 'teams']);
-  const [isMounted, setIsMounted] = useState(false);
   const breadcrumbs = buildBreadcrumbJsonLd([
     { name: t('common:home'), url: getAbsoluteUrl('/') },
     { name: t('common:granGolTeams'), url: getAbsoluteUrl('/teams') },
   ]);
 
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  if (!ready || !isMounted) {
+  if (!ready) {
     return <div>
       <SeoHead
         title={t('seo:teamsTitle')}

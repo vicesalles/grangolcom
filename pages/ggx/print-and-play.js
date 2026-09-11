@@ -8,14 +8,12 @@ import SeoHead from '../../components/SeoHead';
 import { IoMdFootball } from '@react-icons/all-files/io/IoMdFootball';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'react-i18next';
-import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { buildBreadcrumbJsonLd, getAbsoluteUrl } from '../../lib/seo';
 import YouTubeEmbed from '../../components/YouTubeEmbed';
 
 export default function GGXPrintAndPlay() {
   const { t, ready } = useTranslation(['common', 'ggx', 'seo','ggx_pnp']);
-  const [isMounted, setIsMounted] = useState(false);
   const breadcrumbs = buildBreadcrumbJsonLd([
     { name: t('common:home'), url: getAbsoluteUrl('/') },
     { name: t('ggx:ggxTitol'), url: getAbsoluteUrl('/ggx') },
@@ -31,11 +29,7 @@ export default function GGXPrintAndPlay() {
     url: 'https://www.grangol.com/ggx/print-and-play',
   };
 
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  if (!ready || !isMounted) {
+  if (!ready) {
     return (
       <div>
         <SeoHead
@@ -67,13 +61,13 @@ export default function GGXPrintAndPlay() {
         />
 
         <div className={styles.articleTeams}>
-          <h3>{t('ggx_pnp:ggxpnp_assembly_title')}</h3>
+          <h2>{t('ggx_pnp:ggxpnp_assembly_title')}</h2>
           <p>{t('ggx_pnp:ggxpnp_assembly_text')}</p>
           <div className={styles.containerImatge}>
           <video width={1200} alt={t('ggx_pnp:ggxpnp_assembly_media_alt')} src='https://gafrmmszazh98sh9.public.blob.vercel-storage.com/Stadium/ggx_stadium_0-kOW2KEIqAm5SiEWMUi2wtfMjoEXfRl.mp4' autoPlay loop muted playsinline/>
           </div>
 
-          <h3>{t('ggx_pnp:ggxpnp_what_title')}</h3>
+          <h2>{t('ggx_pnp:ggxpnp_what_title')}</h2>
           <p>{t('ggx_pnp:ggxpnp_what_text')}</p>
           <div className={styles.containerImatge}>
             <Image
@@ -87,7 +81,7 @@ export default function GGXPrintAndPlay() {
             </p>
           </div>
 
-          <h3>{t('ggx_pnp:ggxpnp_why_title')}</h3>
+          <h2>{t('ggx_pnp:ggxpnp_why_title')}</h2>
           <p>{t('ggx_pnp:ggxpnp_why_text')}</p>
           <div className={styles.containerImatge}>
             <Image
@@ -103,14 +97,14 @@ export default function GGXPrintAndPlay() {
 
           <YouTubeEmbed videoId="XpXVMy8aels" />
 
-          <h3>{t('ggx_pnp:ggxpnp_print_title')}</h3>
+          <h2>{t('ggx_pnp:ggxpnp_print_title')}</h2>
           <p>{t('ggx_pnp:ggxpnp_print_text')}</p>
           <div className={styles.containerImatge}>
             <a className={styles.ctaPrimary} href="https://makerworld.com/en/models/1032252-ggx-the-table-football-soccer-game" target='_blank' rel="noopener noreferrer">{t('ggx_pnp:ggxpnp_print_cta')}</a>
           </div>
 
 
-          <h3>{t('ggx_pnp:ggxpnp_teams_title')}</h3>
+          <h2>{t('ggx_pnp:ggxpnp_teams_title')}</h2>
           <p>{t('ggx_pnp:ggxpnp_teams_text')}</p>
           <div className={styles.containerImatge}>
             <Image
@@ -124,8 +118,8 @@ export default function GGXPrintAndPlay() {
             <a className={styles.ctaPrimary} href="https://makerworld.com/en/collections/4767775-ggx-teams" target='_blank' rel="noopener noreferrer">{t('ggx_pnp:ggxpnp_teams_cta')}</a>
           </div>
 
-          <h4>{t('ggx_pnp:ggxpnp_grangol_eyebrow')}</h4>
-          <h3>{t('ggx_pnp:ggxpnp_grangol_title')}</h3>
+          <h3>{t('ggx_pnp:ggxpnp_grangol_eyebrow')}</h3>
+          <h2>{t('ggx_pnp:ggxpnp_grangol_title')}</h2>
           <p>{t('ggx_pnp:ggxpnp_grangol_text')}</p>
           
         </div>

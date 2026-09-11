@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'react-i18next';
-import { useState, useEffect } from 'react';
 import PageHeader from '../../components/PageHeader';
 import SeoHead from '../../components/SeoHead';
 import TopNavbar from '../../components/TopNavbar';
@@ -27,17 +26,12 @@ export async function getStaticProps({locale}) {
 
 export default function ArticlesIndex({posts}) {
     const { t, ready } = useTranslation(['common', 'ggx', 'seo']);
-    const [isMounted, setIsMounted] = useState(false);
     const breadcrumbs = buildBreadcrumbJsonLd([
       { name: t('common:home'), url: getAbsoluteUrl('/') },
       { name: t('common:devLog'), url: getAbsoluteUrl('/articles') },
     ]);
 
-    useEffect(() => {
-      setIsMounted(true);
-    }, []);
-
-    if (!ready || !isMounted) {
+    if (!ready) {
       return <div>
         <SeoHead
           title={t('seo:articlesTitle')}
