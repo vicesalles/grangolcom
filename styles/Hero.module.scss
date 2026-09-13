@@ -50,3 +50,25 @@
     font-size: 1.05rem;
   }
 }
+
+.menu {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding: 0.75em 1em;
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--font-ui);
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0.3em 0.8em;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: #268b07;
+    }
+  }
+}

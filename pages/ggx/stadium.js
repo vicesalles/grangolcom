@@ -2,9 +2,8 @@ import Link from 'next/link'
 import styles from '../../styles/General.module.scss'
 
 import Footer from '../../components/Footer';
-import PageHeader from '../../components/PageHeader';
 import SeoHead from '../../components/SeoHead';
-import TopNavbar from '../../components/TopNavbar';
+import Hero from '../../components/Hero';
 
 import {IoMdFootball} from '@react-icons/all-files/io/IoMdFootball';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -57,18 +56,22 @@ export default function GGX() {
        jsonLd={jsonLdData}
        breadcrumbs={breadcrumbs}
      />
-      <main className={styles.main}>
-      <TopNavbar/>
-        <PageHeader 
-        title={t('stadium:titolStadium')}
-        description={t('stadium:subtitolStadium')}/>
+      <main className={styles.main}>      
+              <Hero 
+                menu = {true}
+                          title={t('stadium:titolStadium')}
+                          subtitle={t('stadium:subtitolStadium')}
+                          image="https://gafrmmszazh98sh9.public.blob.vercel-storage.com/GranGolGGx.JPG"
+                        />
     
         <div>          
           <div className={styles.article}>    
           <h3>{t('stadium:titolArticleStadium')}</h3>
           <p>{t('stadium:introStadium')}</p>        
           
-          <p><Link className={styles.newsletter} href="https://makerworld.com/en/models/1032252" target='_blank' rel="noopener">{t('stadium:printStadium')}</Link></p> 
+          <div className={styles.containerImatge} style={{ marginBottom: '2em' }}>
+            <a className={styles.ctaPrimary} href="https://makerworld.com/en/models/1032252" target='_blank' rel="noopener noreferrer">{t('stadium:printStadium')}</a>
+          </div>
                     
           
           <div className={styles.containerImatge}>

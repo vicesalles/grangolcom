@@ -54,7 +54,7 @@ export default function GGXPrintAndPlay() {
         breadcrumbs={breadcrumbs}
       />
       <main className={styles.main}>
-        <Hero
+        <Hero menu = {true}
           title={t('ggx_pnp:ggxpnp_title')}
           subtitle={t('ggx_pnp:ggxpnp_subtitle')}
           image="https://gafrmmszazh98sh9.public.blob.vercel-storage.com/GGxNit.JPG"

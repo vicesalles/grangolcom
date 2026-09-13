@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import PageHeader from '../../components/PageHeader';
 import SeoHead from '../../components/SeoHead';
 import TopNavbar from '../../components/TopNavbar';
+import Hero from '../../components/Hero';
 
 import {IoMdFootball} from '@react-icons/all-files/io/IoMdFootball';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -45,7 +46,9 @@ export default function GGX() {
       />
       <IoMdFootball fontSize={12} /></div>;
   }
- 
+// Foto alternativa https://gafrmmszazh98sh9.public.blob.vercel-storage.com/LigaItaliana.png
+// https://gafrmmszazh98sh9.public.blob.vercel-storage.com/GranGolGGx.JPG
+// https://gafrmmszazh98sh9.public.blob.vercel-storage.com/miners.JPG
   return (
     <div className={styles.container}>
       <SeoHead
@@ -55,12 +58,13 @@ export default function GGX() {
         jsonLd={jsonLdData}
         breadcrumbs={breadcrumbs}
       />
-
-      <main className={styles.main}>
-      <TopNavbar/>
-        <PageHeader 
-        title={t('ggx:ggxTitol')}
-        description={t('ggx:ggxSubTitol')}/>
+    
+      <main className={styles.main}>     
+            <Hero 
+                  title={t('ggx:ggxTitol')}
+                  subtitle={t('ggx:ggxSubTitol')}
+                  image="https://gafrmmszazh98sh9.public.blob.vercel-storage.com/GranGolGGx.JPG"
+                />
     
         <div>          
           <div className={styles.article}>    

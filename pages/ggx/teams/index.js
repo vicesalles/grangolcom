@@ -2,9 +2,8 @@ import Link from 'next/link';
 import styles from '../../../styles/General.module.scss';
 
 import Footer from '../../../components/Footer';
-import PageHeader from '../../../components/PageHeader';
 import SeoHead from '../../../components/SeoHead';
-import TopNavbar from '../../../components/TopNavbar';
+import Hero from '../../../components/Hero';
 
 import { IoMdFootball } from '@react-icons/all-files/io/IoMdFootball';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -43,7 +42,8 @@ export default function GGXTeams() {
       </div>
     );
   }
-
+//Foto alternativa https://gafrmmszazh98sh9.public.blob.vercel-storage.com/LigaItaliana.png
+// https://gafrmmszazh98sh9.public.blob.vercel-storage.com/miners.JPG
   return (
     <div className={styles.container}>
       <SeoHead
@@ -53,11 +53,21 @@ export default function GGXTeams() {
         jsonLd={jsonLdData}
         breadcrumbs={breadcrumbs}
       />
-      <main className={styles.main}>
-        <TopNavbar />
-        <PageHeader title={t('ggx:ggxTeamsTitle')} description={t('ggx:ggxTeamsDescription')} />
+      <main className={styles.main}>      
+        <Hero 
+                          title={t('ggx:ggxTeamsTitle')}
+                          subtitle={t('ggx:ggxTeamsDescription')}
+                          image="https://gafrmmszazh98sh9.public.blob.vercel-storage.com/LigaItaliana.png"
+                        />
 
         <div className={styles.articleTeams}>
+                                   <div className={styles.botoneraDestacada}>
+          <Link className={styles.newsletter} href="/">{t('home')}</Link>
+          <Link className={styles.newsletter} href="/ggx/">{t('ggx:queEsGGx')}</Link>
+          <Link className={styles.newsletter} href="/ggx/rules">{t('ggx:ggxNormesTitol')}</Link>
+          <Link className={styles.newsletter} href="/ggx/stadium">{t('ggx:ggxStadium')}</Link>
+          <Link className={styles.newsletter} href="/ggx/support">{t('ggx:ggxSupportGGX')}</Link>
+        </div>
           <h3>{t('ggx:ggxTeamsDescription')}</h3>
           <p>{t('ggx:ggxTeamsDisclaimer')}</p>
           <div className={styles.containerImatge}>
@@ -76,6 +86,12 @@ export default function GGXTeams() {
           </div>
           <div>
             <h4>GRAN GOL</h4>
+            <Image
+              src="https://gafrmmszazh98sh9.public.blob.vercel-storage.com/miners.JPG"
+              width={1200}
+              height={900}
+              alt={t('ggx:teamsStack')}
+            />
             <p>{t('ggx:granGolTeams')}</p>
             <ul className={styles.teamGrid}>
               <li className={styles.teamGridItem}>
@@ -123,14 +139,7 @@ export default function GGXTeams() {
             </ul>
           </div>
         </div>
-
-        <div className={styles.botoneraDestacada}>
-          <Link className={styles.newsletter} href="/">{t('home')}</Link>
-          <Link className={styles.newsletter} href="/ggx/">{t('ggx:queEsGGx')}</Link>
-          <Link className={styles.newsletter} href="/ggx/rules">{t('ggx:ggxNormesTitol')}</Link>
-          <Link className={styles.newsletter} href="/ggx/stadium">{t('ggx:ggxStadium')}</Link>
-          <Link className={styles.newsletter} href="/ggx/support">{t('ggx:ggxSupportGGX')}</Link>
-        </div>
+       
       </main>
 
       <Footer />
