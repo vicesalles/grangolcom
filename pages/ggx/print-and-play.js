@@ -129,6 +129,7 @@ export default function GGXPrintAndPlay() {
           <Link className={styles.newsletter} href="/ggx/">{t('ggx:queEsGGx')}</Link>
           <Link className={styles.newsletter} href="/ggx/rules">{t('ggx:ggxNormesTitol')}</Link>
           <Link className={styles.newsletter} href="/ggx/stadium">{t('ggx:ggxStadium')}</Link>
+          <Link className={styles.newsletter} href="/ggx/teams">{t('ggxTeams')}</Link>
           <Link className={styles.newsletter} href="/ggx/support">{t('ggx:ggxSupportGGX')}</Link>
         </div>
       </main>
