@@ -64,7 +64,7 @@ export default function GGXPrintAndPlay() {
           <h2>{t('ggx_pnp:ggxpnp_assembly_title')}</h2>
           <p>{t('ggx_pnp:ggxpnp_assembly_text')}</p>
           <div className={styles.containerImatge}>
-          <video width={1200} alt={t('ggx_pnp:ggxpnp_assembly_media_alt')} src='https://gafrmmszazh98sh9.public.blob.vercel-storage.com/Stadium/ggx_stadium_0-kOW2KEIqAm5SiEWMUi2wtfMjoEXfRl.mp4' autoPlay loop muted playsinline/>
+          <video width={1200} alt={t('ggx_pnp:ggxpnp_assembly_media_alt')} src='https://gafrmmszazh98sh9.public.blob.vercel-storage.com/Stadium/ggx_stadium_0-kOW2KEIqAm5SiEWMUi2wtfMjoEXfRl.mp4' autoPlay loop muted playsInline/>
           </div>
 
           <h2>{t('ggx_pnp:ggxpnp_what_title')}</h2>

@@ -146,7 +146,7 @@ export default function GGX() {
           <p className={styles.peuFoto}>{t('stadium:porteries06')}</p>      
           </div>
           <div className={styles.containerImatge}>
-          <video width={1200} src='https://gafrmmszazh98sh9.public.blob.vercel-storage.com/Stadium/ggx_stadium_0-kOW2KEIqAm5SiEWMUi2wtfMjoEXfRl.mp4' autoPlay loop muted playsinline/>
+          <video width={1200} src='https://gafrmmszazh98sh9.public.blob.vercel-storage.com/Stadium/ggx_stadium_0-kOW2KEIqAm5SiEWMUi2wtfMjoEXfRl.mp4' autoPlay loop muted playsInline/>
           <p className={styles.peuFoto}>{t('stadium:loopVideo')}</p>
           </div>
       
