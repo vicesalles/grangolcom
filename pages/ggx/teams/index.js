@@ -86,12 +86,14 @@ export default function GGXTeams() {
           </div>
           <div>
             <h4>GRAN GOL</h4>
+            <div className={styles.containerImatge}>
             <Image
               src="https://gafrmmszazh98sh9.public.blob.vercel-storage.com/miners.JPG"
               width={1200}
               height={900}
               alt={t('ggx:teamsStack')}
             />
+            </div>
             <p>{t('ggx:granGolTeams')}</p>
             <ul className={styles.teamGrid}>
               <li className={styles.teamGridItem}>
