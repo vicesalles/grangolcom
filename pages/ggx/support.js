@@ -60,7 +60,7 @@ export default function SupportGGX() {
           <a className={styles.support} href={t('common:shareNewsletter')} target="_blank" rel="noopener noreferrer">
             {t('common:newsLetterMaker')}
           </a>
-          <a className={styles.support} href="https://discord.gg/UYAeS6Jv" target="_blank" rel="noopener noreferrer">
+          <a className={styles.support} href="https://discord.gg/5K4C5hpU" target="_blank" rel="noopener noreferrer">
             {t('common:joinDiscord')}
           </a>
         </div>
