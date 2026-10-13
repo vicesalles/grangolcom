@@ -10,9 +10,11 @@ import {IoMdFootball} from '@react-icons/all-files/io/IoMdFootball';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
+import { MDXRemote } from 'next-mdx-remote';
+import components from '../../components/MDXComponents';
 import { buildBreadcrumbJsonLd, getAbsoluteUrl } from '../../lib/seo';
 
-export default function GGX() {
+export default function GGX({ mdxSource }) {
   const { t, ready } = useTranslation(['common', 'ggx', 'seo']);
   const breadcrumbs = buildBreadcrumbJsonLd([
     { name: t('common:home'), url: getAbsoluteUrl('/') },
@@ -75,24 +77,7 @@ export default function GGX() {
             <li>{t('ggx:ggxNormesPartitTemps')}</li>
             </ul></p>
             <p>{t('ggx:ggxNormesIntro')}</p>
-            <p><ol>
-                <li>{t('ggx:ggxNormes1')}</li>
-                <li>{t('ggx:ggxNormes2')}</li>
-                <li>{t('ggx:ggxNormes3')}</li>
-                <li>{t('ggx:ggxNormes4')}</li>
-                <li>{t('ggx:ggxNormes5')}</li>
-                <li>{t('ggx:ggxNormes6')}</li>
-                <li>{t('ggx:ggxNormes7')}</li>
-                <li>{t('ggx:ggxNormes8')}</li>
-                <li>{t('ggx:ggxNormes9')}</li>
-                <li>{t('ggx:ggxNormes10')}</li>
-                <li>{t('ggx:ggxNormes11')}</li>
-                <li>{t('ggx:ggxNormes12')}</li>
-                <li>{t('ggx:ggxNormes13')}</li>
-                <li>{t('ggx:ggxNormes14')}</li>
-                <li>{t('ggx:ggxNormes15')}</li>
-                <li>{t('ggx:ggxNormes16')}</li>
-                </ol></p>
+            <MDXRemote {...mdxSource} components={components} />
                 <div className={styles.containerImatge}>
               <a className={styles.botoCTA} href={t('ggx:ggxNormesPaperURL')} target='_blank'>{t('ggx:ggxNormesPaperText')}</a>
                 </div>
@@ -143,8 +128,12 @@ export default function GGX() {
 }
 
 export async function getStaticProps({ locale }) {
+  const { getGgxRules } = await import('../../lib/mdx.server');
+  const mdxSource = await getGgxRules(locale);
+
   return {
     props: {
+      mdxSource,
       ...(await serverSideTranslations(locale, ['common', 'ggx', 'seo'])),
     },
   };

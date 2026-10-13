@@ -43,7 +43,7 @@ export default function Footer() {
       </a>
 
       <a
-        href="https://discord.gg/5K4C5hpU"
+        href="https://discord.gg/GcCkMpGh"
         target="_blank"
         rel="noopener noreferrer"
         style={{ marginRight: 15 }}
