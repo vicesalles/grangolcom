@@ -71,29 +71,12 @@ export default function GGX({ mdxSource }) {
           <Link className={styles.newsletter} href="/ggx/">{t('ggx:queEsGGx')}</Link> <Link className={styles.newsletter} href="/ggx/stadium">{t('ggx:ggxStadium')}</Link> <Link className={styles.newsletter} href="/ggx/teams">{t('ggxTeams')}</Link> <Link className={styles.newsletter} href="/ggx/support">{t('ggx:ggxSupportGGX')}</Link>
           </div>
           <h3>{t('ggx:ggxNormesSubTitol')}</h3>
-          <p>{t('ggx:ggxNormesPartit')}</p>
-          <p><ul>
-            <li>{t('ggx:ggxNormesPartitGols')}</li>
-            <li>{t('ggx:ggxNormesPartitTemps')}</li>
-            </ul></p>
-            <p>{t('ggx:ggxNormesIntro')}</p>
-            <MDXRemote {...mdxSource} components={components} />
-                <div className={styles.containerImatge}>
+          <MDXRemote {...mdxSource} components={components} />
+          <div className={styles.containerImatge}>
               <a className={styles.botoCTA} href={t('ggx:ggxNormesPaperURL')} target='_blank'>{t('ggx:ggxNormesPaperText')}</a>
-                </div>
+          </div>
             
           </div>
-
-          <div className={styles.containerImatge}>
-          <Image
-                    src="https://gafrmmszazh98sh9.public.blob.vercel-storage.com/Teams/4-fbcCQP587AOkm8mWNjM4R0beekXZly.JPG"
-                    width={1200}
-                    height={900}
-                    alt="{t('ggx:ggxFotoForaDeJoc')}"
-                />
-                <p className={styles.peuFoto}>{t('ggx:ggxFotoForaDeJoc')}</p>
-          </div>
-
 
           <div className={styles.containerImatge}>
           <Image
@@ -103,16 +86,7 @@ export default function GGX({ mdxSource }) {
                     alt="{t('ggx:ggxFotoAreaPenal')}"
                 />
                 <p className={styles.peuFoto}>{t('ggx:ggxFotoAreaPenal')}</p>
-          </div>
-          <div className={styles.containerImatge}>
-          <Image
-                    src="/img/articles/areaGol.jpg"
-                    width={1200}
-                    height={798}
-                    alt="{t('ggx:ggxFotoAreaGol')}"
-                />
-                <p className={styles.peuFoto}>{t('ggx:ggxFotoAreaGol')}</p>
-          </div>
+          </div>        
         </div>
 
         <div className={styles.botoneraDestacada}>
