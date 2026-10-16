@@ -13,7 +13,10 @@ import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 import { buildBreadcrumbJsonLd, getAbsoluteUrl } from '../../lib/seo';
 
-export default function GGX() {
+import { MDXRemote } from 'next-mdx-remote';
+import components from '../../components/MDXComponents';
+
+export default function GGX({ mdxSource }) {
   const { t, ready } = useTranslation(['common', 'ggx', 'seo']);
   const breadcrumbs = buildBreadcrumbJsonLd([
     { name: t('common:home'), url: getAbsoluteUrl('/') },
@@ -139,6 +142,10 @@ export default function GGX() {
                 />
                 <p className={styles.peuFoto}>{t('ggx:ggxQcExperts')}</p>
           </div>
+
+          <div className={styles.bbgText}>
+            <MDXRemote {...mdxSource} components={components} />
+          </div>
           
           </div>
         </div>
@@ -146,6 +153,8 @@ export default function GGX() {
         <div className={styles.botoneraDestacada}>
         <Link className={styles.newsletter} href="/">{t('home')}</Link> <Link className={styles.newsletter} href="/ggx/rules">{t('ggx:ggxNormesTitol')}</Link> <Link className={styles.newsletter} href="/ggx/stadium">{t('ggx:ggxStadium')}</Link> <Link className={styles.newsletter} href="/ggx/teams">{t('ggxTeams')}</Link> <Link className={styles.newsletter} href="/ggx/support">{t('ggx:ggxSupportGGX')}</Link>
           </div>
+
+        
 
       </main>      
        
@@ -156,8 +165,11 @@ export default function GGX() {
 }
 
 export async function getStaticProps({ locale }) {
+   const { getBBGtext } = await import('../../lib/mdx.server');
+  const mdxSource = await getBBGtext(locale);
   return {
     props: {
+      mdxSource,
       ...(await serverSideTranslations(locale, ['common', 'ggx', 'seo'])),
     },
   };

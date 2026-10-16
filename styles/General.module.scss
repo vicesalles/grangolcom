@@ -298,3 +298,17 @@ $grangol-green:#26b840;
     margin-left: 28px;
   }
 }
+
+.bbgText {
+  margin-top: 2em;
+
+  a {
+    color: $grangol-green;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
